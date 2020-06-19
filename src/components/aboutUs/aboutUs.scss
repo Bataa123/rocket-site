@@ -45,3 +45,93 @@
     transform: matrix(1, 0, 0, -1, 0, 0);
     margin: 0 32px ;
 }
+
+.touchingText {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    margin: 32px auto 123px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    width: 1043px;
+    color: #FFFFFF;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.aboutEvery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .everything {
+        margin: 0 64px ;
+        width: 1209px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        .allText {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 421px;
+            .aboutHeadline {
+                text-transform: uppercase;
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 56px;
+                line-height: 68px;
+                color: #FFFFFF
+            }
+            
+            .text {
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 200%;
+                color: #FFFFFF;
+            }
+            .readMore {
+                cursor: pointer;
+                width: 194px;
+                height: 67px;
+                border: 2px solid #FFFFFF;
+                border-radius: 2px;
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 173.6%;
+                color: #FFFFFF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }    
+    .arrow {
+        background-image: url("../../images&icons/arrow.png");
+        background-size: 16px 32px;
+        height: 32px;
+        width: 16px;
+    }
+    .left {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    .right {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+    }
+}
+
+
+
+.aboutImage {
+    background-image: url('../../images&icons/spaceX.png');
+    width: 640px;
+    height: 640px;
+    background-size: cover;
+}
