@@ -17,13 +17,6 @@
     margin: auto;
 }
 
-.touching {
-    display: flex;
-    margin-top: 90px;
-    align-items: center;
-    justify-content: center;
-}
-
 .usCircle {
     width: 18px;
     height: 18px;
@@ -32,8 +25,7 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
-    background: #FFFFFF;
-    color: white;
+    background: #737386;    
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
 }
@@ -46,18 +38,25 @@
     margin: 0 32px ;
 }
 
-.touchingText {
+.touching {
+    display: flex;
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    margin: 32px auto 123px;
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
+    font-style: normal;
     width: 1043px;
-    color: #FFFFFF;
+    margin: 90px auto 123px;
+    color: #737386;
+}
+.buttonA {
+    height: 79px;
     display: flex;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .aboutEvery {
@@ -127,12 +126,17 @@
     }
 }
 
-
-
 .aboutImage {
     background-image: url('../../images&icons/BigSpaceX.png');
     width: 640px;
     height: 640px;
+    margin-left: 40px;
     background-size: cover;
     background-position: center;
+}
+
+.slide {
+    display: flex;
+    width: 1213px;
+    overflow: hidden;
 }

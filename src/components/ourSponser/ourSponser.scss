@@ -17,13 +17,13 @@
     margin: auto;
 }
 
-.touching {
+.touchingO {
     display: flex;
     margin-top: 30px;
     justify-content: space-between;
 }
 
-.usCircle {
+.UsCircle {
     width: 18px;
     height: 18px;
     border-radius: 50%;
@@ -43,4 +43,11 @@
     background: #737386;
     transform: matrix(1, 0, 0, -1, 0, 0);
     margin: 0 32px ;
+}
+
+.sponser {
+    display: flex;
+    justify-content: center;
+    margin-top: 37px;
+    margin-bottom: 160px;
 }
