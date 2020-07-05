@@ -1,11 +1,12 @@
 import React from "react";
 
-export const Time = () => {
+export const Team = () => {
   return (
-    <div className="everything" id="scrollTimeline">
+    <div className="everything" id="scrollTeam">
+      <div className="aboutImage"></div>
       <div className="allText">
         <div className="aboutHeadline">
-          time <br /> project
+          team <br /> project
         </div>
         <div className="text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
@@ -15,7 +16,6 @@ export const Time = () => {
         </div>
         <div className="readMore">Read more</div>
       </div>
-      <div className="aboutImage"></div>
     </div>
   );
 };

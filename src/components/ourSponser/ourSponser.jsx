@@ -1,27 +1,28 @@
 import React from "react";
 import "./ourSponser.scss";
-import spacex from "../../images&icons/spaceX.png";
+import spacex from "../../images&icons/spacex.png";
+import nomt from '../../images&icons/sponser/nomt.png'
 
 const OurSponser = () => {
   return (
     <>
-      <div className="headLine">OUR SPONSER</div>
+      <div id="sponser" className="headLine">OUR SPONSER</div>
       <div className="zuraas"></div>
       <div className="sponser">
         <img
           alt="number1"
           style={{
             margin: "40px 0px 0px 59px",
-            height: "32px",
+            height: "170px",
             width: "240px"
           }}
-          src={spacex}
+          src={nomt}
         ></img>
         <img
           alt="number2"
           style={{
             margin: "40px 0px 0px 59px",
-            height: "32px",
+            height: "70px",
             width: "240px"
           }}
           src={spacex}
@@ -30,7 +31,7 @@ const OurSponser = () => {
           alt="number3"
           style={{
             margin: "40px 0px 0px 59px",
-            height: "32px",
+            height: "70px",
             width: "240px"
           }}
           src={spacex}
@@ -39,7 +40,7 @@ const OurSponser = () => {
           alt="number3"
           style={{
             margin: "40px 0px 0px 59px",
-            height: "32px",
+            height: "70px",
             width: "240px"
           }}
           src={spacex}

@@ -1,70 +1,28 @@
-.headLine{
-    font-family: 'Montserrat', sans-serif;
+.headLine {
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 40px;
     line-height: 49px;
-    color: #FFFFFF;
-    text-align: center ;
+    color: #ffffff;
+    text-align: center;
     margin: 137px 0 34px;
 }
 
 .zuraas {
     width: 134px;
     height: 6px;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 1px;
     margin: auto;
-}
-
-.usCircle {
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    background: #737386;    
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-}
-
-.zuraasT {
-    width: 240px;
-    height: 2px;
-    background: #737386;
-    transform: matrix(1, 0, 0, -1, 0, 0);
-    margin: 0 32px ;
-}
-
-.touching {
-    display: flex;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    font-style: normal;
-    width: 1043px;
-    margin: 90px auto 123px;
-    color: #737386;
-}
-.buttonA {
-    height: 79px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
+    margin-bottom: 160px;
 }
 
 .aboutEvery {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     .everything {
-        margin: 0 64px ;
         width: 1209px;
         display: flex;
         justify-content: space-between;
@@ -73,70 +31,98 @@
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            width: 421px;
+            width: 640px;
+            margin-left: 20px;
+            margin-right: 20px;
             .aboutHeadline {
                 text-transform: uppercase;
-                font-family: 'Montserrat', sans-serif;
+                font-family: "Montserrat", sans-serif;
                 font-style: normal;
                 font-weight: 800;
                 font-size: 56px;
                 line-height: 68px;
-                color: #FFFFFF
+                color: #ffffff;
             }
-            
+
             .text {
-                font-family: 'Montserrat', sans-serif;
+                font-family: "Montserrat", sans-serif;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 18px;
                 line-height: 200%;
-                color: #FFFFFF;
+                color: #ffffff;
             }
             .readMore {
                 cursor: pointer;
                 width: 194px;
                 height: 67px;
-                border: 2px solid #FFFFFF;
+                border: 2px solid #ffffff;
                 border-radius: 2px;
-                font-family: 'Montserrat', sans-serif;
+                font-family: "Montserrat", sans-serif;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 20px;
                 line-height: 173.6%;
-                color: #FFFFFF;
+                color: #ffffff;
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }
         }
-    }    
-    .arrow {
-        background-image: url("../../images&icons/arrow.png");
-        background-size: 16px 32px;
-        height: 32px;
-        width: 16px;
-    }
-    .left {
-        transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-    }
-    .right {
-        transform: rotate(180deg);
-        -webkit-transform: rotate(180deg);
     }
 }
 
 .aboutImage {
-    background-image: url('../../images&icons/BigSpaceX.png');
+    background-image: url("../../images&icons/BigSpaceX.png");
     width: 640px;
     height: 640px;
-    margin-left: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
     background-size: cover;
     background-position: center;
 }
 
-.slide {
-    display: flex;
-    width: 1213px;
-    overflow: hidden;
+@media only screen and (max-width: 1399px) {
+    .headLine {
+        font-size: 26.8px;
+        line-height: 32px;
+        margin: 92px 0 23px;
+    }
+
+    .zuraas {
+        width: 90px;
+        height: 4px;
+        margin-bottom: 107px;
+    }
+
+    .aboutEvery {
+        .everything {
+            width: 810px;
+            .allText {
+                width: 430px;
+                margin-left: 13px;
+                margin-right: 13px;
+                .aboutHeadline {
+                    font-size: 38px;
+                    line-height: 45px;
+                }
+
+                .text {
+                    font-size: 12px;
+                }
+                .readMore {
+                    width: 130px;
+                    height: 45px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .aboutImage {
+        width: 428px;
+        height: 428px;
+        margin-left: 13px;
+        margin-right: 13px;
+    }
 }

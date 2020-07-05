@@ -1,0 +1,26 @@
+.copyright {
+    position: absolute;
+    left: 18.59%;
+    margin-top: 55px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: white;
+}
+
+.footer {
+    background-color: black;
+    height: 140px;
+    width: 100%;
+    display: flex;
+}
+
+.instagram {
+    position: absolute;
+    right: 100px;
+    margin-top: 55px;
+    cursor: pointer;
+}

@@ -1,7 +1,7 @@
 .opacity {
   background-image: linear-gradient(to top, #080828 0.01%, rgba(0, 0, 0, 0) 81.25%), 
     url('./images&icons/BigSpaceX.png');
-  background-size: cover;
+  background-size: 100% 100%;
   width: 100vw;
   .firstLook {
     height: 100vh;
@@ -49,4 +49,11 @@
       }
     } 
   }
+}
+
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #080828;
 }

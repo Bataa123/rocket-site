@@ -1,0 +1,150 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactName {
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+
+    width: 580px;
+    height: 75px;
+
+    background: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 32px;
+    outline: none;
+}
+
+.contactEmail {
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    width: 580px;
+    height: 75px;
+
+    background: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-left: 50px;
+    padding: 32px;
+    outline: none;
+}
+
+.contactMessage {
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    width: 1207px;
+    height: 200px;
+    background: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-top: 50px;
+    padding: 32px;
+    outline: none;
+}
+
+.contactButton {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: white;
+    width: 312px;
+    height: 75px;
+    border: none;
+    background-color: #2c6cfa;
+    border-radius: 4px;
+    outline: none;
+    margin-top: 50px;
+    margin-left: 896px;
+    margin-bottom: 150px;
+    cursor: pointer;
+}
+
+.name {
+    position: absolute;
+    left: 46vw;
+    // right: 680px;
+    margin-top: 20px;
+}
+
+.email {
+    position: absolute;
+    right: 370px;
+    margin-top: 24px;
+}
+
+.message {
+    position: absolute;
+    left: 46vw;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1399px) {
+    .contactName {
+        font-size: 13px;
+        line-height: 15px;
+
+        width: 388px;
+        height: 33px;
+        padding: 21px;
+    }
+
+    .contactEmail {
+        font-size: 13px;
+        line-height: 15px;
+        width: 388px;
+        height: 50px;
+
+        margin-left: 33px;
+        padding: 21px;
+    }
+
+    .contactMessage {
+        font-size: 13px;
+        line-height: 15px;
+        width: 808px;
+        height: 134px;
+        margin-top: 33px;
+        padding: 11px;
+    }
+
+    .contactButton {
+        font-size: 13px;
+        line-height: 15px;
+        width: 209px;
+        height: 50px;
+        margin-top: 33px;
+        margin-left: 600px;
+        margin-bottom: 100px;
+    }
+
+    .name {
+        position: absolute;
+        // left: 46vw;
+        left: 580px !important;
+        margin-top: 20px;
+    }
+
+    .email {
+        position: absolute;
+        right: 50px;
+        margin-top: 24px;
+    }
+
+    .message {
+        position: absolute;
+        left: 46vw;
+        margin-top: 20px;
+    }
+}

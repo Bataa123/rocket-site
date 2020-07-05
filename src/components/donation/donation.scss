@@ -1,0 +1,56 @@
+.donateLeft {
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+    color: white;
+}
+
+.donateTitle {
+    width: 475px;
+    height: 136px;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 68px;
+}
+
+.donateText {
+    margin-top: 500px;
+    width: 605px;
+    height: 180px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 200%;
+}
+
+.donate {
+    display: flex;
+}
+
+.donateRight {
+    margin-left: 220px;
+    width: 377px;
+    height: 576.89px;
+    background-color: yellow;
+}
+
+@media only screen and (max-width: 1399px) {
+    .donateTitle {
+        width: 318px;
+        height: 91px;
+        font-size: 38px;
+        line-height: 45px;
+    }
+
+    .donateText {
+        margin-top: 63px;
+        width: 405px;
+        height: 120px;
+        font-size: 12px;
+    }
+
+    .donateRight {
+        margin-left: 147px;
+        width: 252px;
+        height: 385px;
+    }
+}
