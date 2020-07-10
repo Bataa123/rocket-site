@@ -23,7 +23,7 @@
     flex-wrap: wrap;
     justify-content: center;
     .everything {
-        width: 1209px;
+        width: 100vw;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
@@ -31,7 +31,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            width: 640px;
+            width: 45vw;
             margin-left: 20px;
             margin-right: 20px;
             .aboutHeadline {
@@ -74,10 +74,8 @@
 
 .aboutImage {
     background-image: url("../../images&icons/BigSpaceX.png");
-    width: 640px;
+    width: 50vw;
     height: 640px;
-    margin-left: 20px;
-    margin-right: 20px;
     background-size: cover;
     background-position: center;
 }
@@ -97,11 +95,10 @@
 
     .aboutEvery {
         .everything {
-            width: 810px;
+            width: 100vw;
             .allText {
-                width: 430px;
-                margin-left: 13px;
-                margin-right: 13px;
+                width: 43vw;
+                margin: auto;
                 .aboutHeadline {
                     font-size: 38px;
                     line-height: 45px;
@@ -120,9 +117,7 @@
     }
 
     .aboutImage {
-        width: 428px;
+        width: 50vw;
         height: 428px;
-        margin-left: 13px;
-        margin-right: 13px;
     }
 }

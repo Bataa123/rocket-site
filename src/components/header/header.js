@@ -1,0 +1,36 @@
+import React from 'react';
+import { useHistory } from 'react-router-dom';
+import './header.scss'
+
+export const Header = () => {
+    const history = useHistory()
+
+    const toOurTeam = () => {
+        history.push("/ourTeam");
+    }
+
+    return (
+        <div className="opacity">
+            <div className="firstLook">
+                <div style={{ textAlign: "center" }}>
+                    <div className="linkButtons" onClick={() =>
+                        document.getElementById('aboutUs').scrollIntoView({ behavior: "smooth" })
+                    }>About Us</div>
+                    <div className="linkButtons" onClick={() =>
+                        document.getElementById('sponser').scrollIntoView({ behavior: "smooth" })
+                    }>Sponser</div>
+                    <div className="linkButtons" onClick={() =>
+                        document.getElementById('donation').scrollIntoView({ behavior: "smooth" })
+                    }>Donate</div>
+                    <div className="linkButtons" onClick={() =>
+                        document.getElementById('contact').scrollIntoView({ behavior: "smooth" })
+                    }>Contact Us</div>
+                    <div className="linkButtons" onClick={() => toOurTeam()}>Our Team</div>
+                </div>
+                <div className='firstRectangle'>20000M Above the <br /> Gobi desert</div>
+                <div className="arrowCenter"> <div className="arrow down"></div></div>
+            </div>
+        </div>
+    )
+}
+

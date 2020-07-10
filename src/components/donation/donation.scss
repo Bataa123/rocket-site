@@ -1,3 +1,7 @@
+.donate {
+    display: flex;
+    justify-content: center;
+}
 .donateLeft {
     display: flex;
     flex-direction: column;
@@ -14,7 +18,6 @@
 }
 
 .donateText {
-    margin-top: 500px;
     width: 605px;
     height: 180px;
     font-weight: 500;
@@ -22,9 +25,6 @@
     line-height: 200%;
 }
 
-.donate {
-    display: flex;
-}
 
 .donateRight {
     margin-left: 220px;

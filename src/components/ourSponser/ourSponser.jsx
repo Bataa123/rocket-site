@@ -1,6 +1,6 @@
 import React from "react";
 import "./ourSponser.scss";
-import spacex from "../../images&icons/spacex.png";
+import spacex from "../../images&icons/spaceX.png";
 import nomt from '../../images&icons/sponser/nomt.png'
 
 const OurSponser = () => {

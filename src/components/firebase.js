@@ -3,7 +3,7 @@ import firebase from 'firebase'
 const firebaseConfig = {
   apiKey: "AIzaSyARGDwXELgLxxlCJ-wp-Rt5Yx-Wx5yY1Qo",
   authDomain: "gobi-space.firebaseapp.com",
-  databaseURL: "https://gobi-space.firebaseio.com",
+  databaseURL: "https://gobi-space.firebaseapp.com",
   projectId: "gobi-space",
   storageBucket: "gobi-space.appspot.com",
   messagingSenderId: "946503562646",
