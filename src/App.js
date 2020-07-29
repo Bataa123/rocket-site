@@ -6,7 +6,8 @@ import {
 } from "react-router-dom";
 import { Header } from './components/header/header'
 import AboutUs from './components/aboutUs/aboutUs'
-import OurSponser from './components/ourSponser/ourSponser'
+import OurSponsor from './components/ourSponsor/ourSponsor'
+import Universities from './components/universities/universities'
 import { RockerLaunche } from './components/movingRocket/move';
 import { Footer } from './components/footer/footer';
 import { Donation } from './components/donation/donation';
@@ -22,7 +23,9 @@ function App() {
             <Header />
             <RockerLaunche />
             <AboutUs />
-            <OurSponser />
+            <OurTeam/>
+            <OurSponsor />
+            <Universities />
             <Donation />
             <Contact />
             <Footer />

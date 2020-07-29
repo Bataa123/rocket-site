@@ -1,23 +1,80 @@
-.headerText {
-    color: white;
+.headLine {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    color: #ffffff;
     text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: Montserrat;
+    margin: 137px 0 34px;
+    font-weight: 500;
     font-size: 40px;
-    margin: 40px 0 40px 0;
+    line-height: 49px;
 }
 
-.images {
-    height: 300px;    
-    width: 250px;
-    background-color: yellowgreen;
+.aboutEvery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .everything {
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        .allText {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 433px;
+            height: 388px;
+            margin: auto;
+            .secondLine {
+                width: 40px;
+                height: 6px;
+                background: #00B65F;
+            }
+            .aboutHeadline {
+                text-transform: uppercase;
+                font-family: "Montserrat", sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 49px;
+                color: #ffffff;
+            }
+
+            .text {
+                font-family: "Montserrat", sans-serif;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 173.6%;
+                color: #ffffff;
+            }
+            .readMore {
+                cursor: pointer;
+                width: 153px;
+                height: 60px;
+                border: 2px solid #ffffff;
+                border-radius: 2px;
+                font-family: "Montserrat", sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 173.6%;
+                color: #ffffff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
 }
 
-.teacherCard {
-    
+.aboutImage {
+    background-image: url("../../images&icons/BigSpaceX.png");
+    width: 50vw;
+    height:861px;
+    background-size: cover;
+    background-position: center;
 }
-
 .names {
     color: white;
     text-transform: uppercase;

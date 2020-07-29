@@ -1,9 +1,11 @@
 import React from "react";
+import sRocket from '../../../images&icons/secondRocket.png'
+
 
 export const Goal = () => {
   return (
     <div className="everything" id="scrollGoal">
-      <div className="aboutImage"></div>
+      <div style={{backgroundImage: `url(${sRocket})`}} className="aboutImage"></div>
       <div className="allText">
         <div className="secondLine"></div>
         <div className="aboutHeadline">
