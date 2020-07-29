@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import './header.scss'
 
 export const Header = () => {
@@ -23,7 +23,6 @@ export const Header = () => {
                     <Link className="linkButtons" to="/ourTeam">Our Team</Link>
                 </div> */}
                 <div className='firstRectangle'>20000M Above the <br /> Gobi desert</div>
-                <div className="arrowCenter"> <div className="arrow down"></div></div>
             </div>
         </div>
     )

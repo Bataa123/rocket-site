@@ -5,69 +5,74 @@
 }
 
 .contactName {
-    font-family: Raleway;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 23px;
-    width: 580px;
-    height: 75px;
-    background: #ffffff;
-    border: 2px solid rgba(255, 255, 255, 0.4);
-    box-sizing: border-box;
-    border-radius: 4px;
-    padding: 32px;
+    color: white;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    width: 1256px;
+    padding: 16px;
     outline: none;
+    background: black;
+    color: white;
+    border-color: black;
+}
+
+.contactLineGreen {
+    border: 1px solid #00B65F;
+    width: 1288px;
+}
+.contactLine {
+    border: 1px solid #FFFFFF;
+    width: 1288px;
 }
 
 .contactEmail {
-    font-family: Raleway;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 23px;
-    width: 580px;
-    height: 75px;
-
-    background: #ffffff;
-    border: 2px solid rgba(255, 255, 255, 0.4);
-    box-sizing: border-box;
-    border-radius: 4px;
-    margin-left: 50px;
-    padding: 32px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    width: 1256px;
+    padding: 16px;
     outline: none;
+    background: black;
+    color: white;
+    border-color: black;
 }
 
 .contactMessage {
-    font-family: Raleway;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 23px;
-    width: 1207px;
-    height: 200px;
-    background: #ffffff;
-    border: 2px solid rgba(255, 255, 255, 0.4);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    width: 1288px;
+    height: 320px;
+    background: black;
+    color: white;
+    border: 1px solid #FFFFFF;
     box-sizing: border-box;
-    border-radius: 4px;
     margin-top: 50px;
-    padding: 32px;
+    padding: 16px;
     outline: none;
 }
 
 .contactButton {
-    font-family: Raleway;
-    font-weight: 700;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 24px;
     color: white;
-    width: 312px;
-    height: 75px;
+    width: 1288px;
+    height: 56px;
     border: none;
-    background-color: #2c6cfa;
-    border-radius: 4px;
+    background-color: #00B65F   ;
     outline: none;
-    margin-top: 50px;
-    margin-left: 896px;
+    margin-top: 56px;
     margin-bottom: 150px;
-    cursor: pointer;
 }
 
 .name {
@@ -90,60 +95,60 @@
 }
 
 @media only screen and (max-width: 1499px) {
+    .contactLineGreen {
+        width: 1030px;
+    }
+    .contactLine {
+        width: 1030px;
+    }
+    
     .contactName {
-        font-size: 13px;
-        line-height: 15px;
-
-        width: 388px;
-        height: 33px;
-        padding: 21px;
+        font-size: 12px;
+        line-height: 20px;
+        width: 1004px;
+        padding: 12px;
     }
 
     .contactEmail {
-        font-size: 13px;
-        line-height: 15px;
-        width: 388px;
-        height: 50px;
-
-        margin-left: 33px;
-        padding: 21px;
+        font-size: 12px;
+        line-height: 20px;
+        width: 1004px;
+        padding: 12px;
     }
-
+    
     .contactMessage {
-        font-size: 13px;
-        line-height: 15px;
-        width: 808px;
-        height: 134px;
-        margin-top: 33px;
-        padding: 11px;
+        font-size: 12px;
+        line-height: 16px;
+        width: 1030px;
+        height: 256px;
+        margin-top: 40px;
+        padding: 12px;
     }
-
+    
     .contactButton {
-        font-size: 13px;
-        line-height: 15px;
-        width: 209px;
-        height: 50px;
-        margin-top: 33px;
-        margin-left: 600px;
-        margin-bottom: 100px;
+        font-size: 16px;
+        line-height: 19px;
+        width: 1030px;
+        height: 44px;
+        margin-top: 44px;
+        margin-bottom: 120px;
     }
+    
+    // .name {
+    //     position: absolute;
+    //     left: 46vw;
+    //     // right: 680px;
+    //     margin-top: 20px;
+    // }
+    
+    // .email {
+    //     right: 296px;
+    //     margin-top: 19px;
+    // }
+    
+    // .message {
 
-    .name {
-        position: absolute;
-        // left: 46vw;
-        left: 580px !important;
-        margin-top: 20px;
-    }
-
-    .email {
-        position: absolute;
-        right: 50px;
-        margin-top: 24px;
-    }
-
-    .message {
-        position: absolute;
-        left: 46vw;
-        margin-top: 20px;
-    }
+    //     left: 46vw;
+    //     margin-top: 16px;
+    // }
 }

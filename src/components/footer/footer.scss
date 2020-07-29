@@ -1,26 +1,40 @@
-.copyright {
-    position: absolute;
-    left: 18.59%;
-    margin-top: 55px;
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 23px;
-    font-feature-settings: "pnum" on, "lnum" on;
-    color: white;
+.footerLine {
+    opacity: 0.5;
+    border: 1px solid #FFFFFF;
 }
 
 .footer {
     background-color: black;
     height: 140px;
-    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1288px;
+    margin: 0 auto;
+    .copyright {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: white;
+    }
+    img {
+        margin: 0 17px;
+    }
 }
 
-.instagram {
-    position: absolute;
-    right: 100px;
-    margin-top: 55px;
-    cursor: pointer;
+@media only screen and (max-width: 1499px) {
+    .footer {
+        height: 112px;
+        max-width: 1030px;
+        .copyright {
+            font-size: 16px;
+            line-height: 19px;
+        }
+        img {
+            margin: 0 13px;
+        }
+    }   
 }

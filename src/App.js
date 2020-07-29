@@ -23,7 +23,7 @@ function App() {
             <Header />
             <RockerLaunche />
             <AboutUs />
-            <OurTeam/>
+            <OurTeam />
             <OurSponsor />
             <Universities />
             <Donation />

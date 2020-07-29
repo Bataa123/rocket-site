@@ -33,13 +33,13 @@ export const Contact = () => {
     <div className="contact" id="contact">
       <div className="headLine">CONTACT US</div>
       <div className="zuraas"></div>
-      <div>
-        <input id="name" placeholder="Name" className="contactName"></input>
-        <input id="email" placeholder="Email" className="contactEmail"></input>
-      </div>
-      <input id="text" placeholder="Message" className="contactMessage"></input>
+      <input id="name" placeholder="NAME" className="contactName"></input>
+      <div className="contactLineGreen"></div>
+      <input id="email" placeholder="EMAIL" className="contactEmail"></input>
+      <div className="contactLine"></div>
+      <input id="text" placeholder="MESSAGE" className="contactMessage"></input>
       <button className="contactButton" onClick={() => submit()}>
-        SEND MESSAGE
+        SEND
       </button>
     </div>
   );
