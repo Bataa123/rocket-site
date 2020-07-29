@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./aboutUs.scss";
-import { Goal, Team, Project, Time } from "./sub-components";
+import { Goal, Team, Project } from "./sub-components";
 // import aboutUsData from './aboutUsData.js'
 import '../../images&icons/spaceX.png'
 
@@ -33,9 +33,9 @@ const AboutUs = () => {
         <div>
           <Goal />
         </div>
-        <div>
+        {/* <div>
           <Time />
-        </div>
+        </div> */}
         <div>
           <Team />
         </div>

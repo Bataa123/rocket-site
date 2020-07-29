@@ -1,21 +1,20 @@
 .headLine {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
-    font-weight: 800;
-    font-size: 40px;
-    line-height: 49px;
     color: #ffffff;
     text-align: center;
     margin: 137px 0 34px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 49px;
 }
 
 .zuraas {
-    width: 134px;
-    height: 6px;
-    background: #ffffff;
-    border-radius: 1px;
     margin: auto;
     margin-bottom: 160px;
+    width: 80px;
+    height: 6px;
+    background: #00B65F;
 }
 
 .aboutEvery {
@@ -30,38 +29,43 @@
         .allText {
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
-            width: 45vw;
-            margin-left: 20px;
-            margin-right: 20px;
+            justify-content: space-between;
+            width: 433px;
+            height: 388px;
+            margin: auto;
+            .secondLine {
+                width: 40px;
+                height: 6px;
+                background: #00B65F;
+            }
             .aboutHeadline {
                 text-transform: uppercase;
                 font-family: "Montserrat", sans-serif;
                 font-style: normal;
-                font-weight: 800;
-                font-size: 56px;
-                line-height: 68px;
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 49px;
                 color: #ffffff;
             }
 
             .text {
                 font-family: "Montserrat", sans-serif;
                 font-style: normal;
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 200%;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 173.6%;
                 color: #ffffff;
             }
             .readMore {
                 cursor: pointer;
-                width: 194px;
-                height: 67px;
+                width: 153px;
+                height: 60px;
                 border: 2px solid #ffffff;
                 border-radius: 2px;
                 font-family: "Montserrat", sans-serif;
                 font-style: normal;
-                font-weight: 500;
-                font-size: 20px;
+                font-weight: normal;
+                font-size: 16px;
                 line-height: 173.6%;
                 color: #ffffff;
                 display: flex;
@@ -75,12 +79,12 @@
 .aboutImage {
     background-image: url("../../images&icons/BigSpaceX.png");
     width: 50vw;
-    height: 640px;
+    height:861px;
     background-size: cover;
     background-position: center;
 }
 
-@media only screen and (max-width: 1399px) {
+@media only screen and (max-width: 1499px) {
     .headLine {
         font-size: 26.8px;
         line-height: 32px;
@@ -88,8 +92,8 @@
     }
 
     .zuraas {
-        width: 90px;
-        height: 4px;
+        width: 64px;
+        height: 5px;
         margin-bottom: 107px;
     }
 
@@ -97,20 +101,21 @@
         .everything {
             width: 100vw;
             .allText {
-                width: 43vw;
+                width: 346px;
+                height: 310px;
                 margin: auto;
                 .aboutHeadline {
-                    font-size: 38px;
-                    line-height: 45px;
+                    font-size: 30px;
+                    line-height: 36px;
                 }
 
                 .text {
-                    font-size: 12px;
+                    font-size: 9px;
                 }
                 .readMore {
-                    width: 130px;
-                    height: 45px;
-                    font-size: 13px;
+                    width: 104px;
+                    height: 36px;
+                    font-size: 10px;
                 }
             }
         }
@@ -118,6 +123,6 @@
 
     .aboutImage {
         width: 50vw;
-        height: 428px;
+        height: 688px;
     }
 }

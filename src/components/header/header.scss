@@ -1,13 +1,15 @@
 .opacity {
-    background-image: linear-gradient(to top, #080828 0.01%, rgba(0, 0, 0, 0) 81.25%), 
-      url('../../images&icons/BigSpaceX.png');
-    background-size: 100% 100%;
+    // background-image: linear-gradient(to top, #080828 0.01%, rgba(0, 0, 0, 0) 81.25%), 
+    //   url('../../images&icons/BigSpaceX.png');
+    // background-size: 100% 100%;
+    background-image: url('../../images&icons//firstRocket.png');
+    background-size: cover;
     width: 100vw;
     .firstLook {
       height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: center;
       .linkButtons {
         cursor: pointer;
         font-family: 'Montserrat', sans-serif;
@@ -18,6 +20,7 @@
         color: #FFFFFF;
         display: inline-block;
         margin: 56px 24px 0px;
+        text-decoration: none !important;
       }    
       .firstRectangle {
         color: white;
@@ -26,9 +29,9 @@
         justify-content: center;
         font-family: 'Montserrat', sans-serif;
         font-style: normal;
-        font-weight: 900;
-        font-size: 80px;
-        line-height: 98px;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 59px;
         text-align: center;
       }
       .arrowCenter {

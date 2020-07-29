@@ -1,7 +1,8 @@
 import React from "react";
 import "./ourSponser.scss";
-import spacex from "../../images&icons/spaceX.png";
-import nomt from '../../images&icons/sponser/nomt.png'
+import miat from '../../images&icons/sponser/miatSponser.png'
+import mosta from '../../images&icons/sponser/mostaSponser.png'
+import nomt from '../../images&icons/sponser/nomtSponser.png'
 
 const OurSponser = () => {
   return (
@@ -25,7 +26,7 @@ const OurSponser = () => {
             height: "70px",
             width: "240px"
           }}
-          src={spacex}
+          src={miat}
         ></img>
         <img
           alt="number3"
@@ -34,16 +35,7 @@ const OurSponser = () => {
             height: "70px",
             width: "240px"
           }}
-          src={spacex}
-        ></img>
-        <img
-          alt="number3"
-          style={{
-            margin: "40px 0px 0px 59px",
-            height: "70px",
-            width: "240px"
-          }}
-          src={spacex}
+          src={mosta}
         ></img>
       </div>
     </>

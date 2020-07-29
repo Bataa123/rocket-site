@@ -1,4 +1,4 @@
 export * from './goal'
 export * from './project'
-export * from './team'
+export * from './ourTeam/team'
 export * from './time'

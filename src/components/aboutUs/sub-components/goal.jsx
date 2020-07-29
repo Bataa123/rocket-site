@@ -5,8 +5,9 @@ export const Goal = () => {
     <div className="everything" id="scrollGoal">
       <div className="aboutImage"></div>
       <div className="allText">
+        <div className="secondLine"></div>
         <div className="aboutHeadline">
-          Goal <br /> project
+          Our <br /> Goal
         </div>
         <div className="text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis

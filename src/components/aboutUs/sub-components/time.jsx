@@ -4,6 +4,7 @@ export const Time = () => {
   return (
     <div className="everything" id="scrollTimeline">
       <div className="allText">
+        <div className="secondLine"></div>
         <div className="aboutHeadline">
           time <br /> project
         </div>

@@ -3,9 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  useHistory
 } from "react-router-dom";
-import './App.scss';
 import { Header } from './components/header/header'
 import AboutUs from './components/aboutUs/aboutUs'
 import OurSponser from './components/ourSponser/ourSponser'
@@ -18,19 +16,25 @@ import { OurTeam } from './components/ourTeam/ourTeam';
 function App() {
   return (
     <>
-      <Header />
-      <RockerLaunche />
-      <AboutUs />
-      <OurSponser />
-      <Donation />
-      <Contact />
-      <Footer />
       <Router>
         <Switch>
-          <Route path="/ourTeam">
-            <OurTeam />
+          <Route path="/" exact>
+            <Header />
+            <RockerLaunche />
+            <AboutUs />
+            <OurSponser />
+            <Donation />
+            <Contact />
+            <Footer />
           </Route>
         </Switch>
+        <Router>
+          <Switch>
+            <Route path="/ourTeam">
+              <OurTeam />
+            </Route>
+          </Switch>
+        </Router>
       </Router>
     </>
   );

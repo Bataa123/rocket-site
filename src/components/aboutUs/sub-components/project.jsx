@@ -4,6 +4,7 @@ export const Project = () => {
   return (
     <div className="everything" id="scrollProject">
       <div className="allText">
+        <div className="secondLine"></div>
         <div className="aboutHeadline">
           our <br /> project
         </div>
