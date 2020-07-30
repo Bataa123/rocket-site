@@ -5,7 +5,7 @@ import './ourTeam.scss'
 export const OurTeam = () => {
     return (
         <div className="everything" id="scrollGoal">
-            <div className="allText">
+            {/* <div className="allText">
                 <div className="secondLine"></div>
                 <div className="aboutHeadline">
                     Our <br /> Team
@@ -17,7 +17,7 @@ export const OurTeam = () => {
                     natus accusamus aliquam. Provident!
                 </div>
                 <div className="readMore">Read more</div>
-            </div>
+            </div> */}
         </div>
     )
 }

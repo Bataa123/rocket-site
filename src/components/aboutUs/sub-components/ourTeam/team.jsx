@@ -3,7 +3,7 @@ import './team.scss'
 
 export const Team = () => {
   return (
-    <div className="everything" id="scrollTeam">
+    <div id="scrollTeam">
       
     </div>
   );

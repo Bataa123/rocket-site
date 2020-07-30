@@ -1,7 +1,6 @@
 import React from "react";
 import "./aboutUs.scss";
 import { Goal, Team, Project } from "./sub-components";
-import '../../images&icons/spaceX.png'
 // import aboutUsData from './aboutUsData.js'
 
 const AboutUs = () => {
@@ -18,8 +17,8 @@ const AboutUs = () => {
                     <Goal />
                 </div>
                 {/* <div>
-          <Time />
-        </div> */}
+                <Time />
+                </div> */}
                 <div>
                     <Team />
                 </div>
