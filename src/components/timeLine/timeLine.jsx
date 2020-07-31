@@ -7,7 +7,7 @@ export const TimeLine = () => {
     <div className="timeline">
       <div className="timeline-head"> timeline </div>
       <div className="zuraas"></div>
-      <img alt="timeline" src={timeline} />
+      <img className="timeline-image" alt="timeline" src={timeline} />
       {/* <div className="diagram">
         <div className="texts-top texts">
           <div className="text1">2020.2.22 ehlel</div>
