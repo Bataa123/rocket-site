@@ -1,11 +1,15 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 import './header.scss'
+import Video from '../../images&icons/backgroundVideo.mov'
 
 export const Header = () => {
 
     return (
         <div className="opacity">
+            <video autoPlay loop muted style={{position: 'absolute', width: '100vw', height: '100vh', objectFit: 'cover'}}>
+                <source src={Video} type='video/mp4'></source>
+            </video>
             <div className='logo'></div>
             <div className="firstLook">
                 {/* <div style={{ textAlign: "center" }}>
