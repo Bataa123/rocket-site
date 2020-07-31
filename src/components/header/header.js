@@ -6,6 +6,7 @@ export const Header = () => {
 
     return (
         <div className="opacity">
+            <div className='logo'></div>
             <div className="firstLook">
                 {/* <div style={{ textAlign: "center" }}>
                     <div className="linkButtons" onClick={() =>
