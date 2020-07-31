@@ -15,7 +15,7 @@ export const Goal = () => {
 
   return (
     <>
-    {
+    {/* {
       // call === true ? 
     }
       <div className="getCenter">
@@ -34,7 +34,7 @@ export const Goal = () => {
           sequi provident similique ullam, aspernatur, mollitia ipsum excepturi
           natus accusamus aliquam. Provident!
         </div>
-      </div>
+      </div> */}
 
       <div className="everything" id="scrollGoal">
         <div style={{ backgroundImage: `url(${sRocket})` }} className="aboutImage"></div>
@@ -44,10 +44,9 @@ export const Goal = () => {
             Our <br /> Goal
         </div>
           <div className="text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
-            sapiente aperiam dolores commodi porro quibusdam fuga debitis eum
-            sequi provident similique ullam, aspernatur, mollitia ipsum excepturi
-            natus accusamus aliquam. Provident!
+          Our goal is to launch our own rocket into outer space at a distance of 100 km <br/>
+          1. Karman became the first student in the world to reach the border and launch a rocket into outer space <br/>
+          2. Became the first people launch a rocket into outer space from mongolia
         </div>
           <div onClick={callPopUp} className="readMore">Read more</div>
         </div>
