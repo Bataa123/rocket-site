@@ -13,6 +13,7 @@ import { Footer } from './components/footer/footer';
 import { Donation } from './components/donation/donation';
 import { Contact } from './components/contactUs/conact';
 import { OurTeam } from './components/ourTeam/ourTeam';
+import { TimeLine } from './components/timeLine/timeLine';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <RockerLaunche />
             <AboutUs />
             <OurTeam />
+            <TimeLine />
             <OurSponsor />
             <Universities />
             <Donation />
