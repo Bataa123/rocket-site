@@ -8,10 +8,9 @@
 
 .timeline-head {
     font-family: "Montserrat", sans-serif;
-    text-transform: uppercase;
     margin: 137px 0 34px;
     font-weight: 500;
-    font-size: 2.2vw;
+    font-size: 40px;
     line-height: 49px;
 }
 
@@ -29,4 +28,27 @@
 }
 .timeline-image {
     width: 1000px;
+}
+
+@media only screen and (max-width: 1499px) {
+    .timeline-head {
+        font-family: "Montserrat", sans-serif;
+        margin: 92px 0 23px;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 39px;
+    }
+    
+    .dot-container {
+        width: 90vw;
+    }
+    
+    .dot {
+        border-radius: 50%;
+        height: 16px;
+        width: 16px;
+    }
+    .timeline-image {
+        width: 1000px;
+    }    
 }

@@ -7,9 +7,9 @@ export const Header = () => {
 
     return (
         <div className="opacity">
-            <video autoPlay loop muted style={{position: 'absolute', width: '100vw', height: '100vh', objectFit: 'cover'}}>
+            {/* <video autoPlay loop muted style={{position: 'absolute', width: '100vw', height: '100vh', objectFit: 'cover'}}>
                 <source src={Video} type='video/mp4'></source>
-            </video>
+            </video> */}
             <div className='logo'></div>
             <div className="firstLook">
                 {/* <div style={{ textAlign: "center" }}>

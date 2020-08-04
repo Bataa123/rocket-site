@@ -5,10 +5,10 @@ import timeline from "../../images&icons/timeline.png";
 export const TimeLine = () => {
   return (
     <div className="timeline">
-      <div className="timeline-head"> timeline </div>
+      <div className="timeline-head"> TIMELINE </div>
       <div className="zuraas"></div>
-      <img className="timeline-image" alt="timeline" src={timeline} />
-      {/* <div className="diagram">
+      {/* <img className="timeline-image" alt="timeline" src={timeline} /> */}
+      <div className="diagram">
         <div className="texts-top texts">
           <div className="text1">2020.2.22 ehlel</div>
           <div className="text3">2020.3.25 tootsolol simulation hiisen</div>
@@ -33,7 +33,7 @@ export const TimeLine = () => {
           <div className="text6">2020.11.10 static test#2</div>
           <div className="text8">2020.11.28 huurguh talbai belen bolno </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

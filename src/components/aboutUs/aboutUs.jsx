@@ -1,6 +1,7 @@
 import React from "react";
 import "./aboutUs.scss";
-import { Goal, Team, Project } from "./sub-components";
+import { Goal, Project } from "./sub-components";
+import { OurTeam } from '../ourTeam/ourTeam'
 // import aboutUsData from './aboutUsData.js'
 
 const AboutUs = () => {
@@ -16,11 +17,8 @@ const AboutUs = () => {
                 <div>
                     <Goal />
                 </div>
-                {/* <div>
-                <Time />
-                </div> */}
                 <div>
-                    <Team />
+                    <OurTeam />
                 </div>
             </div>
         </div>

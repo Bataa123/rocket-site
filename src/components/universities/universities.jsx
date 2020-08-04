@@ -15,7 +15,7 @@ import villnova from '../../images&icons/universities/villnovaUniversity.png'
 const Universities = () => {
   return (
     <>
-      <div id="unis" className="headLine">Universities</div>
+      <div id="unis" className="headLine">UNIVERSITIES</div>
       <div className="zuraas"></div>
       <div className="univers">
         <img

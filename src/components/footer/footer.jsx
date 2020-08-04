@@ -14,7 +14,7 @@ export const Footer = () => {
         <div>
           <img onClick={() => window.open("https://www.facebook.com/20000m-above-the-Gobi-Desert-111550123772413/", '_blank')}
             src={facebook} alt="facebook" />
-          <img onClick={() => window.open("https://www.instagram.com/20000m_above_the_gobi_desert", '_blank')}
+          <img onClick={() => window.open("https://www.instagram.com/gobi.space/", '_blank')}
             src={instagram} alt="instagram" />
           {/* <img src={twitter} alt="facebook" /> */}
           {/* <img src={youtube} alt="facebook" /> */}
