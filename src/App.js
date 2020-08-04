@@ -32,14 +32,10 @@ function App() {
             <Contact />
             <Footer />
           </Route>
+          <Route path="/ourTeam">
+            {/* <OurTeam /> */}
+          </Route>
         </Switch>
-        <Router>
-          <Switch>
-            <Route path="/ourTeam">
-              <OurTeam />
-            </Route>
-          </Switch>
-        </Router>
       </Router>
     </>
   );

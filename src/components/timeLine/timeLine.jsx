@@ -2,118 +2,55 @@ import React from "react";
 import "./timeLine.scss";
 
 export const TimeLine = () => {
-  const makeDots = (n) => {
-    var i;
-    const dot = document.createElement('div');
-    dot.className = 'dot';
-    console.log(document.getElementById('dot-container'))
-    for (i = 0; i < n; i++)
-      document.getElementById("root")
-        .appendChild(dot);
+  window.onload = () => {
+    for (var i = 0; i < 60; i++) {
+      const dot = document.createElement("div");
+      dot.className = "dot";
+      document.getElementById("dot-container").appendChild(dot);
+    }
   };
-
   return (
     <div className="timeline">
       <div className="timeline-head"> timeline </div>
       <div className="zuraas"></div>
       <div className="diagram">
-        <div className="texts-top texts">
-          <div className="text1 text">
+        <div className="timeLineTexts">
+          <div className="timeLineText">
             Project starts
             <div className="line"></div>
           </div>
-          <div className="text3 text">
+          <div className="timeLineText">
             Calculation of simulation
             <div className="line"></div>
           </div>
-          <div className="text5 text">
+          <div className="timeLineText">
             Static test #1
             <div className="line"></div>
           </div>
-          <div className="text7 text">
+          <div className="timeLineText">
             Static test #3
             <div className="line"></div>
           </div>
-          <div className="text9 text">
+          <div className="timeLineText">
             Launch
             <div className="line"></div>
           </div>
         </div>
-        <div className="dot-container" id="dot-container">
-          {/* {makeDots(60)} */}
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-        </div>
-        <div className=" texts-bottom texts">
-          <div className="text2 text">
+        <div className="dot-container" id="dot-container"></div>
+        <div className="timeLineTexts">
+          <div className="timeLineText">
             <div className="line"></div>
             Formed a team
           </div>
-          <div className="text4 text">
+          <div className="timeLineText">
             <div className="line"></div>
             Complete the assembly
           </div>
-          <div className="text6 text">
+          <div className="timeLineText">
             <div className="line"></div>
             Static test #2
           </div>
-          <div className="text8 text">
+          <div className="timeLineText">
             <div className="line"></div>
             Launch site will be ready
           </div>
