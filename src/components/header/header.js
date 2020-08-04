@@ -1,7 +1,6 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 import './header.scss'
-import Video from '../../images&icons/backgroundVideo.mov'
 
 export const Header = () => {
 
