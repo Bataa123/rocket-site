@@ -33,13 +33,13 @@ function App() {
             <Footer />
           </Route>
         </Switch>
-        <Router>
+        {/* <Router>
           <Switch>
             <Route path="/ourTeam">
               <OurTeam />
             </Route>
           </Switch>
-        </Router>
+        </Router> */}
       </Router>
     </>
   );
