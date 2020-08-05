@@ -95,7 +95,7 @@
 }
 .getCenter {
     visibility: hidden;
-    height: 100vh;
+    height: 861px;
     width: 100vw;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.7);
@@ -160,4 +160,12 @@
         width: 50vw;
         height: 688px;
     }
+    .getCenter {
+        height: 688px;
+        .popUp {
+            max-width: 600px;
+            font-size: 13px;
+            line-height: 138.88%;
+        }
+    }    
 }

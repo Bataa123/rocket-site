@@ -1,8 +1,6 @@
 import React from "react";
 import "./aboutUs.scss";
 import { Goal, Project } from "./sub-components";
-// import aboutUsData from './aboutUsData.js'
-
 const AboutUs = () => {
   return (
     <div id="aboutUs">
