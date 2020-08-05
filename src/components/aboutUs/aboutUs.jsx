@@ -1,23 +1,6 @@
 import React from "react";
 import "./aboutUs.scss";
 import { Goal, Project } from "./sub-components";
-<<<<<<< HEAD
-
-const AboutUs = () => {
-
-    return (
-        <div id="aboutUs">
-            <div className="headLine">ABOUT US</div>
-            <div className="zuraas"></div>
-            <div className="aboutEvery">
-                <div>
-                    <Project />
-                </div>
-                <div>
-                    <Goal />
-                </div> 
-            </div>
-=======
 import { OurTeam } from "../ourTeam/ourTeam";
 // import aboutUsData from './aboutUsData.js'
 
@@ -29,7 +12,6 @@ const AboutUs = () => {
       <div className="aboutEvery">
         <div>
           <Project />
->>>>>>> e740c1e13d9a43144ec1b5d63e12bcd00c731be1
         </div>
         <div>
           <Goal />

@@ -15,6 +15,7 @@
     background-image: url('../../images&icons//firstRocket.png');
     background-size: cover;
     background-position-y: 287px;
+    background-position: center;
     background-repeat: no-repeat;
     width: 100vw;
     .firstLook {
@@ -96,4 +97,8 @@
       } 
     }
   }
+}
+
+@media only screen and (max-width: 1025px) {
+  
 }

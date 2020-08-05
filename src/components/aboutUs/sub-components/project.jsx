@@ -19,13 +19,7 @@ export const Project = () => {
               <button style={{}} onClick={callPopUp}>X</button>
             </div>
             <div className="popUp">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
-              sapiente aperiam dolores commodi porro quibusdam fuga debitis eum
-              sequi provident similique ullam, aspernatur, mollitia ipsum excepturi
-              natus accusamus aliquam. Provident! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
-              sapiente aperiam dolores commodi porro quibusdam fuga debitis eum
-              sequi provident similique ullam, aspernatur, mollitia ipsum excepturi
-              natus accusamus aliquam. Provident!
+              We are focused on launching a rocket to break the student altitude record of 330,000 feet, reaching the Kármán line, which is considered the border between Earth’s atmosphere and outer space. Designing, building and launching a rocket of this magnitude faces a serious financial obstacle. We are raising money in the hopes that our dream of reaching outer space can be achieved.
           </div>
           </div>
           :
@@ -36,13 +30,7 @@ export const Project = () => {
           </div>
             </div>
             <div className="popUp">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
-              sapiente aperiam dolores commodi porro quibusdam fuga debitis eum
-              sequi provident similique ullam, aspernatur, mollitia ipsum excepturi
-              natus accusamus aliquam. Provident! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
-              sapiente aperiam dolores commodi porro quibusdam fuga debitis eum
-              sequi provident similique ullam, aspernatur, mollitia ipsum excepturi
-              natus accusamus aliquam. Provident!
+              We are focused on launching a rocket to break the student altitude record of 330,000 feet, reaching the Kármán line, which is considered the border between Earth’s atmosphere and outer space. Designing, building and launching a rocket of this magnitude faces a serious financial obstacle. We are raising money in the hopes that our dream of reaching outer space can be achieved.
         </div>
           </div>
       }
@@ -53,7 +41,7 @@ export const Project = () => {
             our <br /> project
         </div>
           <div className="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae deleniti minus beatae maxime ab quaerat nam hic eum quam consequuntur laborum error pariatur, soluta doloribus dicta animi tenetur possimus!
+          We are focused on launching a rocket to break the student altitude record of 330,000 feet, reaching the Kármán line, which is considered the border between Earth’s atmosphere and outer space. Designing, building and launching a rocket of this magnitude faces a serious financial obstacle. 
         </div>
           <div onClick={callPopUp} className="readMore">Read more</div>
         </div>

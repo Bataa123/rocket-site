@@ -36,7 +36,6 @@ function App() {
             {/* <OurTeam /> */}
           </Route>
         </Switch>
-<<<<<<< HEAD
         {/* <Router>
           <Switch>
             <Route path="/ourTeam">
@@ -44,8 +43,6 @@ function App() {
             </Route>
           </Switch>
         </Router> */}
-=======
->>>>>>> e740c1e13d9a43144ec1b5d63e12bcd00c731be1
       </Router>
     </>
   );
