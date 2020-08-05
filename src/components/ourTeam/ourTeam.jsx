@@ -1,11 +1,42 @@
 import React from "react";
 import "./ourTeam.scss";
-import javkhaa from '../../images&icons/teachers/javkhaa.png';
-import ezka from '../../images&icons/teachers/ezenbaatar.png'
+import javkhaa from "../../images&icons/teachers/javkhaa.png";
+import ezka from "../../images&icons/teachers/ezenbaatar.png";
 
 export const OurTeam = () => {
+  var slideIndex = 1;
+  // Next/previous controls
+  const plusSlides = (n) => {
+    showSlides((slideIndex += n));
+  };
+
+  // Thumbnail image controls
+  const currentSlide = (n) => {
+    showSlides((slideIndex = n));
+  };
+
+  const showSlides = (n) => {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dots");
+
+    slideIndex = n > slides.length ? 1 : slideIndex;
+    slideIndex = n < 1 ? slides.length : slideIndex;
+
+    for (i = 0; i < slides.length; i++) slides[i].style.display = "none";
+
+    for (i = 0; i < dots.length; i++)
+      dots[i].className = dots[i].className.replace(" active", "");
+
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  };
   return (
-    <div className="everything" id="scrollGoal">
+    <div
+      className="everything"
+      id="scrollGoal"
+      onLoad={() => showSlides(slideIndex)}
+    >
       <div className="allText">
         <div className="secondLine"></div>
         <div className="aboutHeadline">
@@ -19,21 +50,30 @@ export const OurTeam = () => {
         </div>
         <div className="readMore">Read more</div>
       </div>
-      <div class="slideshow-container">
-        <div class="mySlides fade">
-          <img src={javkhaa}/>
+      <div className="slideshow-container">
+        <div className="mySlides fade">
+          <img className="aboutUsImage" alt="ezka" src={ezka} />
         </div>
 
-        <div class="mySlides fade">
-          <img src={ezka}/>
+        <div className="mySlides fade">
+          <img className="aboutUsImage" alt="javkhaa" src={javkhaa} />
         </div>
 
-        <a class="prev" onclick="plusSlides(-1)">
+        <div className="mySlides fade">
+          <img className="aboutUsImage" alt="ezka" src={ezka} />
+        </div>
+
+        <div className="prev" onClick={() => plusSlides(-1)}>
           &#10094;
-        </a>
-        <a class="next" onclick="plusSlides(1)">
+        </div>
+        <div className="next" onClick={() => plusSlides(1)}>
           &#10095;
-        </a>
+        </div>
+        <div style={{ textAlign: "center" }}>
+          <span className="dots" onClick={() => currentSlide(1)}></span>
+          <span className="dots" onClick={() => currentSlide(2)}></span>
+          <span className="dots" onClick={() => currentSlide(3)}></span>
+        </div>
       </div>
     </div>
   );
