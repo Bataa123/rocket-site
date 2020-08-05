@@ -1,6 +1,7 @@
 import React from "react";
 import "./aboutUs.scss";
 import { Goal, Project } from "./sub-components";
+<<<<<<< HEAD
 
 const AboutUs = () => {
 
@@ -16,30 +17,45 @@ const AboutUs = () => {
                     <Goal />
                 </div> 
             </div>
+=======
+import { OurTeam } from "../ourTeam/ourTeam";
+// import aboutUsData from './aboutUsData.js'
+
+const AboutUs = () => {
+  return (
+    <div id="aboutUs">
+      <div className="headLine">ABOUT US</div>
+      <div className="zuraas"></div>
+      <div className="aboutEvery">
+        <div>
+          <Project />
+>>>>>>> e740c1e13d9a43144ec1b5d63e12bcd00c731be1
         </div>
+        <div>
+          <Goal />
+        </div>
+      </div>
+    </div>
+  );
 
-    );
+  // const [oldSlide, setOldSlide] = useState('project')
+  // const [slideColor, setSlideColor] = useState('project')
 
-    // const [oldSlide, setOldSlide] = useState('project')
-    // const [slideColor, setSlideColor] = useState('project')
+  // useEffect(() => {
+  //   document.getElementById(oldSlide).style.color = '#737386'
+  //   document.getElementById(slideColor).style.color = 'white'
+  //   document.getElementById(oldSlide).firstChild.style.background = '#737386'
+  //   document.getElementById(slideColor).firstChild.style.background = 'white'
 
-    // useEffect(() => {
-    //   document.getElementById(oldSlide).style.color = '#737386'
-    //   document.getElementById(slideColor).style.color = 'white'
-    //   document.getElementById(oldSlide).firstChild.style.background = '#737386'
-    //   document.getElementById(slideColor).firstChild.style.background = 'white'
+  //   setOldSlide(slideColor)
+  // }, [slideColor, oldSlide])
 
-    //   setOldSlide(slideColor)
-    // }, [slideColor, oldSlide])
-
-    // const scrollAboutUs = (nani) => {
-    //   const element = document.getElementById(nani);
-    //   element.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
-    // }
-
+  // const scrollAboutUs = (nani) => {
+  //   const element = document.getElementById(nani);
+  //   element.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+  // }
 };
 export default AboutUs;
-
 
 // {/* <div className="headLine">ABOUT US</div>
 //             <div className="zuraas"></div>
