@@ -2,8 +2,10 @@ import React from "react";
 import "./ourTeam.scss";
 import javkhaa from "../../images&icons/teachers/javkhaa.png";
 import ezka from "../../images&icons/teachers/ezenbaatar.png";
+import { useHistory } from "react-router-dom";
 
 export const OurTeam = () => {
+  const history = useHistory();
   var slideIndex = 1;
   // Next/previous controls
   const plusSlides = (n) => {
@@ -31,6 +33,9 @@ export const OurTeam = () => {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
   };
+
+  const toOurTeam = () => history.push("/ourTeam");
+
   return (
     <div
       className="everything"
@@ -48,7 +53,7 @@ export const OurTeam = () => {
           sequi provident similique ullam, aspernatur, mollitia ipsum excepturi
           natus accusamus aliquam. Provident!
         </div>
-        <div className="readMore">Read more</div>
+        <div className="readMore" onClick={toOurTeam}>Read more</div>
       </div>
       <div className="slideshow-container">
         <div className="mySlides fade">
