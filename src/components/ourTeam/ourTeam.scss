@@ -7,8 +7,9 @@
     font-weight: 500;
     font-size: 40px;
     line-height: 49px;
+}
 .everything {
-    margin-top: 200px;
+    // margin-top: 200px;
 }
 
 * {
@@ -107,6 +108,9 @@
     border-radius: 40px;
     height: 36vw;
     width: 29vw;
+    // border-radius: 40px;
+    height: 600px;
+    width: 500px;
 }
 
 @-webkit-keyframes fade {
@@ -125,4 +129,4 @@
     to {
         opacity: 1;
     }
-}}
+}
