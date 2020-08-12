@@ -17,7 +17,7 @@ import { TimeLine } from './components/timeLine/timeLine';
 
 function App() {
   return (
-    <>
+    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
       <Router>
         <Switch>
           <Route path="/" exact>
@@ -44,7 +44,7 @@ function App() {
           </Switch>
         </Router> */}
       </Router>
-    </>
+    </div>
   );
 }
 

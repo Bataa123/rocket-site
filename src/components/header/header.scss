@@ -1,5 +1,5 @@
-.logo{
-  background-image: url('../../images&icons/logo.png');
+.logo {
+  background-image: url("../../images&icons/logo.png");
   height: 88px;
   width: 88px;
   background-size: cover;
@@ -8,6 +8,7 @@
 }
 
 .opacity {
+<<<<<<< HEAD
     // background-image: linear-gradient(to top, #080828 0.01%, rgba(0, 0, 0, 0) 81.25%), 
     //   url('../../images&icons/BigSpaceX.png');
     // background-size: 100% 100%;
@@ -20,83 +21,81 @@
     width: 100vw;
     .firstLook {
       height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      .linkButtons {
-        cursor: pointer;
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 24px;
-        color: #FFFFFF;
-        display: inline-block;
-        margin: 56px 24px 0px;
-        text-decoration: none !important;
-      }    
-      .firstRectangle {
-        position: absolute;
-        margin-top:410px;
-        color: white;
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 60px;
-        line-height: 59px;
-        text-align: center;
-      }
-      .arrowCenter {
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 56px;
-        .arrow {
-          cursor: pointer;
-          border: solid white;
-          border-width: 0 3px 3px 0;
-          display: inline-block;
-          padding: 10px;
-        }
-        .down {
-          transform: rotate(45deg);
-          -webkit-transform: rotate(45deg);
-        }
-      } 
-    }
-  }
-  
-  .mainPage {
+=======
+  background-image: url("../../images&icons//firstRocket.png");
+  background-size: cover;
+  background-position-y: 287px;
+  background-repeat: no-repeat;
+  width: 100vw;
+  .firstLook {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    .linkButtons {
+      cursor: pointer;
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      color: #ffffff;
+      display: inline-block;
+      margin: 56px 24px 0px;
+      text-decoration: none !important;
+    }
+    .firstRectangle {
+      position: absolute;
+      margin-top: 410px;
+      color: white;
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 60px;
+      line-height: 59px;
+      text-align: center;
+    }
+    .arrowCenter {
+      width: 100vw;
+>>>>>>> a2ee2a7287dd9bd2cb7329c26cf1bfba748e998c
+      display: flex;
+      justify-content: center;
+      margin-bottom: 56px;
+      .arrow {
+        cursor: pointer;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 10px;
+      }
+      .down {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+    }
   }
+}
 
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 @media only screen and (max-width: 1499px) {
-  .logo{
+  .logo {
     height: 70px;
     width: 70px;
     margin: 30px 0 0 30px;
   }
-  .opacity {
-    background-position-y: 230px;
-    .firstLook {
-      .linkButtons {
-        font-weight: 480;
-        font-size: 16px;
-        line-height: 19px;
-        margin: 44px 19px 0px;
-      }    
-      .firstRectangle {
-        font-weight: 400;
-        font-size: 60px;
-        line-height: 60px;
-        position: absolute;
-        margin-top: 272px;
-      } 
-    }
+
+  .linkButtons {
+    font-weight: 480;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 44px 19px 0px;
   }
+<<<<<<< HEAD
 }
 
 @media only screen and (max-width: 500px) {
@@ -124,3 +123,13 @@
     }
   }
 }
+=======
+  .firstRectangle {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    position: absolute;
+    margin-top: 272px;
+  }
+}
+>>>>>>> a2ee2a7287dd9bd2cb7329c26cf1bfba748e998c

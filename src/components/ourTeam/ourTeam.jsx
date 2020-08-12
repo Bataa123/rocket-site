@@ -26,6 +26,7 @@ export const OurTeam = () => {
     slideIndex = n < 1 ? slides.length : slideIndex;
 
     for (i = 0; i < slides.length; i++) slides[i].style.display = "none";
+    // for (i = 0; i < slides.length; i++) slides[i].style.display = "none";
 
     for (i = 0; i < dots.length; i++)
       dots[i].className = dots[i].className.replace(" active", "");
@@ -38,7 +39,7 @@ export const OurTeam = () => {
 
   return (
     <div
-      className="everything"
+      className="everything ourTeamEverything"
       id="scrollGoal"
       onLoad={() => showSlides(slideIndex)}
     >
