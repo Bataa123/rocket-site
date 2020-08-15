@@ -1,0 +1,60 @@
+[debug] [2020-08-15T15:57:52.739Z] ----------------------------------------------------------------------
+[debug] [2020-08-15T15:57:52.740Z] Command:       /usr/local/bin/firebase /Users/batuch_ka/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy --only hosting
+[debug] [2020-08-15T15:57:52.741Z] CLI Version:   8.4.3
+[debug] [2020-08-15T15:57:52.741Z] Platform:      darwin
+[debug] [2020-08-15T15:57:52.741Z] Node Version:  v12.16.1
+[debug] [2020-08-15T15:57:52.748Z] Time:          Sat Aug 15 2020 23:57:52 GMT+0800 (Ulaanbaatar Standard Time)
+[debug] [2020-08-15T15:57:52.749Z] ----------------------------------------------------------------------
+[debug] [2020-08-15T15:57:52.749Z] 
+[debug] [2020-08-15T15:57:52.761Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-08-15T15:57:52.761Z] > authorizing via signed-in user
+[debug] [2020-08-15T15:57:52.762Z] [iam] checking project gobi-space for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-08-15T15:57:52.765Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/gobi-space:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-08-15T15:57:53.982Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 15 Aug 2020 15:57:53 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=821","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-08-15T15:57:53.985Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/gobi-space  
+ 
+[debug] [2020-08-15T15:57:54.591Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 15 Aug 2020 15:57:54 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'gobi-space'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-08-15T15:57:54.598Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/gobi-space/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-08-15T15:57:56.261Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 15 Aug 2020 15:57:56 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[gobi-space]: beginning deploy... 
+[info] i  hosting[gobi-space]: found 24 files in build 
+[debug] [2020-08-15T15:57:56.878Z] [hosting] hash cache [YnVpbGQ] stored for 24 files
+[debug] [2020-08-15T15:57:56.878Z] [hosting][hash queue][FINAL] {"max":592,"min":21,"avg":68.91666666666667,"active":0,"complete":24,"success":24,"errored":0,"retried":0,"total":24,"elapsed":600}
+[debug] [2020-08-15T15:57:56.878Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/gobi-space/versions/01b8b742945fe2cc:populateFiles  
+ <request body omitted>
+[debug] [2020-08-15T15:57:58.380Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 15 Aug 2020 15:57:58 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-08-15T15:57:58.390Z] [hosting][populate queue][FINAL] {"max":1506,"min":1506,"avg":1506,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1514}
+[debug] [2020-08-15T15:57:58.390Z] [hosting] uploads queued: 8
+[debug] [2020-08-15T15:58:01.370Z] [hosting][upload queue][FINAL] {"max":2989,"min":1844,"avg":2328.125,"active":0,"complete":8,"success":8,"errored":0,"retried":0,"total":8,"elapsed":2989}
+[info] ✔  hosting[gobi-space]: file upload complete 
+[debug] [2020-08-15T15:58:01.372Z] [hosting] deploy completed after 5109ms
+[debug] [2020-08-15T15:58:01.603Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "gobi-space"
+    },
+    "site": "gobi-space",
+    "version": "sites/gobi-space/versions/01b8b742945fe2cc"
+  }
+]
+[info] i  hosting[gobi-space]: finalizing version... 
+[debug] [2020-08-15T15:58:01.604Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/gobi-space/versions/01b8b742945fe2cc?updateMask=status  
+ {"status":"FINALIZED"}

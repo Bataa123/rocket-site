@@ -14,10 +14,10 @@ export const Goal = () => {
         call === true ?
           <div style={{ visibility: "visible" }} className="getCenter">
             <div className='secondHeadline'>
-            <div className="aboutHeadline" style={{width: 'auto', fontSize: '60px'}}>
+            <div className="aboutHeadline onlyPhone" style={{width: 'auto'}}>
                 Our Goal
               </div>
-              <button style={{fontSize: '60px '}} onClick={callPopUp}>X</button>
+              <button style={{}} className="onlyPhone" onClick={callPopUp}>X</button>
             </div>
             <div className="popUp">
               Our goal is to launch our own rocket into outer space at a distance of 100 km <br />

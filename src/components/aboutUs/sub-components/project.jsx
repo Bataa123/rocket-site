@@ -16,10 +16,10 @@ export const Project = () => {
         call === true ?
           <div style={{ visibility: "visible" }} className="getCenter">
             <div className='secondHeadline'>
-              <div className="aboutHeadline" style={{width: 'auto', fontSize: '60px'}}>
+              <div className="aboutHeadline onlyPhone" style={{width: 'auto'}}>
                 Our Project
             </div>
-              <button style={{fontSize: '60px '}} onClick={callPopUp}>X</button>
+              <button style={{}} className="onlyPhone" onClick={callPopUp}>X</button>
             </div>
             <div className="popUp">
               We are focused on launching a rocket to break the student altitude record of 330,000 feet, reaching the Kármán line, which is considered the border between Earth’s atmosphere and outer space. Designing, building and launching a rocket of this magnitude faces a serious financial obstacle. We are raising money in the hopes that our dream of reaching outer space can be achieved.
