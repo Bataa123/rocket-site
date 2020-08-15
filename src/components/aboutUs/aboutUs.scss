@@ -36,6 +36,7 @@
         height: 388px;
         margin: auto;
         .secondLine {
+            margin-bottom: 16px;
             width: 40px;
             height: 6px;
             background: #00b65f;
@@ -80,6 +81,7 @@
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
+    width: 165px;
     font-weight: 500;
     font-size: 40px;
     line-height: 49px;
@@ -139,11 +141,16 @@
                 width: 346px;
                 height: 310px;
                 margin: auto;
+                .secondLine {
+                    margin-bottom: 13px;
+                    width: 40px;
+                    height: 6px;
+                    background: #00b65f;
+                }
                 .aboutHeadline {
                     font-size: 30px;
                     line-height: 36px;
                 }
-
                 .text {
                     font-size: 13px;
                 }
@@ -170,52 +177,77 @@
     }    
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-device-width: 500px) {
+    .secondLine {
+        width: 60px !important; 
+        height: 10px !important ;
+        background: #00b65f;
+    }
     .headLine {
         font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
-    }
-    .zuraas {
-        width: 20px;
-        height: 3px;
-        margin-bottom: 107px;
+        font-size: 55px;
+        line-height:  55px;
     }
     
+    .zuraas {
+        width: 60px;
+        height: 9px;
+    }
 
     .aboutEvery {
         .everything {
-            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            // width: 100vw;
             .allText {
-                width: 346px;
-                height: 310px;
-                margin: auto;
-                .aboutHeadline {
-                    font-size: 30px;
-                    line-height: 36px;
+                width: 80vw;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                margin:  auto;
+                height: auto;
+                padding: 180px 0 100px;
+                .headlineWithLine {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 50px;
                 }
-
+                .aboutHeadline {
+                    margin-top: 30px;
+                    display: flex;
+                    flex-direction: row;
+                    width: auto;
+                    font-weight: 500;
+                    font-size: 60px;
+                    line-height: 49px;
+                }
                 .text {
-                    font-size: 13px;
+                    font-size: 35px;
+                    padding: 50px 0;
                 }
                 .readMore {
-                    width: 104px;
-                    height: 36px;
-                    font-size: 10px;
+                    padding: 30px 60px;
+                    width: auto;
+                    height: auto;
+                    font-size: 30px;
                 }
             }
         }
     }
-
+    .reverseForPhone {
+        display: flex;
+        flex-direction: column-reverse !important;
+    }
     .aboutImage {
-        width: 50vw;
-        height: 688px;
+        width: 100vw;
+        height: 50vh;
     }
     .getCenter {
-        height: 688px;
+        height: 100vh;
         .popUp {
             max-width: 600px;
-            font-size: 13px;
+            font-size: 35px;
             line-height: 138.88%;
         }
     }    

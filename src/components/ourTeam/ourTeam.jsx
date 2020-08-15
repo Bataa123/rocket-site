@@ -1,6 +1,6 @@
 import React from "react";
 import "./ourTeam.scss";
-import javkhaa from "../../images&icons/teachers/javkhaa.png";
+// import javkhaa from "../../images&icons/teachers/javkhaa.png";
 import ezka from "../../images&icons/teachers/ezenbaatar.png";
 import { useHistory } from "react-router-dom";
 
@@ -39,6 +39,7 @@ export const OurTeam = () => {
 
   return (
     <div
+      style={{marginTop: '181px'}}
       className="everything ourTeamEverything"
       id="scrollGoal"
       onLoad={() => showSlides(slideIndex)}
@@ -46,28 +47,25 @@ export const OurTeam = () => {
       <div className="allText">
         <div className="secondLine"></div>
         <div className="aboutHeadline">
-          Our <br /> Team
+          Our Team
         </div>
         <div className="text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
-          sapiente aperiam dolores commodi porro quibusdam fuga debitis eum
-          sequi provident similique ullam, aspernatur, mollitia ipsum excepturi
-          natus accusamus aliquam. Provident!
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. 
         </div>
-        <div className="readMore" onClick={toOurTeam}>Read more</div>
+        <div className="readMore" onClick={toOurTeam}>All Member</div>
       </div>
       <div className="slideshow-container">
         <div className="mySlides fade">
           <img className="aboutUsImage" alt="ezka" src={ezka} />
         </div>
 
-        <div className="mySlides fade">
+        {/* <div className="mySlides fade">
           <img className="aboutUsImage" alt="javkhaa" src={javkhaa} />
         </div>
 
         <div className="mySlides fade">
           <img className="aboutUsImage" alt="ezka" src={ezka} />
-        </div>
+        </div> */}
 
         <div className="prev" onClick={() => plusSlides(-1)}>
           &#10094;
@@ -77,8 +75,8 @@ export const OurTeam = () => {
         </div>
         <div style={{ textAlign: "center" }}>
           <span className="dots" onClick={() => currentSlide(1)}></span>
-          <span className="dots" onClick={() => currentSlide(2)}></span>
-          <span className="dots" onClick={() => currentSlide(3)}></span>
+          {/* <span className="dots" onClick={() => currentSlide(2)}></span>
+          <span className="dots" onClick={() => currentSlide(3)}></span> */}
         </div>
       </div>
     </div>

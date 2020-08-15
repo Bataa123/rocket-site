@@ -34,6 +34,10 @@ function App() {
           </Route>
           <Route path="/ourTeam">
             {/* <OurTeam /> */}
+            <div 
+              style={{fontSize: '50px', color: 'white', height: '100vh', margin: "auto", display: 'block', fontFamily: "Montserrat"}}
+              >We are working on it
+            </div>
           </Route>
         </Switch>
         {/* <Router>

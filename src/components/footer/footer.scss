@@ -1,6 +1,7 @@
 .footerLine {
     opacity: 0.5;
     border: 1px solid #FFFFFF;
+    width: 100vw;
 }
 
 .footer {
@@ -9,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1288px;
+    width: 85vw;
     margin: 0 auto;
     .copyright {
         font-family: Montserrat;
@@ -29,7 +30,6 @@
 @media only screen and (max-width: 1499px) {
     .footer {
         height: 112px;
-        max-width: 1030px;
         .copyright {
             font-size: 16px;
             line-height: 19px;
@@ -37,6 +37,22 @@
         img {
             cursor: pointer;
             margin: 0 13px;
+        }
+    }   
+}
+@media only screen and (max-device-width: 500px) {
+    .footer {
+        // height: 112px;
+        max-width: 80vw;
+        padding: 20px 0;
+        .copyright {
+            font-size: 25px;
+            line-height: 19px;
+        }
+        img {
+            height: 45px;
+            cursor: pointer;
+            margin: 0 25px;
         }
     }   
 }

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .headLineTeam {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -11,110 +10,193 @@
 }
 .everything {
     // margin-top: 200px;
-=======
-.ourTeamEverything {
-    margin-top: 200px;
-    width: 88vw;
->>>>>>> a2ee2a7287dd9bd2cb7329c26cf1bfba748e998c
-}
+    .ourTeamEverything {
+        margin-top: 200px;
+        width: 60vw;
+    }
 
-* {
-    box-sizing: border-box;
-}
+    * {
+        box-sizing: border-box;
+    }
 
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-    // margin-right: 10vw;
-}
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        // margin-right: 10vw;
+    }
 
-/* Hide the images by default */
-.mySlides {
-    display: none;
-}
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+    }
 
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
 
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    opacity: 0.4;
-}
-
-/* The dots/bullets/indicators */
-.dots {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #717171;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active,
-.dots:hover {
-    background-color: #f2f2f2;
-}
-
-/* Fading animation */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-/* images */
-
-.aboutUsImage {
-<<<<<<< HEAD
-=======
-    border-radius: 10px;
->>>>>>> a2ee2a7287dd9bd2cb7329c26cf1bfba748e998c
-    height: 36vw;
-    width: 29vw;
-}
-
-@-webkit-keyframes fade {
-    from {
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
         opacity: 0.4;
     }
-    to {
-        opacity: 1;
+
+    /* The dots/bullets/indicators */
+    .dots {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #717171;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dots:hover {
+        background-color: #f2f2f2;
+    }
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    /* images */
+
+    .aboutUsImage {
+        height: 36vw;
+        width: 29vw;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: 0.4;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: 0.4;
+        }
+        to {
+            opacity: 1;
+        }
     }
 }
 
-@keyframes fade {
-    from {
-        opacity: 0.4;
+@media only screen and (max-width: 1499px) {
+    .headLineTeam {
+        margin: 137px 0 34px;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 49px;
     }
-    to {
-        opacity: 1;
+    // .everything {
+    .ourTeamEverything {
+    }
+}
+
+@media only screen and (max-device-width: 500px) {
+    // .headLineTeam {
+    //     font-family: "Montserrat", sans-serif;
+    //     font-style: normal;
+    //     color: #ffffff;
+    //     text-align: center;
+    //     margin: 137px 0 34px;
+    //     font-weight: 500;
+    //     font-size: 40px;
+    //     line-height: 49px;
+    // }
+    .secondLine {
+        width: 60px !important;
+        height: 10px !important ;
+        background: #00b65f;
+    }
+    .headLine {
+        font-weight: 500;
+        font-size: 55px;
+        line-height: 55px;
+    }
+
+    .zuraas {
+        width: 60px;
+        height: 9px;
+    }
+
+    .everything {
+        display: flex;
+        flex-direction: column;
+        .aboutUsImage {
+            height: 60vw;
+            width: 50vw;
+        }
+        .allText {
+            width: 80vw;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: auto;
+            height: auto;
+            padding: 0 0 100px;
+            .headlineWithLine {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 50px;
+            }
+            .aboutHeadline {
+                margin-top: 30px;
+                display: flex;
+                flex-direction: row;
+                width: auto;
+                font-weight: 500;
+                font-size: 60px;
+                line-height: 49px;
+            }
+            .text {
+                font-size: 35px;
+                width: 80vw;
+                padding: 50px 0;
+            }
+            .readMore {
+                padding: 30px 60px;
+                width: auto;
+                height: auto;
+                font-size: 30px;
+            }
+        }
+    }
+    .reverseForPhone {
+        display: flex;
+        flex-direction: column-reverse !important;
     }
 }
