@@ -8,9 +8,11 @@
 }
 
 .opacity {
-  background-image: linear-gradient(to top, #080828 0.01%, rgba(0, 0, 0, 0) 81.25%), url("../../images&icons//firstRocket.png");
-  background-size: cover;
-  background-position-y: 287px;
+  // to top, #000000 0.01%, rgba(0, 0, 0, 0) 82%),
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images&icons/backgroundLogo.png");
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   width: 100vw;
   .firstLook {
@@ -32,7 +34,7 @@
     }
     .firstRectangle {
       position: absolute;
-      margin-top: 410px;
+      margin-top: 45vh;
       color: white;
       font-family: "Montserrat", sans-serif;
       font-style: normal;
@@ -73,6 +75,15 @@
     width: 70px;
     margin: 30px 0 0 30px;
   }
+  .opacity{
+    .firstLook{
+      .firstRectangle{
+        font-size: 48px;
+        line-height: 48px;
+        // font-weight: 400;
+      }
+    }
+  }
 
   .linkButtons {
     font-weight: 480;
@@ -89,8 +100,7 @@
     margin: 30px 0 0 30px;
   }
   .opacity {
-    background-position-x: -300px;
-    background-position-y: 500px;
+    background-position: center;
     .firstLook {
       .linkButtons {
         font-weight: 480;
@@ -99,7 +109,7 @@
         margin: 44px 19px 0px;
       }    
       .firstRectangle {
-        margin-top: 450px;
+        margin-top: 45vh;
         font-family: Montserrat;
         font-style: normal;
         font-weight: 400;

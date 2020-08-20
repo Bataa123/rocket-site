@@ -1,6 +1,7 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 import './header.scss'
+import { Navigation } from '../navigation/navigation'
 
 export const Header = () => {
 
@@ -9,8 +10,9 @@ export const Header = () => {
             {/* <video autoPlay loop muted style={{position: 'absolute', width: '100vw', height: '100vh', objectFit: 'cover'}}>
                 <source src={Video} type='video/mp4'></source>
             </video> */}
-            <div className='logo'></div>
+            {/* <div className='logo'></div> */}
             <div className="firstLook">
+                <Navigation />
                 {/* <div style={{ textAlign: "center" }}>
                     <div className="linkButtons" onClick={() =>
                         document.getElementById('aboutUs').scrollIntoView({ behavior: "smooth" })
