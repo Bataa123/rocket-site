@@ -1,8 +1,18 @@
 .nav {
     width: 100vw;
     height: 10vh;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
     .text {
-        
+        color: white;   
+        font-size: 40px;
+        font-family: "Montserrat", sans-serif;
     }
 }
+.padding {
+    padding: 0 20px;
+}
+
