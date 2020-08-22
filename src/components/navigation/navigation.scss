@@ -8,11 +8,17 @@
     position: fixed;
     .text {
         color: white;   
-        font-size: 40px;
+        font-size: 35px;
         font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+    }
+    .menu {
+        .menuItems {
+            
+        }
     }
 }
 .padding {
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
