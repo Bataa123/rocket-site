@@ -1,28 +1,108 @@
-import React from 'react'
+// import React from 'react'
+
+// export const Navigation = () => {
+
+//     return (
+
+//     )
+// }
+
+
+import React from 'react';
 import './navigation.scss'
+import clsx from 'clsx';
+import { makeStyles } from '@material-ui/core/styles';
+import Drawer from '@material-ui/core/Drawer';
+import List from '@material-ui/core/List';
+import Divider from '@material-ui/core/Divider';
+import MenuIcon from '@material-ui/icons/Menu';
+import { ListItem, ListItemText } from '@material-ui/core';
 
-export const Navigation = () => {
-    
-    return (
-        <div className="nav">
-            <div className="text padding">
-                Gobi Space
-            </div>
-            <div>gggg
-              <svg style={{ cursor: 'pointer' }} className="menu padding"
-                width="25" height="19" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="20" height="2" rx="1" fill="white" />
-                <rect y="6" width="20" height="2" rx="1" fill="white" />
-                <rect y="12" width="20" height="2" rx="1" fill="white" />
-            </svg>
-            </div>
-            
-        </div>
-    )
+const useStyles = makeStyles({
+  list: {
+    width: 250,
+  },
+  fullList: {
+    width: 'auto',
+  },
+});
+
+export function Navigation() {
+  const classes = useStyles();
+  const [state, setState] = React.useState({
+    right: false,
+  });
+
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) return;
+    setState({ [anchor]: open });
+  };
+
+  const list = (anchor) => (
+    <div
+      className={clsx(classes.list, {
+        [classes.fullList]: anchor === 'top' || anchor === 'bottom',
+      })}
+      role="presentation"
+      onClick={toggleDrawer(anchor, false)}
+      onKeyDown={toggleDrawer(anchor, false)}
+    >
+      <List>
+        <ListItemText onClick={() =>
+          document.getElementById('ourProject').scrollIntoView({
+            behavior: 'smooth'
+          })
+        }
+          className="menuText">
+          Our project
+        </ListItemText>
+        <ListItemText className="menuText">
+          Our goal
+        </ListItemText>
+        <ListItemText className="menuText">
+          Our team
+        </ListItemText>
+        <ListItemText className="menuText">
+          Timeline
+        </ListItemText>
+        <ListItemText className="menuText">
+          Our sponsor
+        </ListItemText>
+        <ListItemText className="menuText">
+          Universities
+        </ListItemText>
+        <ListItemText className="menuText">
+          Donate
+        </ListItemText>
+        <ListItemText className="menuText">
+          Contact us
+        </ListItemText>
+      </List>
+      <Divider />
+      <List>
+
+      </List>
+    </div>
+  );
+
+  return (
+    <div className="nav">
+      <div className="text padding">
+        Gobi Space
+    </div>
+      <div className="padding">
+        <React.Fragment key={"right"}>
+          <MenuIcon fontSize="large" style={{ color: 'white' }} onClick={toggleDrawer('right', true)} />
+          <Drawer anchor={'right'} open={state['right']} onClose={toggleDrawer('right', false)}>
+            {list('right')}
+          </Drawer>
+        </React.Fragment>
+
+      </div>
+
+    </div>
+  );
 }
-
-
-
 
 
 

@@ -1,58 +1,51 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import CancelIcon from '@material-ui/icons/Cancel';
 import sRocket from '../../../images&icons/secondRocket.png'
 
 export const Goal = () => {
   const [call, setCall] = useState(false);
 
+  const width = window.outerWidth
+  console.log(width)
+
   const callPopUp = () => {
     setCall(!call)
   }
+  useEffect(() => {
+    const project = document.getElementById('getGoal');
+    project.style.width = call === true ? "100vw" : "0px";
+    project.style.height = call === true ? "100vh" : "0px";
+    document.getElementById('ourGoalTitle').style.fontSize = call === true ? "40px" : "0px";
+    document.getElementById('ourGoalText').style.fontSize = call === true ? "20px" : "0px";
+  }, [call])
 
   return (
-    <>
-      {
-        call === true ?
-          <div style={{ visibility: "visible" }} className="getCenter">
-            <div className='secondHeadline'>
-            <div className="aboutHeadline onlyPhone" style={{width: 'auto'}}>
-                Our Goal
+    <div className="ourProjectContainer">
+      <div style={{ visibility: call === true ? 'visible' : 'hidden' }} className="getCenter" id="getGoal">
+        <div className='secondHeadline'>
+          <div id="ourGoalTitle" className="aboutHeadline onlyPhone" style={{ width: 'auto' }}>
+            Our Goal
               </div>
-              <button style={{}} className="onlyPhone" onClick={callPopUp}>X</button>
-            </div>
-            <div className="popUp">
-              Our goal is to launch our own rocket into outer space at a distance of 100 km <br />
-          1. Karman became the first student in the world to reach the border and launch a rocket into outer space <br />
-          2. Became the first people launch a rocket into outer space from mongolia
-            </div>
+          <CancelIcon fontSize="large" style={{ color: 'white', margin: 'auto 10px' }} className="onlyPhone" onClick={callPopUp} />
+        </div>
+        <div id="ourGoalText" className="popUp">
+          We are focused on launching a rocket to break the student altitude record of 330,000 feet, reaching the Kármán line, which is considered the border between Earth’s atmosphere and outer space. Designing, building and launching a rocket of this magnitude faces a serious financial obstacle. We are raising money in the hopes that our dream of reaching outer space can be achieved.
           </div>
-          :
-          <div className="getCenter">
-            <div className='secondHeadline'>
-              <div className="aboutHeadline">
-                Our Goal
-            </div>
-            </div>
-            <div className="popUp">
-              Our goal is to launch our own rocket into outer space at a distance of 100 km <br />
-          1. Karman became the first student in the world to reach the border and launch a rocket into outer space <br />
-          2. Became the first people launch a rocket into outer space from mongolia
-          </div>
-          </div>
-      }
+      </div>
 
-      <div className="everything reverseForPhone" id="scrollGoal">
+      <div className="everything reverseForPhone" id="ourGoal">
         <div style={{ backgroundImage: `url(${sRocket})` }} className="aboutImage"></div>
         <div className="allText">
           <div className="headlineWithLine">
             <div className="secondLine"></div>
-            <div className="aboutHeadline">our goal</div>  
+            <div className="aboutHeadline">our goal</div>
           </div>
           <div className="text">
-          20+ Students From Across The globe, ranging from High School Students to Ph.D. candidates at some of the world’s most prestigious universities
+            20+ Students From Across The globe, ranging from High School Students to Ph.D. candidates at some of the world’s most prestigious universities
           </div>
           <div onClick={callPopUp} className="readMore">Read more</div>
         </div>
       </div>
-    </>
+    </div>
   );
 };

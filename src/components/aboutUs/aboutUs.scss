@@ -86,25 +86,26 @@
     font-size: 40px;
     line-height: 49px;
     color: #ffffff;
+    transition: 1s;
 }
 .aboutImage {
     background-image: url("../../images&icons/BigSpaceX.png");
     // transform: scaleY(-1);
     width: 50vw;
-    height: 861px;
+    height: 100vh;
     background-size: cover;
     background-position: center;
 }
 .getCenter {
-    visibility: hidden;
-    height: 861px;
-    width: 100vw;
+    height: 0px;
+    width: 0px;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: 1s;
     .popUp {
         max-width: 600px;
         font-family: "Montserrat", sans-serif;
@@ -114,6 +115,7 @@
         line-height: 173.6%;
         color: #ffffff;
         text-align: center;
+        transition: 1s;
     }
 }
 .secondHeadline {
@@ -121,6 +123,11 @@
     flex-direction: row;
 }
 
+.ourProjectContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 @media only screen and (max-width: 1499px) {
     .headLine {
         font-size: 26.8px;
@@ -165,10 +172,8 @@
 
     .aboutImage {
         width: 50vw;
-        height: 688px;
     }
     .getCenter {
-        height: 688px;
         .popUp {
             max-width: 600px;
             font-size: 13px;

@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import CancelIcon from '@material-ui/icons/Cancel';
 
 export const Project = () => {
   const [call, setCall] = useState(false);
-  
+
   const width = window.outerWidth
   console.log(width)
 
@@ -10,34 +11,28 @@ export const Project = () => {
     setCall(!call)
   }
 
+  useEffect(() => {
+    const project = document.getElementById('getCenter');
+    project.style.width = call === true ? "100vw" : "0px";
+    project.style.height = call === true ? "100vh" : "0px";
+    document.getElementById('ourProjectTitle').style.fontSize = call === true ? "40px" : "0px";
+    document.getElementById('ourProjectText').style.fontSize = call === true ? "20px" : "0px";
+  }, [call])
   return (
-    <>
-      {
-        call === true ?
-          <div style={{ visibility: "visible" }} className="getCenter">
-            <div className='secondHeadline'>
-              <div className="aboutHeadline onlyPhone" style={{width: 'auto'}}>
-                Our Project
-            </div>
-              <button style={{}} className="onlyPhone" onClick={callPopUp}>X</button>
-            </div>
-            <div className="popUp">
-              We are focused on launching a rocket to break the student altitude record of 330,000 feet, reaching the Kármán line, which is considered the border between Earth’s atmosphere and outer space. Designing, building and launching a rocket of this magnitude faces a serious financial obstacle. We are raising money in the hopes that our dream of reaching outer space can be achieved.
-          </div>
-          </div>
-          :
-          <div className="getCenter">
-            <div className='secondHeadline'>
-              <div className="aboutHeadline">
-                Our Project
-          </div>
-            </div>
-            <div className="popUp">
-              We are focused on launching a rocket to break the student altitude record of 330,000 feet, reaching the Kármán line, which is considered the border between Earth’s atmosphere and outer space. Designing, building and launching a rocket of this magnitude faces a serious financial obstacle. We are raising money in the hopes that our dream of reaching outer space can be achieved.
+    <div className="ourProjectContainer">
+      <div style={{ visibility: call === true ? 'visible' : 'hidden' }} className="getCenter" id="getCenter">
+        <div className='secondHeadline'>
+          <div id="ourProjectTitle" className="aboutHeadline onlyPhone" style={{ width: 'auto' }}>
+            Our Project
+              </div>
+          <CancelIcon fontSize="large" style={{ color: 'white', margin: 'auto 10px' }} className="onlyPhone" onClick={callPopUp} />
         </div>
+        <div id="ourProjectText" className="popUp">
+          We are focused on launching a rocket to break the student altitude record of 330,000 feet, reaching the Kármán line, which is considered the border between Earth’s atmosphere and outer space. Designing, building and launching a rocket of this magnitude faces a serious financial obstacle. We are raising money in the hopes that our dream of reaching outer space can be achieved.
           </div>
-      }
-      <div className="everything" id="scrollProject" >
+      </div>
+
+      <div className="everything" id="ourProject" >
         <div className="allText">
           <div className="headlineWithLine">
             <div className="secondLine"></div>
@@ -52,6 +47,6 @@ export const Project = () => {
         </div>
         <div className="aboutImage"></div>
       </div>
-    </>
+    </div>
   );
 };
