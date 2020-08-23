@@ -1,0 +1,28 @@
+.ourSponsor .zuraas {
+  margin-bottom: 60px;
+}
+
+.sponsor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80vw;
+  margin-bottom: 60px;
+}
+.sponsor img {
+  width: 270px;
+}
+
+@media only screen and (max-width: 1499px) {
+  .ourSponsor .zuraas {
+    margin-bottom: 55px;
+  }
+
+  .sponsor {
+    margin-bottom: 47px;
+  }
+  .sponsor img {
+    width: 200px;
+  }
+}

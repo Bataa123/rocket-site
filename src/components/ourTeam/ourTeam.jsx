@@ -39,20 +39,20 @@ export const OurTeam = () => {
 
   return (
     <div
-      style={{marginTop: '181px'}}
+      // style={{marginTop: '181px'}}
       className="everything ourTeamEverything"
-      id="scrollGoal"
+      id="ourTeam"
       onLoad={() => showSlides(slideIndex)}
     >
-      <div className="allText">
+      <div className="allText ">
         <div className="secondLine"></div>
         <div className="aboutHeadline">
           Our Team
         </div>
         <div className="text">
-        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. 
+        20+ Students From Across The globe, ranging from High School Students to Ph.D. candidates at some of the world’s most prestigious universities
         </div>
-        <div className="readMore" onClick={toOurTeam}>All Member</div>
+        <div className="readMore" onClick={toOurTeam}>All Members</div>
       </div>
       <div className="slideshow-container">
         <div className="mySlides fade">

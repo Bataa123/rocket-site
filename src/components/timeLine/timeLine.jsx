@@ -12,10 +12,10 @@ export const TimeLine = () => {
     }
   };
   return (
-    <div className="timeline">
+    <div className="timeline" id="timeLine">
       <div className="timeline-head"> timeline </div>
       <div className="zuraas"></div>
-      <div className="diagram">
+      <div className="diagram" >
         <div className="timeLineTexts">
           <div className="timeLineText">
             Project starts

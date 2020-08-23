@@ -8,12 +8,12 @@
     font-size: 40px;
     line-height: 49px;
 }
+.ourTeamEverything {
+    height: 90vh;
+    width: 80vw;
+}
 .everything {
     // margin-top: 200px;
-    .ourTeamEverything {
-        margin-top: 200px;
-        width: 60vw;
-    }
 
     * {
         box-sizing: border-box;
@@ -120,9 +120,7 @@
         font-size: 40px;
         line-height: 49px;
     }
-    // .everything {
-    .ourTeamEverything {
-    }
+    
 }
 
 @media only screen and (max-device-width: 500px) {

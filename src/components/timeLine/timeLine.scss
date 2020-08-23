@@ -1,10 +1,18 @@
 .timeline {
+    height: 90vh;
     color: white;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     font-family: "Montserrat", sans-serif;
+    .zuraas{
+        margin: 0;
+    }
+}
+.diagram {
+    margin-top: 7vh;
 }
 
 .timeline-head {

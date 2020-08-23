@@ -6,8 +6,8 @@ import nomt from '../../images&icons/sponsor/nomtSponsor.png'
 
 const OurSponsor = () => {
   return (
-    <>
-      <div id="sponsor" className="headLine">OUR SPONSOR</div>
+    <div className="ourSponsor">
+      <div id="sponsor" className="headLine"> SPONSORS</div>
       <div className="zuraas"></div>
       <div className="sponsor">
         <img
@@ -23,7 +23,7 @@ const OurSponsor = () => {
           src={mosta}
         ></img>
       </div>
-    </>
+    </div>
   );
 };
 

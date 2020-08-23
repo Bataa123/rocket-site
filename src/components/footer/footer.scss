@@ -12,33 +12,33 @@
     justify-content: space-between;
     width: 85vw;
     margin: 0 auto;
-    .copyright {
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 24px;
-        font-feature-settings: 'pnum' on, 'lnum' on;
-        color: white;
-    }
     img {
         margin: 0 17px;
         cursor: pointer;
     }
 }
+.copyright {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: white;
+}
 
 @media only screen and (max-width: 1499px) {
     .footer {
         height: 112px;
-        .copyright {
-            font-size: 16px;
-            line-height: 19px;
-        }
         img {
             cursor: pointer;
             margin: 0 13px;
         }
     }   
+    .copyright {
+        font-size: 16px;
+        line-height: 19px;
+    }
 }
 @media only screen and (max-device-width: 500px) {
     .footer {

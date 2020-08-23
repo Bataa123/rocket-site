@@ -26,7 +26,7 @@ export const Goal = () => {
           <div id="ourGoalTitle" className="aboutHeadline onlyPhone" style={{ width: 'auto' }}>
             Our Goal
               </div>
-          <CancelIcon fontSize="large" style={{ color: 'white', margin: 'auto 10px' }} className="onlyPhone" onClick={callPopUp} />
+          <CancelIcon style={{ color: 'white', margin: 'auto 10px', fontSize: call === true ? '2.1875rem' : '0px' }} className="onlyPhone" onClick={callPopUp} />
         </div>
         <div id="ourGoalText" className="popUp">
           We are focused on launching a rocket to break the student altitude record of 330,000 feet, reaching the Kármán line, which is considered the border between Earth’s atmosphere and outer space. Designing, building and launching a rocket of this magnitude faces a serious financial obstacle. We are raising money in the hopes that our dream of reaching outer space can be achieved.
@@ -41,7 +41,7 @@ export const Goal = () => {
             <div className="aboutHeadline">our goal</div>
           </div>
           <div className="text">
-            20+ Students From Across The globe, ranging from High School Students to Ph.D. candidates at some of the world’s most prestigious universities
+            We are focused on launching a rocket to break the student altitude record of 330,000 feet, reaching the Kármán line, which is considered the border between Earth’s atmosphere and outer space. Designing, building and launching a rocket of this magnitude faces a serious financial obstacle.
           </div>
           <div onClick={callPopUp} className="readMore">Read more</div>
         </div>
