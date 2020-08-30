@@ -1,6 +1,6 @@
 import React from "react";
 import "./ourTeam.scss";
-import background from "../../images&icons/ourTeamBackground.svg";
+import background from "../../images&icons/backgrounds/ourTeamBackground.svg";
 // import { useHistory } from "react-router-dom";
 import member1 from "../../images&icons/members/jennifer.jpg";
 import member2 from "../../images&icons/members/jennifer1.jpg";

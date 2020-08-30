@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import CancelIcon from "@material-ui/icons/Cancel";
 import projectImage from "../../../images&icons/launchRocket.jpg";
-import TextImage from "../../../images&icons/TextImage.svg";
+import TextImage from "../../../images&icons/backgrounds/TextImage.svg";
 
 export const Project = () => {
   const [call, setCall] = useState(false);
