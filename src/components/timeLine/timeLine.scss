@@ -1,5 +1,4 @@
 .timeline {
-    height: 90vh;
     color: white;
     width: 100%;
     display: flex;
@@ -7,86 +6,58 @@
     align-items: center;
     justify-content: center;
     font-family: "Montserrat", sans-serif;
-    .zuraas{
-        margin: 0;
+    .secondLine {
+        margin-top: 10vw;
     }
-}
-.diagram {
-    margin-top: 7vh;
 }
 
 .timeline-head {
     text-transform: uppercase;
-    margin: 137px 0 34px;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 49px;
+    font-size: 2.3vw;
+    font-weight: 600;
+    line-height: 2.6vw;
 }
 
-.dot-container {
-    width: 90vw;
+.timelineText {
+    margin-top: 1.5vw;
+    font-family: Raleway;
+    width: 40vw;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.timeLineContainer {
+    margin-top: 5vw;
     display: flex;
-    justify-content: space-evenly;
+    width: 64vw;
+    justify-content: space-between;
+}
+.timeImage {
+    width: 25vw;
 }
 
-.dot {
-    border-radius: 50%;
-    height: 5px;
-    width: 5px;
-    background-color: white;
+.firstColumn {
+    display: grid;
+    grid-template-columns: 25vw;
+    grid-gap: 3vw;
+}
+.secondColumn {
+    margin-top: 6vw;
+    height: 0vw;
+    display: grid;
+    grid-template-columns: 25vw;
+    grid-gap: 3vw;
 }
 
-.timeLineTexts {
-    display: flex;
-    justify-content: space-evenly;
+.middleLine {
+    height: auto;
+    width: 3px;
+    background-color: #00b65f;
 }
 
-.timeLineText {
-    margin: 10px 0 10px 0;
-    display: flex;
-    font-weight: 500;
-    flex-direction: column;
-    align-items: center;
-    opacity: 0.7;
-    font-size: 20px;
-}
-
-.line {
-    background-color: white;
-    width: 2px;
-    height: 100px;
-    margin: 10px 0 10px 0;
-}
-
-
-// @media only screen and (max-width: 1499px) {
-//     .timeline-head {
-//         font-family: "Montserrat", sans-serif;
-//         margin: 92px 0 23px;
-//         font-weight: 400;
-//         font-size: 32px;
-//         line-height: 39px;
-//     }
-    
-//     .dot-container {
-//         width: 90vw;
-//     }
-    
-//     .dot {
-//         border-radius: 50%;
-//         height: 16px;
-//         width: 16px;
-//     }
-// }
-@media only screen and (max-width: 1499px) {
-    .timeline-head {
-        font-size: 32px;
-        line-height: 55px;
-    }
-}
-@media only screen and (max-device-width: 500px) {
-    .timeline-head {
-        font-size: 55px;
-        line-height: 55px;
-    }
+.shadow {
+    position: absolute;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
+    width: 64vw;
+    height: 80vw;
 }
