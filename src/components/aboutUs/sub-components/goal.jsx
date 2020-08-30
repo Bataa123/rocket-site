@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import CancelIcon from "@material-ui/icons/Cancel";
-import sRocket from "../../../images&icons/launchRocket.svg";
+import sRocket from "../../../images&icons/launchRocket.jpg";
 import TextImage from "../../../images&icons/TextImage.svg";
 
 export const Goal = () => {
