@@ -1,7 +1,7 @@
 import React from "react";
 import "./ourTeam.scss";
 import background from "../../images&icons/backgrounds/ourTeamBackground.svg";
-// import { useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import member1 from "../../images&icons/members/jennifer.jpg";
 import member2 from "../../images&icons/members/jennifer1.jpg";
 import member3 from "../../images&icons/members/lucie.jpg";
@@ -12,6 +12,10 @@ import member7 from "../../images&icons/members/safiya.jpg";
 import member8 from "../../images&icons/members/safiya1.jpg";
 
 export const OurTeam = () => {
+  const history = useHistory();
+
+  const toTeam = () => history.push("/ourTeam");
+
   return (
     <div className="ourTeamEverything" id="ourTeam">
       <div className="secondLine"></div>
@@ -67,7 +71,7 @@ export const OurTeam = () => {
           <div className="memberRole">it engineer</div>
         </div>
       </div>
-      <div className="ourTeamButton"> All </div>
+      <div className="ourTeamButton" onClick={toTeam}> All </div>
     </div>
   );
 };
