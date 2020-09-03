@@ -1,71 +1,58 @@
 import React from "react";
 import "./timeLine.scss";
+import rocket1 from "../../images&icons/time/1.jpg";
+import rocket2 from "../../images&icons/time/2.jpg";
+import rocket3 from "../../images&icons/time/3.jpg";
+import rocket4 from "../../images&icons/time/4.jpg";
+import rocket5 from "../../images&icons/time/5.jpg";
+import rocket6 from "../../images&icons/time/6.jpg";
+import rocket7 from "../../images&icons/time/7.jpg";
+import rocket8 from "../../images&icons/time/8.jpg";
+import rocket9 from "../../images&icons/time/9.jpg";
 
 export const TimeLine = () => {
-  window.onload = () => {
-    const width = window.innerWidth;
-    const numberOfDot = width / 30;
-    for (var i = 0; i < numberOfDot; i++) {
-      const dot = document.createElement("div");
-      dot.className = "dot";
-      document.getElementById("dot-container").appendChild(dot);
-    }
-  };
   return (
-    <div className="timeline" id="timeLine">
+    <div className="timeline" id="timeLine" style={{position: "relative"}}>
+      <div className="secondLine"></div>
       <div className="timeline-head"> timeline </div>
-      <div className="zuraas"></div>
-      <div className="diagram" >
-        <div className="timeLineTexts">
-          <div className="timeLineText">
-            Project starts
-            <div>2020.2.22</div>
-            <div className="line"></div>
+      <div className="timelineText">
+        20+ Students From Across The globe, ranging from High School Students to
+        Ph.D. candidates at some of the world’s most prestigious universities
+      </div>
+      <div className="timeLineContainer">
+        <div className="firstColumn">
+          <div>
+            <img alt="time1" src={rocket1} className="timeImage" />
           </div>
-          <div className="timeLineText">
-            Calculation of simulation
-            <div>2020.3.25 -- 2020.7.11</div>
-            <div className="line"></div>
+          <div>
+            <img alt="time2" src={rocket2} className="timeImage" />
           </div>
-          <div className="timeLineText">
-            Static test #1
-            <div>2020.11.5</div>
-            <div className="line"></div>
+          <div>
+            <img alt="time3" src={rocket3} className="timeImage" />
           </div>
-          <div className="timeLineText">
-            Static test #3
-            <div>2020.11.20</div>
-            <div className="line"></div>
+          <div>
+            <img alt="time4" src={rocket4} className="timeImage" />
           </div>
-          <div className="timeLineText">
-            Launch
-            <div>2020.11.30</div>
-            <div className="line"></div>
+          <div>
+            <img alt="time5" src={rocket5} className="timeImage" />
           </div>
         </div>
-        <div className="dot-container" id="dot-container"></div>
-        <div className="timeLineTexts">
-          <div className="timeLineText">
-            <div className="line"></div>
-            <div>2020.3.22</div>
-            Formed a team
+        <div className="middleLine"></div>
+        <div className="secondColumn">
+          <div>
+            <img alt="time6" src={rocket6} className="timeImage" />
           </div>
-          <div className="timeLineText">
-            <div className="line"></div>
-            <div>2020.11.1</div>
-            Complete the assembly
+          <div>
+            <img alt="time7" src={rocket7} className="timeImage" />
           </div>
-          <div className="timeLineText">
-            <div className="line"></div>
-            <div>2020.11.10</div>
-            Static test #2
+          <div>
+            <img alt="time8" src={rocket8} className="timeImage" />
           </div>
-          <div className="timeLineText">
-            <div className="line"></div>
-            <div>2020.11.28</div>
-            Launch site will be ready
+          <div>
+            <img alt="time9" src={rocket9} className="timeImage" />
           </div>
         </div>
+        <div className="shadow"></div>
       </div>
     </div>
   );

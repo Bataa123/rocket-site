@@ -4,7 +4,6 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-// import Drawer from '@material-ui/core/Drawer';
 import { Header } from './components/header/header'
 import AboutUs from './components/aboutUs/aboutUs'
 import OurSponsor from './components/ourSponsor/ourSponsor'
@@ -18,7 +17,7 @@ import { TimeLine } from './components/timeLine/timeLine';
 
 function App() {
   return (
-    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <Router>
         <Switch>
           <Route path="/" exact>
@@ -34,20 +33,12 @@ function App() {
             <Footer />
           </Route>
           <Route path="/ourTeam">
-            {/* <OurTeam /> */}
-            <div 
-              style={{fontSize: '50px', color: 'white', height: '100vh', margin: "auto", display: 'block', fontFamily: "Montserrat"}}
-              >We are working on it
+            <div
+              style={{ fontSize: '50px', color: 'white', height: '100vh', margin: "auto", display: 'block', fontFamily: "Montserrat" }}
+            >We are working on it
             </div>
           </Route>
         </Switch>
-        {/* <Router>
-          <Switch>
-            <Route path="/ourTeam">
-              <OurTeam />
-            </Route>
-          </Switch>
-        </Router> */}
       </Router>
     </div>
   );

@@ -1,60 +1,37 @@
-.donate {
-    display: flex;
-    justify-content: center;
-}
 .donateLeft {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
+    align-items: center;
     font-family: Montserrat;
     color: white;
+    margin-bottom: 10vw;
 }
 
 .donateTitle {
-    max-width: 723px;
-    font-style: normal;
+    width: 24vw;
     font-weight: 500;
-    font-size: 40px;
-    line-height: 49px;
-    margin-bottom: 40px;
+    font-size: 2vw;
+    line-height: 2.2vw;
+    margin-bottom: 2vw;
+    text-align: center;
 }
 
 .donateText {
-    max-width: 605px;
-    font-style: normal;
+    max-width: 50vw;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 0.95vw;
     line-height: 200%;
 }
 
-.donateRight {
-    margin-left: 190px;
-    width: 377px;
-    height: 576.89px;
-    background-color: #c4c4c4;
+.donationBackground {
+    position: absolute;
+    top: 21vw;
+    left: 17vw;
+    width: 16vw;
 }
 
-@media only screen and (max-width: 1499px) {
-    .donateTitle {
-        width: 578px;
-        font-size: 36px;
-        line-height: 39px;
-        font-style: normal;
-        font-weight: 400;
-    }
-
-    .donateText {
-        margin-bottom: 20px;
-        font-size: 18px;
-        text-align: center;
-    }
-
-    .donateRight {
-        margin-left: 152px;
-        width: 252px;
-        height: 385px;
-    }
-}
 @media only screen and (max-device-width: 500px) {
     .donateTitle {
         width: 450px;

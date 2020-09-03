@@ -1,84 +1,77 @@
 import React from "react";
 import "./ourTeam.scss";
-// import javkhaa from "../../images&icons/teachers/javkhaa.png";
-import ezka from "../../images&icons/teachers/ezenbaatar.png";
+import background from "../../images&icons/backgrounds/ourTeamBackground.svg";
 import { useHistory } from "react-router-dom";
+import member1 from "../../images&icons/members/jennifer.jpg";
+import member2 from "../../images&icons/members/jennifer1.jpg";
+import member3 from "../../images&icons/members/lucie.jpg";
+import member4 from "../../images&icons/members/lucie1.jpg";
+import member5 from "../../images&icons/members/marley.jpg";
+import member6 from "../../images&icons/members/marley1.jpg";
+import member7 from "../../images&icons/members/safiya.jpg";
+import member8 from "../../images&icons/members/safiya1.jpg";
 
 export const OurTeam = () => {
   const history = useHistory();
-  var slideIndex = 1;
-  // Next/previous controls
-  const plusSlides = (n) => {
-    showSlides((slideIndex += n));
-  };
 
-  // Thumbnail image controls
-  const currentSlide = (n) => {
-    showSlides((slideIndex = n));
-  };
-
-  const showSlides = (n) => {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dots");
-
-    slideIndex = n > slides.length ? 1 : slideIndex;
-    slideIndex = n < 1 ? slides.length : slideIndex;
-
-    for (i = 0; i < slides.length; i++) slides[i].style.display = "none";
-    // for (i = 0; i < slides.length; i++) slides[i].style.display = "none";
-
-    for (i = 0; i < dots.length; i++)
-      dots[i].className = dots[i].className.replace(" active", "");
-
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-  };
-
-  const toOurTeam = () => history.push("/ourTeam");
+  const toTeam = () => history.push("/ourTeam");
 
   return (
-    <div
-      // style={{marginTop: '181px'}}
-      className="everything ourTeamEverything"
-      id="ourTeam"
-      onLoad={() => showSlides(slideIndex)}
-    >
-      <div className="allText ">
-        <div className="secondLine"></div>
-        <div className="aboutHeadline">
-          Our Team
-        </div>
-        <div className="text">
-        20+ Students From Across The globe, ranging from High School Students to Ph.D. candidates at some of the world’s most prestigious universities
-        </div>
-        <div className="readMore" onClick={toOurTeam}>All Members</div>
+    <div className="ourTeamEverything" id="ourTeam">
+      <div className="secondLine"></div>
+      <div className="ourTeamTitle">Our Team</div>
+      <div className="ourTeamText">
+        20+ Students From Across The globe, ranging from High School Students to
+        Ph.D. candidates at some of the world’s most prestigious universities
       </div>
-      <div className="slideshow-container">
-        <div className="mySlides fade">
-          <img className="aboutUsImage" alt="ezka" src={ezka} />
+      <img
+        style={{ position: "absolute", zIndex: "1" }}
+        alt="backgroundImage"
+        src={background}
+      />
+      <div className="ourTeamMemebers">
+        <div>
+          <img alt="1" src={member3} className="memberImg" />
+          <div className="memberName">Lucie Mcmahon</div>
+          <div className="memberRole">ceo</div>
         </div>
-
-        {/* <div className="mySlides fade">
-          <img className="aboutUsImage" alt="javkhaa" src={javkhaa} />
+        <div>
+          <img alt="2" src={member5} className="memberImg" />
+          <div className="memberName">Marley Nichols</div>
+          <div className="memberRole">creator</div>
         </div>
-
-        <div className="mySlides fade">
-          <img className="aboutUsImage" alt="ezka" src={ezka} />
-        </div> */}
-
-        <div className="prev" onClick={() => plusSlides(-1)}>
-          &#10094;
+        <div>
+          <img alt="3" src={member1} className="memberImg" />
+          <div className="memberName">Jennifer Powers</div>
+          <div className="memberRole">designer</div>
         </div>
-        <div className="next" onClick={() => plusSlides(1)}>
-          &#10095;
+        <div>
+          <img alt="4" src={member7} className="memberImg" />
+          <div className="memberName">Safiya Holder</div>
+          <div className="memberRole">it engineer</div>
         </div>
-        <div style={{ textAlign: "center" }}>
-          <span className="dots" onClick={() => currentSlide(1)}></span>
-          {/* <span className="dots" onClick={() => currentSlide(2)}></span>
-          <span className="dots" onClick={() => currentSlide(3)}></span> */}
+        <div>
+          <img alt="5" src={member4} className="memberImg" />
+          <div className="memberName">Lucie Mcmahon</div>
+          <div className="memberRole">ceo</div>
+        </div>
+        <div>
+          <img alt="6" src={member6} className="memberImg" />
+          <div className="memberName">Marley Nichols</div>
+          <div className="memberRole">creator</div>
+        </div>
+        <div>
+          <img alt="7" src={member2} className="memberImg" />
+          <div className="memberName">Jennifer Powers</div>
+          <div className="memberRole">designer</div>
+        </div>
+        <div>
+          <img alt="8" src={member8} className="memberImg" />
+          <div className="memberName">Safiya Holder</div>
+          <div className="memberRole">it engineer</div>
         </div>
       </div>
+      <div className="ourTeamButton" onClick={toTeam}> All </div>
     </div>
   );
 };

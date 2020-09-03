@@ -2,131 +2,60 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: Montserrat;
 }
 
 .contactNameEmail {
     color: white;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    width: 1256px;
-    padding: 16px;
+    font-size: 1vw;
+    line-height: 1.2vw;
+    width: 57vw;
+    padding: 1.1vw;
+    padding-left: 3vw !important;
     outline: none;
     background: black;
-    color: white;
     border-color: black;
 }
 
 .contactLineGreen {
     border: 1px solid #00b65f;
-    width: 85vw;
+    opacity: 0.6;
+    width: 57vw;
 }
 .contactLine {
     border: 1px solid #ffffff;
-    width: 85vw;
+    width: 57vw;
+    opacity: 0.6;
 }
 .contactMessage {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    width: 85vw;
-    height: 320px;
+    font-size: 1vw;
+    line-height: 1.2vw;
+    width: 57vw;
+    height: 16vw;
     background: black;
     color: white;
     border: 1px solid #ffffff;
     box-sizing: border-box;
-    margin-top: 50px;
-    padding: 16px;
+    margin-top: 3vw;
+    padding: 1.1vw;
     outline: none;
 }
 
 .contactButton {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
     font-size: 20px;
     line-height: 24px;
     color: white;
-    width: 85vw;
+    width: 57vw;
     height: 56px;
     border: none;
     background-color: #00b65f;
     outline: none;
-    margin-top: 56px;
+    margin-top: 2vw;
     margin-bottom: 150px;
 }
 
-.name {
-    position: absolute;
-    left: 46vw;
-    // right: 680px;
-    margin-top: 20px;
-}
-
-.email {
-    position: absolute;
-    right: 370px;
-    margin-top: 24px;
-}
-
-.message {
-    position: absolute;
-    left: 46vw;
-    margin-top: 20px;
-}
-
-@media only screen and (max-width: 1499px) {
-
-    .contactNameEmail {
-        font-size: 12px;
-        line-height: 20px;
-        width: 82vw;
-        padding: 12px;
-    }
-
-    .contactMessage {
-        font-size: 12px;
-        line-height: 16px;
-        width: 85vw;
-        height: 256px;
-        margin-top: 40px;
-        padding: 12px;
-    }
-
-    .contactButton {
-        font-size: 16px;
-        line-height: 19px;
-        width: 85vw;
-        height: 44px;
-        margin-top: 44px;
-        margin-bottom: 120px;
-    }
-
-    // .name {
-    //     position: absolute;
-    //     left: 46vw;
-    //     // right: 680px;
-    //     margin-top: 20px;
-    // }
-
-    // .email {
-    //     right: 296px;
-    //     margin-top: 19px;
-    // }
-
-    // .message {
-
-    //     left: 46vw;
-    //     margin-top: 16px;
-    // }
-}
 
 @media only screen and (max-device-width: 500px) {
-
     .contactLineGreen {
         margin-bottom: 150px;
     }

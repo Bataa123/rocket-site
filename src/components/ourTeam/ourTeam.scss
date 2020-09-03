@@ -1,200 +1,68 @@
-.headLineTeam {
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    color: #ffffff;
-    text-align: center;
-    margin: 137px 0 34px;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 49px;
-}
 .ourTeamEverything {
-    height: 90vh;
+    margin-top: 10vw;
     width: 80vw;
-}
-.everything {
-    // margin-top: 200px;
-
-    * {
-        box-sizing: border-box;
-    }
-
-    /* Slideshow container */
-    .slideshow-container {
-        max-width: 1000px;
-        position: relative;
-        margin: auto;
-        // margin-right: 10vw;
-    }
-
-    /* Hide the images by default */
-    .mySlides {
-        display: none;
-    }
-
-    /* Next & previous buttons */
-    .prev,
-    .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        margin-top: -22px;
-        padding: 16px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-    }
-
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover,
-    .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-        opacity: 0.4;
-    }
-
-    /* The dots/bullets/indicators */
-    .dots {
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #717171;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .active,
-    .dots:hover {
-        background-color: #f2f2f2;
-    }
-
-    /* Fading animation */
-    .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.5s;
-        animation-name: fade;
-        animation-duration: 1.5s;
-    }
-
-    /* images */
-
-    .aboutUsImage {
-        height: 36vw;
-        width: 29vw;
-    }
-
-    @-webkit-keyframes fade {
-        from {
-            opacity: 0.4;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
-    @keyframes fade {
-        from {
-            opacity: 0.4;
-        }
-        to {
-            opacity: 1;
-        }
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
 }
 
-@media only screen and (max-width: 1499px) {
-    .headLineTeam {
-        margin: 137px 0 34px;
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 49px;
-    }
-    
+.ourTeamTitle {
+    font-family: Montserrat;
+    font-size: 2.3vw;
+    font-weight: 600;
+    line-height: 2.6vw;
+    text-transform: uppercase;
 }
 
-@media only screen and (max-device-width: 500px) {
-    // .headLineTeam {
-    //     font-family: "Montserrat", sans-serif;
-    //     font-style: normal;
-    //     color: #ffffff;
-    //     text-align: center;
-    //     margin: 137px 0 34px;
-    //     font-weight: 500;
-    //     font-size: 40px;
-    //     line-height: 49px;
-    // }
-    .secondLine {
-        width: 60px !important;
-        height: 10px !important ;
-        background: #00b65f;
-    }
-    .headLine {
-        font-weight: 500;
-        font-size: 55px;
-        line-height: 55px;
-    }
+.ourTeamText {
+    margin-top: 2vh;
+    font-family: Raleway;
+    font-size: 1.3vw;
+    line-height: 1.7vw;
+    width: 56vw;
+    text-align: center;
+}
 
-    .zuraas {
-        width: 60px;
-        height: 9px;
-    }
+.ourTeamMemebers {
+    margin-top: 4vw;
+    display: grid;
+    grid-template-columns: repeat(4, 17vw);
+    grid-gap: 1rem;
+    z-index: 2;
+    font-family: Montserrat;
+}
 
-    .everything {
-        display: flex;
-        flex-direction: column;
-        .aboutUsImage {
-            height: 60vw;
-            width: 50vw;
-        }
-        .allText {
-            width: 80vw;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            margin: auto;
-            height: auto;
-            padding: 0 0 100px;
-            .headlineWithLine {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding: 50px;
-            }
-            .aboutHeadline {
-                margin-top: 30px;
-                display: flex;
-                flex-direction: row;
-                width: auto;
-                font-weight: 500;
-                font-size: 60px;
-                line-height: 49px;
-            }
-            .text {
-                font-size: 35px;
-                width: 80vw;
-                padding: 50px 0;
-            }
-            .readMore {
-                padding: 30px 60px;
-                width: auto;
-                height: auto;
-                font-size: 30px;
-            }
-        }
-    }
-    .reverseForPhone {
-        display: flex;
-        flex-direction: column-reverse !important;
-    }
+.memberImg {
+    width: 17vw;
+    border-radius: 4px;
+}
+
+.memberName {
+    font-weight: 600;
+    font-size: 1.3vw;
+    line-height: 3vw;
+    text-align: center;
+}
+
+.memberRole {
+    font-size: 1.1vw;
+    line-height: 3vw;
+    text-transform: uppercase;
+    text-align: center;
+    color: #00b65f;
+}
+
+.ourTeamButton {
+    cursor: pointer;
+    margin-top: 2vw;
+    width: 8vw;
+    height: 5vh;
+    font-family: Montserrat;
+    font-size: 1.2vw;
+    line-height: 2.4vw;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

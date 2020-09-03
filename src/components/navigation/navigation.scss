@@ -1,30 +1,31 @@
 .nav {
-    width: 100vw;
-    height: 10vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
+    width: 70vw;
+    height: 7vh;
 }
+
+.topBarContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+<<<<<<< HEAD
 .textNav {
     color: white;
     font-size: 35px;
     font-family: "Montserrat", sans-serif;
+=======
+
+.topBarLinks {
+    margin: 20px 10px 0px 10px;
+    font-weight: 600;
+    font-size: 1vw;
+    line-height: 2vw;
+>>>>>>> 687cbf551e6c5e628bed4ceedba827f76071dbb9
     text-transform: uppercase;
-}
-.menuText {
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px;
-    font-family: "Montserrat", sans-serif !important;
     cursor: pointer;
-}
-.padding {
-    padding: 0 30px;
 }
 
 @media only screen and (max-device-width: 500px) {
+<<<<<<< HEAD
     .padding {
         padding: 0 60px;
     }
@@ -53,6 +54,11 @@
     .MuiList-padding {
         padding: 15px 0px !important;
     }
+=======
+    .icon {
+        font-size: 60px !important;
+    }
+>>>>>>> 687cbf551e6c5e628bed4ceedba827f76071dbb9
     .social {
         width: 60px;
         height: 60px;

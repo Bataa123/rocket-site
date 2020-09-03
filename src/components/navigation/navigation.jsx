@@ -1,7 +1,12 @@
-// import React from 'react'
+import React from "react";
+import "./navigation.scss";
+import { SideBar } from "./sidebar";
+import { TopBar } from "./topBar";
 
-// export const Navigation = () => {
+export const Navigation = () => {
+  const width = window.innerWidth;
 
+<<<<<<< HEAD
 //     return (
 
 //     )
@@ -155,9 +160,11 @@ export function Navigation() {
 
     </div>
   );
+=======
+  const menuDecide = () => {
+    if (width <= 950) return <SideBar />;
+    return <TopBar />;
+  };
+  return <div className="nav">{menuDecide()}</div>;
+>>>>>>> 687cbf551e6c5e628bed4ceedba827f76071dbb9
 }
-
-
-
-
-

@@ -4,7 +4,7 @@
     align-items: center;
     margin-bottom: 160px;
     flex-wrap: wrap;
-    max-width: 1500px;
+    width: 70vw;
     margin: 0 auto;
     img {
         display: inline-block;
@@ -13,58 +13,6 @@
     }
 }
 
-// .touching {
-//     display: flex;
-//     margin-top: 30px;
-//     justify-content: space-between;
-// }
-
-
-// .zuraasT {
-//     width: 240px;
-//     height: 2px;
-//     background: #737386;
-//     transform: matrix(1, 0, 0, -1, 0, 0);
-//     margin: 0 32px;
-// }
-
-// .UsCircle {
-//     width: 18px;
-//     height: 18px;
-//     border-radius: 50%;
-//     font-style: normal;
-//     font-weight: 500;
-//     font-size: 24px;
-//     line-height: 29px;
-//     background: #ffffff;
-//     color: white;
-//     font-family: "Montserrat", sans-serif;
-//     cursor: pointer;
-// }
-
-
-@media only screen and (max-width: 1499px) {
-
-
-    .univers {
-        margin-bottom: 107px;
-        max-width: 1200px;
-        img {
-            max-width: 130px;
-            padding: 0 30px;
-        }
-    }
-
-    // .UsCircle {
-    //     width: 12px;
-    //     height: 12px;
-    //     font-size: 16px;
-    //     line-height: 19px;
-    // }
-
-    // .zuraasT {
-    //     width: 160px;
-    //     height: 21px;
-    //     margin: 0 21px;
-    // }
+.universityLogo {
+    width: 6vw;
 }
