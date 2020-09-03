@@ -32,7 +32,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 0.85vw;
-    line-height: 160%;
+    line-height: 1.5vw;
 }
 .readMore {
     cursor: pointer;
@@ -157,7 +157,8 @@
         height: 55px;
     }
     .text {
-        font-size: 14px;
+        font-size: 1.2vw;
+        line-height: 2vw;
     }
 
     .getCenter {
@@ -220,6 +221,7 @@
                 }
                 .text {
                     font-size: 35px;
+                    line-height: 160%;
                     padding: 50px 0 !important;
                 }
                 .readMore {
