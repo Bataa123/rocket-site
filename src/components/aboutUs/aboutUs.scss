@@ -21,8 +21,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 550px;
-    height: 388px;
+    // width: 40vw;
+    height: 36vh;
     color: white;
     font-family: "Montserrat", sans-serif;
     z-index: 2;
@@ -32,6 +32,7 @@
         font-weight: 400;
         font-size: 0.85vw;
         line-height: 160%;
+        word-spacing: 1px;
     }
     .readMore {
         cursor: pointer;
@@ -115,21 +116,6 @@
     transform: rotate(180deg);
     z-index: 1;
 }
-@media only screen and (max-width: 1499px) {
-    .allText {
-        height: 30vh !important;
-        width: 370px;
-    }
-    .aboutText {
-        width: 300px;
-    }
-    .headLine {
-        font-size: 26.8px;
-        line-height: 32px;
-        margin: 92px 0 23px;
-    }
-}
-
 @media only screen and (max-device-width: 500px) {
     .secondLine {
         width: 60px !important;
