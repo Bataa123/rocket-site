@@ -28,33 +28,11 @@
     z-index: 2;
 }
 
-<<<<<<< Updated upstream
-    .text {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 0.85vw;
-        line-height: 160%;
-        word-spacing: 1px;
-    }
-    .readMore {
-        cursor: pointer;
-        font-family: Montserrat;
-        font-size: 0.85vw;
-        font-weight: 600;
-        width: 153px;
-        height: 60px;
-        background-color: #00b65f;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-=======
 .text {
     font-style: normal;
     font-weight: 400;
     font-size: 0.85vw;
     line-height: 160%;
->>>>>>> Stashed changes
 }
 .readMore {
     cursor: pointer;
@@ -138,8 +116,6 @@
     transform: rotate(180deg);
     z-index: 1;
 }
-<<<<<<< Updated upstream
-=======
 @media only screen and (max-width: 1499px) {
     .allText {
         height: 30vh !important;
@@ -185,7 +161,6 @@
     }
 }
 
->>>>>>> Stashed changes
 @media only screen and (max-device-width: 500px) {
     .secondLine {
         width: 60px !important;

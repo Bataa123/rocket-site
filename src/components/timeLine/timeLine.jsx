@@ -2,15 +2,15 @@ import React from "react";
 import "./timeLine.scss";
 import left from "../../images&icons/linkedIcons/leftArrow.svg";
 import right from "../../images&icons/linkedIcons/rightArrow.svg";
-import rocket1 from "../../images&icons/time/1.jpg";
-import rocket2 from "../../images&icons/time/2.jpg";
-import rocket3 from "../../images&icons/time/3.jpg";
-import rocket4 from "../../images&icons/time/4.jpg";
-import rocket5 from "../../images&icons/time/5.jpg";
-import rocket6 from "../../images&icons/time/6.jpg";
-import rocket7 from "../../images&icons/time/7.jpg";
-import rocket8 from "../../images&icons/time/8.jpg";
-import rocket9 from "../../images&icons/time/9.jpg";
+// import rocket1 from "../../images&icons/time/1.jpg";
+// import rocket2 from "../../images&icons/time/2.jpg";
+// import rocket3 from "../../images&icons/time/3.jpg";
+// import rocket4 from "../../images&icons/time/4.jpg";
+// import rocket5 from "../../images&icons/time/5.jpg";
+// import rocket6 from "../../images&icons/time/6.jpg";
+// import rocket7 from "../../images&icons/time/7.jpg";
+// import rocket8 from "../../images&icons/time/8.jpg";
+// import rocket9 from "../../images&icons/time/9.jpg";
 
 export const TimeLine = () => {
   return (
