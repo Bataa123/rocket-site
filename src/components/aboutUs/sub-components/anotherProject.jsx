@@ -3,7 +3,7 @@ import CancelIcon from "@material-ui/icons/Cancel";
 import projectImage from "../../../images&icons/launchRocket.jpg";
 import TextImage from "../../../images&icons/backgrounds/TextImage.svg";
 
-export const Project = () => {
+export const AnotherProject = () => {
   const [call, setCall] = useState(false);
 
   const callPopUp = () => {
@@ -66,17 +66,14 @@ export const Project = () => {
             We are focused on launching a rocket to break the student altitude
             record of 330,000 feet, reaching the Kármán line, which is
             considered the border between Earth’s atmosphere and outer space.
-            Designing,
-            building and launching a rocket of this magnitude faces a serious
-            financial obstacle.
+            Designing, building and launching a rocket of this magnitude faces a
+            serious financial obstacle.
           </div>
           <div onClick={callPopUp} className="readMore">
             Read more
           </div>
         </div>
-        <div>
-          <img src={projectImage} alt="project" className="aboutImage" />
-        </div>
+        <img src={projectImage} alt="project" className="aboutImage" />
       </div>
     </div>
   );

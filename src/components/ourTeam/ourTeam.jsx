@@ -21,7 +21,7 @@ export const OurTeam = () => {
       <div className="secondLine"></div>
       <div className="ourTeamTitle">Our Team</div>
       <div className="ourTeamText">
-        20+ Students From Across The globe, ranging from High School Students to
+        20+ Students From Across The globe, ranging from High Schooaml Students to
         Ph.D. candidates at some of the world’s most prestigious universities
       </div>
       <img
@@ -45,17 +45,17 @@ export const OurTeam = () => {
           <div className="memberName">Jennifer Powers</div>
           <div className="memberRole">designer</div>
         </div>
-        <div>
+        <div className="visibilityPhone">
           <img alt="4" src={member7} className="memberImg" />
           <div className="memberName">Safiya Holder</div>
           <div className="memberRole">it engineer</div>
         </div>
-        <div>
+        <div className="visibilityPhone">
           <img alt="5" src={member4} className="memberImg" />
           <div className="memberName">Lucie Mcmahon</div>
           <div className="memberRole">ceo</div>
         </div>
-        <div>
+        <div className="visibilityPhone">
           <img alt="6" src={member6} className="memberImg" />
           <div className="memberName">Marley Nichols</div>
           <div className="memberRole">creator</div>
