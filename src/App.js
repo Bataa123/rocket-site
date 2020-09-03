@@ -8,7 +8,6 @@ import { Header } from './components/header/header'
 import AboutUs from './components/aboutUs/aboutUs'
 import OurSponsor from './components/ourSponsor/ourSponsor'
 import Universities from './components/universities/universities'
-import { RockerLaunche } from './components/movingRocket/move';
 import { Footer } from './components/footer/footer';
 import { Donation } from './components/donation/donation';
 import { Contact } from './components/contactUs/conact';
@@ -22,7 +21,6 @@ function App() {
         <Switch>
           <Route path="/" exact>
             <Header />
-            <RockerLaunche />
             <AboutUs />
             <OurTeam />
             <TimeLine />

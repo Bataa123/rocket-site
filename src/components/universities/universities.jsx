@@ -11,6 +11,7 @@ import penn from "../../images&icons/universities/pennUniversity.png";
 import rutgers from "../../images&icons/universities/rutgersUniversity.png";
 import tokyo from "../../images&icons/universities/tokyoUniversity.png";
 import villnova from "../../images&icons/universities/villnovaUniversity.png";
+import shutis from "../../images&icons/universities/shutis.png"
 
 const Universities = () => {
   return (
@@ -32,6 +33,7 @@ const Universities = () => {
         <img alt="number9" src={rutgers} className="universityLogo"/>
         <img alt="number10" src={tokyo} className="universityLogo"/>
         <img alt="number11" src={villnova} className="universityLogo"/>
+        <img alt="number12" src={shutis} className="universityLogo shutis"/>
       </div>
     </>
   );
