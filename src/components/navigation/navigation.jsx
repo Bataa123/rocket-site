@@ -7,7 +7,7 @@ export const Navigation = () => {
   const width = window.innerWidth;
 
   const menuDecide = () => {
-    if (width <= 950) return <SideBar />;
+    if (width <= 1050) return <SideBar />;
     return <TopBar />;
   };
   return <div className="nav">{menuDecide()}</div>;
