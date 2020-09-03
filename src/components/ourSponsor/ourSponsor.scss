@@ -31,4 +31,15 @@
     width: 20vw;
     right: 0;
     top: 15vw;
+} 
+@media only screen and (max-device-width: 1100px) {
+    .sponsor {
+        width: 94vw;
+        margin-bottom: 60px;
+        justify-content: space-between;
+        margin-bottom: 0;
+        img {
+            width: 17vw;
+        }
+    }
 }

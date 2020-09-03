@@ -7,58 +7,20 @@
     display: flex;
     justify-content: space-evenly;
 }
-<<<<<<< HEAD
-.textNav {
-    color: white;
-    font-size: 35px;
-    font-family: "Montserrat", sans-serif;
-=======
 
 .topBarLinks {
     margin: 20px 10px 0px 10px;
     font-weight: 600;
     font-size: 1vw;
     line-height: 2vw;
->>>>>>> 687cbf551e6c5e628bed4ceedba827f76071dbb9
     text-transform: uppercase;
     cursor: pointer;
 }
 
 @media only screen and (max-device-width: 500px) {
-<<<<<<< HEAD
-    .padding {
-        padding: 0 60px;
-    }
-    .nav {
-        width: 100vw;
-        height: 9vh;
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-    .textNav {
-        color: white;
-        font-size: 40px;
-        font-family: "Montserrat", sans-serif;
-        text-transform: uppercase;
-    }
     .icon {
         font-size: 60px !important;
     }
-    .MuiDrawer-paperAnchorRight {
-        width: 60vw;
-    }
-    .MuiTypography-body1 {
-        font-size: 3rem !important;
-        padding: 10px 20px 0;
-        width: 50vw;
-    }
-    .MuiList-padding {
-        padding: 15px 0px !important;
-    }
-=======
-    .icon {
-        font-size: 60px !important;
-    }
->>>>>>> 687cbf551e6c5e628bed4ceedba827f76071dbb9
     .social {
         width: 60px;
         height: 60px;

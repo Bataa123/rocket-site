@@ -26,7 +26,9 @@
     color: white;
     font-family: "Montserrat", sans-serif;
     z-index: 2;
+}
 
+<<<<<<< Updated upstream
     .text {
         font-style: normal;
         font-weight: 400;
@@ -46,7 +48,27 @@
         align-items: center;
         justify-content: center;
     }
+=======
+.text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.85vw;
+    line-height: 160%;
+>>>>>>> Stashed changes
 }
+.readMore {
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 0.85vw;
+    font-weight: 600;
+    width: 153px;
+    height: 60px;
+    background-color: #00b65f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .projectText {
     margin: auto 0px auto 15vw;
 }
@@ -82,14 +104,14 @@
     justify-content: center;
     transition: 1s;
     z-index: 3;
-    color: white;
-    .popUp {
-        max-width: 600px;
-        font-family: "Montserrat", sans-serif;
-        line-height: 173.6%;
-        text-align: center;
-        transition: 1s;
-    }
+    color: white;   
+}
+.popUp {
+    max-width: 600px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 173.6%;
+    text-align: center;
+    transition: 1s;
 }
 .secondHeadline {
     display: flex;
@@ -116,6 +138,54 @@
     transform: rotate(180deg);
     z-index: 1;
 }
+<<<<<<< Updated upstream
+=======
+@media only screen and (max-width: 1499px) {
+    .allText {
+        height: 30vh !important;
+        width: 370px;
+    }
+    .aboutText {
+        width: 300px;
+    }
+    .headLine {
+        font-size: 26.8px;
+        line-height: 32px;
+        margin: 92px 0 23px;
+    }
+}
+
+@media only screen and (max-device-width: 1100px) {
+    .headLine {
+        font-size: 3.2vw;
+        line-height: 3.7vw;
+        margin: 92px 0 23px;
+    }
+    .allText {
+        height: 24vh !important;
+        // width: 340px;
+    }
+    .projectText{
+        margin: auto 0px auto 6vw;
+    }
+    .aboutText{
+        margin: 6vh 0px 0px 57vw;
+    }
+    .aboutHeadline{
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .readMore{
+        font-size: 14px;
+        width: 140px;
+        height: 55px;
+    }
+    .text {
+        font-size: 14px;
+    }
+}
+
+>>>>>>> Stashed changes
 @media only screen and (max-device-width: 500px) {
     .secondLine {
         width: 60px !important;

@@ -60,12 +60,12 @@ export const OurTeam = () => {
           <div className="memberName">Marley Nichols</div>
           <div className="memberRole">creator</div>
         </div>
-        <div>
+        <div className='visibility'>
           <img alt="7" src={member2} className="memberImg" />
           <div className="memberName">Jennifer Powers</div>
           <div className="memberRole">designer</div>
         </div>
-        <div>
+        <div className='visibility'>
           <img alt="8" src={member8} className="memberImg" />
           <div className="memberName">Safiya Holder</div>
           <div className="memberRole">it engineer</div>
