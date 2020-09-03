@@ -1,5 +1,7 @@
 import React from "react";
 import "./timeLine.scss";
+import left from "../../images&icons/linkedIcons/leftArrow.svg";
+import right from "../../images&icons/linkedIcons/rightArrow.svg";
 import rocket1 from "../../images&icons/time/1.jpg";
 import rocket2 from "../../images&icons/time/2.jpg";
 import rocket3 from "../../images&icons/time/3.jpg";
@@ -12,47 +14,42 @@ import rocket9 from "../../images&icons/time/9.jpg";
 
 export const TimeLine = () => {
   return (
-    <div className="timeline" id="timeLine" style={{position: "relative"}}>
+    <div className="timeline" id="timeLine" style={{ position: "relative" }}>
       <div className="secondLine"></div>
       <div className="timeline-head"> timeline </div>
-      <div className="timelineText">
-        20+ Students From Across The globe, ranging from High School Students to
-        Ph.D. candidates at some of the world’s most prestigious universities
+      <div className="timeline-first-row">
+        <div className="timelineText">
+          20+ Students From Across The globe, ranging from High School Students
+          to Ph.D. candidates at some of the world’s most prestigious
+          universities
+        </div>
+        <div>
+          <p style={{textTransform: "uppercase", fontSize: "1.2vw", margin: "0", textAlign: "right"}}>launch day</p>
+          <p style={{color: "#00B65F", fontSize: "1.5vw", marginTop: "0.8vw"}}>2020 / 08 / 21</p>
+        </div>
       </div>
-      <div className="timeLineContainer">
-        <div className="firstColumn">
-          <div>
-            <img alt="time1" src={rocket1} className="timeImage" />
-          </div>
-          <div>
-            <img alt="time2" src={rocket2} className="timeImage" />
-          </div>
-          <div>
-            <img alt="time3" src={rocket3} className="timeImage" />
-          </div>
-          <div>
-            <img alt="time4" src={rocket4} className="timeImage" />
-          </div>
-          <div>
-            <img alt="time5" src={rocket5} className="timeImage" />
-          </div>
+      <div className="timelineMain">
+        <div className="lineContainer">
+          <img src={left} alt="left arrow" style={{marginRight: "20px", width: "2.4vw"}}/>
+          <div className="line lineLeft" id="0"/>
+          <div className="timeDot" id="1"/>
+          <div className="line" id="2"/>
+          <div className="timeDot" id="3"/>
+          <div className="line" id="4"/>
+          <div className="timeDot" id="5"/>
+          <div className="line" id="6"/>
+          <div className="timeDot" id="7"/>
+          <div className="line" id="8"/>
+          <div className="timeDot" id="9"/>
+          <div className="line" id="10"/>
+          <div className="timeDot" id="11"/>
+          <div className="line" id="12"/>
+          <div className="timeDot" id="13"/>
+          <div className="line" id="14"/>
+          <div className="timeDot" id="15"/>
+          <div className="line lineRight" id="16"/>
+          <img src={right} alt="right arrow" style={{marginLeft: "20px", width: "2.4vw"}}/>
         </div>
-        <div className="middleLine"></div>
-        <div className="secondColumn">
-          <div>
-            <img alt="time6" src={rocket6} className="timeImage" />
-          </div>
-          <div>
-            <img alt="time7" src={rocket7} className="timeImage" />
-          </div>
-          <div>
-            <img alt="time8" src={rocket8} className="timeImage" />
-          </div>
-          <div>
-            <img alt="time9" src={rocket9} className="timeImage" />
-          </div>
-        </div>
-        <div className="shadow"></div>
       </div>
     </div>
   );

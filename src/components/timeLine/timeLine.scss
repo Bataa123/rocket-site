@@ -1,10 +1,9 @@
 .timeline {
     color: white;
-    width: 100%;
+    width: 70vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
     font-family: "Montserrat", sans-serif;
     .secondLine {
         margin-top: 10vw;
@@ -21,43 +20,47 @@
 .timelineText {
     margin-top: 1.5vw;
     font-family: Raleway;
-    width: 40vw;
-    text-align: center;
+    width: 35vw;
+    text-align: start;
     font-size: 1vw;
+    line-height: 1.5vw;
 }
 
-.timeLineContainer {
-    margin-top: 5vw;
-    display: flex;
-    width: 64vw;
-    justify-content: space-between;
-}
 .timeImage {
     width: 25vw;
 }
 
-.firstColumn {
-    display: grid;
-    grid-template-columns: 25vw;
-    grid-gap: 3vw;
-}
-.secondColumn {
-    margin-top: 6vw;
-    height: 0vw;
-    display: grid;
-    grid-template-columns: 25vw;
-    grid-gap: 3vw;
+.timeline-first-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.middleLine {
-    height: auto;
-    width: 3px;
-    background-color: #00b65f;
+.timelineMain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.shadow {
-    position: absolute;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
-    width: 64vw;
-    height: 80vw;
+.lineContainer {
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    height: 1.4px;
+    width: 7vw;
+    background-color: #00B65F;
+}
+
+.lineLeft, .lineRight {
+    width: 4vw;
+}   
+
+.timeDot {
+    height: 0.7vw;
+    width: 0.7vw;
+    border-radius: 50%;
+    background-color: #AFAFAF;
 }
