@@ -1,12 +1,13 @@
 import React from "react";
 import "./aboutUs.scss";
-import { Goal, Project } from "./sub-components";
+import { Goal, Project, AnotherProject } from "./sub-components";
 
 const AboutUs = () => {
   return (
     <div className="aboutEvery" id="aboutUs">
       <Project />
       <Goal />
+      <AnotherProject />
     </div>
   );
 };
