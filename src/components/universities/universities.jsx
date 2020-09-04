@@ -28,11 +28,11 @@ const Universities = () => {
         <img alt="number9" src={rutgers} className="universityLogo"/>
         <img alt="number1" src={berkeley} className="universityLogo"/>
         <img alt="number8" src={penn} className="universityLogo"/>
-        {/* <img alt="number12" src={shutis} className="universityLogo"/> */}
         <img alt="number10" src={tokyo} className="universityLogo"/>
         <img alt="number6" src={mit} className="universityLogo"/>
         <img alt="number3" src={cornell} className="universityLogo"/>
         <img alt="number2" src={columbia} className="universityLogo"/>
+        <img alt="number12" src={shutis} className="universityLogo"/>
       </div>
     </>
   );
