@@ -1,68 +1,138 @@
 .ourTeamEverything {
-    margin-top: 10vw;
-    width: 80vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
+  margin-top: 10vw;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  z-index: 1;
 }
 
 .ourTeamTitle {
-    font-family: Montserrat;
-    font-size: 2.3vw;
-    font-weight: 600;
-    line-height: 2.6vw;
-    text-transform: uppercase;
+  font-family: Montserrat;
+  font-size: 2.3vw;
+  font-weight: 600;
+  line-height: 2.6vw;
+  text-transform: uppercase;
 }
 
 .ourTeamText {
-    margin-top: 2vh;
-    font-family: Raleway;
-    font-size: 1.3vw;
-    line-height: 1.7vw;
-    width: 56vw;
-    text-align: center;
+  margin-top: 2vh;
+  font-family: Raleway;
+  font-size: 1.3vw;
+  line-height: 1.7vw;
+  width: 56vw;
+  text-align: center;
 }
 
 .ourTeamMemebers {
-    margin-top: 4vw;
-    display: grid;
-    grid-template-columns: repeat(4, 17vw);
-    grid-gap: 1rem;
-    z-index: 2;
-    font-family: Montserrat;
+  margin-top: 4vw;
+  display: grid;
+  grid-template-columns: repeat(4, 17vw);
+  grid-gap: 1rem;
+  z-index: 2;
+  font-family: Montserrat;
 }
 
 .memberImg {
-    width: 17vw;
-    border-radius: 4px;
+  width: 17vw;
+  border-radius: 4px;
 }
 
 .memberName {
-    font-weight: 600;
-    font-size: 1.3vw;
-    line-height: 3vw;
-    text-align: center;
+  font-weight: 600;
+  font-size: 1.3vw;
+  line-height: 3vw;
+  text-align: center;
 }
 
 .memberRole {
-    font-size: 1.1vw;
-    line-height: 3vw;
-    text-transform: uppercase;
-    text-align: center;
-    color: #00b65f;
+  font-size: 1.1vw;
+  line-height: 3vw;
+  text-transform: uppercase;
+  text-align: center;
+  color: #00b65f;
 }
 
 .ourTeamButton {
-    cursor: pointer;
-    margin-top: 2vw;
-    width: 8vw;
-    height: 5vh;
-    font-family: Montserrat;
-    font-size: 1.2vw;
-    line-height: 2.4vw;
-    border: 1px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  cursor: pointer;
+  margin-top: 2vw;
+  width: 8vw;
+  height: 5vh;
+  font-family: Montserrat;
+  font-size: 1.2vw;
+  line-height: 2.4vw;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popUp {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 3;
+  display: grid;
+  // overflow: hidden;
+  justify-content: center;
+  grid-template-rows: 10vw repeat(3, 7vw) 3vw 4vw;
+  grid-template-columns: repeat(3, 23vw);
+  grid-template-areas:
+    ". . cancel"
+    "image text1 text1"
+    "image text2 text2"
+    "image text2 text2"
+    "name . ."
+    "duty . .";
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popImage {
+  grid-area: image;
+  width: 20.5vw;
+  height: 20.5vw;
+}
+
+.popName {
+  grid-area: name;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 1.7vw;
+  line-height: 1.9vw;
+  text-align: center;
+}
+
+.popDuty {
+  grid-area: duty;
+  font-family: Montserrat;
+  font-size: 1.5vw;
+  line-height: 1.9vw;
+  text-align: center;
+  text-transform: uppercase;
+  color: #00b65f;
+}
+
+.popText1 {
+  grid-area: text1;
+  font-family: Montserrat;
+  font-size: 1vw;
+  line-height: 150%;
+
+  letter-spacing: 0.02em;
+}
+
+.popText2 {
+  grid-area: text2;
+  font-family: Montserrat;
+  font-size: 1vw;
+  line-height: 150%;
+
+  letter-spacing: 0.02em;
+}
+
+.popCancel {
+    grid-area: cancel;
+    position: absolute;
+    right: 0;
 }

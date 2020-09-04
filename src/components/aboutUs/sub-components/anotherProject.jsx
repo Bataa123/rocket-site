@@ -11,12 +11,12 @@ export const AnotherProject = () => {
   };
 
   useEffect(() => {
-    const project = document.getElementById("getCenter");
+    const project = document.getElementById("anotherCenter");
     project.style.width = call === true ? "100vw" : "0px";
     project.style.height = call === true ? "90vh" : "0px";
-    document.getElementById("ourProjectTitle").style.fontSize =
+    document.getElementById("anotherProjectTitle").style.fontSize =
       call === true ? "2vw" : "0px";
-    document.getElementById("ourProjectText").style.fontSize =
+    document.getElementById("anotherProjectText").style.fontSize =
       call === true ? "1.3vw" : "0px";
   }, [call]);
 
@@ -25,11 +25,11 @@ export const AnotherProject = () => {
       <div
         style={{ visibility: call === true ? "visible" : "hidden" }}
         className="getCenter"
-        id="getCenter"
+        id="anotherCenter"
       >
         <div className="secondHeadline">
           <div
-            id="ourProjectTitle"
+            id="anotherProjectTitle"
             className="aboutHeadline onlyPhone"
             style={{ width: "auto" }}
           >
@@ -45,7 +45,7 @@ export const AnotherProject = () => {
             onClick={callPopUp}
           />
         </div>
-        <div id="ourProjectText" className="popUp">
+        <div id="anotherProjectText" className="popUp">
           We are focused on launching a rocket to break the student altitude
           record of 330,000 feet, reaching the Kármán line, which is considered
           the border between Earth’s atmosphere and outer space. Designing,

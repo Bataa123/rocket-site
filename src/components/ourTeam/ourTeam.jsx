@@ -2,20 +2,84 @@ import React from "react";
 import "./ourTeam.scss";
 import background from "../../images&icons/backgrounds/ourTeamBackground.svg";
 import { useHistory } from "react-router-dom";
-import member1 from "../../images&icons/members/jennifer.jpg";
-import member2 from "../../images&icons/members/jennifer1.jpg";
-import member3 from "../../images&icons/members/lucie.jpg";
-import member4 from "../../images&icons/members/lucie1.jpg";
-import member5 from "../../images&icons/members/marley.jpg";
-import member6 from "../../images&icons/members/marley1.jpg";
-import member7 from "../../images&icons/members/safiya.jpg";
-import member8 from "../../images&icons/members/safiya1.jpg";
+import { OurTeamData } from "./ourTeamData";
+import cancel from "../../images&icons/linkedIcons/cancel.svg"
 
 export const OurTeam = () => {
   const history = useHistory();
+  const members = [
+    "Marley",
+    "Lucie",
+    "Jennifer",
+    "Safiya",
+    "Nichols",
+    "Mcmahon",
+    "Powers",
+    "Holder",
+  ];
 
   const toTeam = () => history.push("/ourTeam");
 
+  const popUp = (number) => {
+    const popUpChild = document.createElement("div");
+    const popUpImage = document.createElement("img");
+    const popUpIcon = document.createElement("img");
+    const popUpTitle = document.createElement("p");
+    const popUpSubject = document.createElement("p");
+    const popUpText1 = document.createElement("p");
+    const popUpText2 = document.createElement("p");
+
+    popUpChild.className = "popUp";
+    popUpChild.id = "";
+
+    popUpImage.src = OurTeamData.images[number];
+    popUpImage.alt = number;
+    popUpImage.className = "popImage";
+
+    popUpIcon.src = cancel;
+    popUpIcon.alt = "cancel";
+    popUpIcon.className = "popCancel";
+    popUpIcon.onclick = () => {
+      document.getElementById("ourTeam").removeChild(popUpChild);
+    }
+
+    popUpTitle.textContent = OurTeamData.informations[number].name;
+    popUpTitle.className = "popName";
+
+    popUpSubject.textContent = OurTeamData.informations[number].duties;
+    popUpSubject.className = "popDuty";
+
+    popUpText1.textContent = OurTeamData.informations[number].about;
+    popUpText1.className = "popText1";
+
+    popUpText2.textContent = OurTeamData.informations[number].about;
+    popUpText2.className = "popText2";
+
+    popUpChild.appendChild(popUpImage);
+    popUpChild.appendChild(popUpTitle);
+    popUpChild.appendChild(popUpSubject);
+    popUpChild.appendChild(popUpText1);
+    popUpChild.appendChild(popUpText2);
+    popUpChild.appendChild(popUpIcon);
+    
+
+    document.getElementById("ourTeam").appendChild(popUpChild);
+  };
+
+  const addMember = () => {
+    const collection = members.map((cur, index) => {
+      return (
+        <div onClick={() => popUp(cur)} style={{ cursor: "pointer" }} key={index}>
+          <img alt="2" src={OurTeamData.images[cur]} className="memberImg" />
+          <div className="memberName">{OurTeamData.informations[cur].name}</div>
+          <div className="memberRole">
+            {OurTeamData.informations[cur].duties}
+          </div>
+        </div>
+      );
+    });
+    return collection;
+  };
   return (
     <div className="ourTeamEverything" id="ourTeam">
       <div className="secondLine"></div>
@@ -29,49 +93,10 @@ export const OurTeam = () => {
         alt="backgroundImage"
         src={background}
       />
-      <div className="ourTeamMemebers">
-        <div>
-          <img alt="1" src={member3} className="memberImg" />
-          <div className="memberName">Lucie Mcmahon</div>
-          <div className="memberRole">ceo</div>
-        </div>
-        <div>
-          <img alt="2" src={member5} className="memberImg" />
-          <div className="memberName">Marley Nichols</div>
-          <div className="memberRole">creator</div>
-        </div>
-        <div>
-          <img alt="3" src={member1} className="memberImg" />
-          <div className="memberName">Jennifer Powers</div>
-          <div className="memberRole">designer</div>
-        </div>
-        <div>
-          <img alt="4" src={member7} className="memberImg" />
-          <div className="memberName">Safiya Holder</div>
-          <div className="memberRole">it engineer</div>
-        </div>
-        <div>
-          <img alt="5" src={member4} className="memberImg" />
-          <div className="memberName">Lucie Mcmahon</div>
-          <div className="memberRole">ceo</div>
-        </div>
-        <div>
-          <img alt="6" src={member6} className="memberImg" />
-          <div className="memberName">Marley Nichols</div>
-          <div className="memberRole">creator</div>
-        </div>
-        <div>
-          <img alt="7" src={member2} className="memberImg" />
-          <div className="memberName">Jennifer Powers</div>
-          <div className="memberRole">designer</div>
-        </div>
-        <div>
-          <img alt="8" src={member8} className="memberImg" />
-          <div className="memberName">Safiya Holder</div>
-          <div className="memberRole">it engineer</div>
-        </div>
+      <div className="ourTeamMemebers">{addMember()}</div>
+      <div className="ourTeamButton" onClick={toTeam}>
+        All
       </div>
-      <div className="ourTeamButton" onClick={toTeam}> All </div>
     </div>
   );
 };

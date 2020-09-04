@@ -1,33 +1,39 @@
 .nav {
-    width: 70vw;
-    height: 7vh;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 9vh;
+  z-index: 4;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .topBarContainer {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex !important;
+  justify-content: space-evenly;
+  width: 70vw;
 }
 
 .topBarLinks {
-    margin: 20px 10px 0px 10px;
-    font-weight: 600;
-    font-size: 1vw;
-    line-height: 2vw;
-    text-transform: uppercase;
-    cursor: pointer;
+  margin: 20px 10px 0px 10px;
+  font-weight: 600;
+  font-size: 1vw;
+  line-height: 2vw;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 @media only screen and (max-device-width: 500px) {
-    .icon {
-        font-size: 60px !important;
-    }
-    .social {
-        width: 60px;
-        height: 60px;
-    }
-    .copyright {
-        width: 50vw;
-        font-size: 30px !important;
-        line-height: 30px !important;
-    }
+  .icon {
+    font-size: 60px !important;
+  }
+  .social {
+    width: 60px;
+    height: 60px;
+  }
+  .copyright {
+    width: 50vw;
+    font-size: 30px !important;
+    line-height: 30px !important;
+  }
 }
