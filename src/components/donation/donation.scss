@@ -32,6 +32,23 @@
     width: 16vw;
 }
 
+@media only screen and (max-device-width: 1100px) {
+    .donateTitle {
+        width: 60vw;
+        font-weight: 500;
+        font-size: 5vw;
+        line-height: 7vw;
+        margin-bottom: 3vw;
+    }
+
+    .donateText {
+        max-width: 61vw;
+        font-weight: 300;
+        font-size: 1.7vw;
+        line-height: 200%;
+    }
+}
+
 @media only screen and (max-device-width: 500px) {
     .donateTitle {
         width: 450px;

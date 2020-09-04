@@ -66,14 +66,17 @@ export const Project = () => {
             We are focused on launching a rocket to break the student altitude
             record of 330,000 feet, reaching the Kármán line, which is
             considered the border between Earth’s atmosphere and outer space.
-            Designing, building and launching a rocket of this magnitude faces a
-            serious financial obstacle.
+            Designing,
+            building and launching a rocket of this magnitude faces a serious
+            financial obstacle.
           </div>
           <div onClick={callPopUp} className="readMore">
             Read more
           </div>
         </div>
-        <img src={projectImage} alt="project" className="aboutImage" />
+        <div>
+          <img src={projectImage} alt="project" className="aboutImage" />
+        </div>
       </div>
     </div>
   );

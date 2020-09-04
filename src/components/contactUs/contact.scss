@@ -54,6 +54,43 @@
     margin-bottom: 150px;
 }
 
+@media only screen and (max-device-width: 1100px) {
+    .contactNameEmail {
+        font-size: 1.8vw;
+        line-height: 2.1vw;
+        width: 90vw;
+        padding: 3vw;
+        padding-left: 3vw !important;
+    }
+    
+    .contactLineGreen {
+        opacity: 0.6;
+        width: 95vw;
+    }
+    .contactLine {
+        width: 95vw;
+        opacity: 0.6;
+    }
+
+    .contactMessage {
+        font-size: 1.8vw;
+        line-height: 1.2vw;
+        width: 95vw;
+        height: 26vw;
+        margin-top: 7vw;
+        padding: 1.1vw;
+    }
+    
+    .contactButton {
+        font-size: 23px;
+        line-height: 25px;
+        width: 95vw;
+        height: 60px;
+        margin-top: 5vw;
+        margin-bottom: 150px;
+    }
+}
+
 
 @media only screen and (max-device-width: 500px) {
     .contactLineGreen {

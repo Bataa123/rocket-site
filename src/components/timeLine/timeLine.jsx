@@ -33,14 +33,7 @@ export const TimeLine = () => {
           universities
         </div>
         <div>
-          <p
-            style={{
-              textTransform: "uppercase",
-              fontSize: "1.2vw",
-              margin: "0",
-              textAlign: "right",
-            }}
-          >
+          <p className="launchDay">
             launch day
           </p>
           <p
@@ -62,6 +55,7 @@ export const TimeLine = () => {
             src={left}
             alt="left arrow"
             style={{ marginRight: "20px", width: "2.4vw", cursor: "pointer" }}
+            className="leftArrow"
             onClick={() => setWich(wich === 1 ? 1 : wich - 2)}
           />
           <img src={rocket} alt="rocket" className="timeRocket" id="rocket" />

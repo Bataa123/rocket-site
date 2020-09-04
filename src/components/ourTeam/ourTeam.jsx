@@ -85,7 +85,7 @@ export const OurTeam = () => {
       <div className="secondLine"></div>
       <div className="ourTeamTitle">Our Team</div>
       <div className="ourTeamText">
-        20+ Students From Across The globe, ranging from High School Students to
+        20+ Students From Across The globe, ranging from High Schooaml Students to
         Ph.D. candidates at some of the world’s most prestigious universities
       </div>
       <img
