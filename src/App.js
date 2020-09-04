@@ -13,6 +13,7 @@ import { Donation } from './components/donation/donation';
 import { Contact } from './components/contactUs/conact';
 import { OurTeam } from './components/ourTeam/ourTeam';
 import { TimeLine } from './components/timeLine/timeLine';
+import { OurTeamPage } from './components/ourTeamPage/ourTeamPage';
 
 function App() {
   return (
@@ -31,10 +32,7 @@ function App() {
             <Footer />
           </Route>
           <Route path="/ourTeam">
-            <div
-              style={{ fontSize: '50px', color: 'white', height: '100vh', margin: "auto", display: 'block', fontFamily: "Montserrat" }}
-            >We are working on it
-            </div>
+            <OurTeamPage />
           </Route>
         </Switch>
       </Router>
