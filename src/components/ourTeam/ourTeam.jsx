@@ -76,6 +76,7 @@ export const OurTeam = () => {
     const collection = members.map((cur, index) => {
       return (
         <div
+          className={`member${index}`}
           onClick={() => popUp(cur)}
           style={{ cursor: "pointer" }}
           key={index}
