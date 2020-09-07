@@ -32,12 +32,12 @@ export const TimeLine = () => {
           to Ph.D. candidates at some of the world’s most prestigious
           universities
         </div>
-        <div>
+        <div className="launch">
           <p className="launchDay">
             launch day
           </p>
-          <p
-            style={{ color: "#00B65F", fontSize: "1.5vw", marginTop: "0.8vw" }}
+          <p className="day"
+            style={{ color: "#00B65F", fontSize: "1.5vw", marginTop: "0.8vw" }} 
           >
             2020 / 08 / 21
           </p>

@@ -1,10 +1,27 @@
+.sideBar {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  width: 85vw;
+  justify-content: space-between;
+}
+
+
 .nav {
+  position: fixed;
   display: flex;
   justify-content: center;
   width: 100vw;
   height: 9vh;
   z-index: 4;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.MuiDrawer-paperAnchorRight{
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  width: 50vw;
 }
 
 .topBarContainer {
@@ -14,25 +31,110 @@
 }
 
 .topBarLinks {
-  margin: 20px 10px 0px 10px;
+  display: flex;
+  align-items: center;
   font-weight: 600;
   font-size: 1vw;
   line-height: 2vw;
   text-transform: uppercase;
   cursor: pointer;
 }
+.makeStyles-list-1{
+  width: 90% !important;
+  height: 100vh !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.MuiDrawer-paperAnchorRight{
+  background-color: black !important;
+  color: white !important;
+  width: 20vw;
+}
+.MuiTypography-body1{
+  font-size: 1.2vw !important;
+  padding: 1.5vw 0 1.5vw 3.5vw;
+  width: 90%;
+  text-transform: uppercase;
+  font-family: Montserrat !important;
+}
+.social {
+  width: 4.7vw;
+  height: 4.7vh;
+}
 
-@media only screen and (max-device-width: 500px) {
+@media only screen and (max-device-width: 1100px) {
+  .gobi{
+    font-size: 3.5vw;
+  }
   .icon {
     font-size: 60px !important;
   }
   .social {
-    width: 60px;
-    height: 60px;
+    width: 6vw;
+    height: 6vh;
   }
   .copyright {
     width: 50vw;
     font-size: 30px !important;
     line-height: 30px !important;
+  }
+  .makeStyles-list-1{
+    width: 90% !important;
+    height: 100vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .MuiDrawer-paperAnchorRight{
+    background-color: black !important;
+    color: white !important;
+    width: 55vw;
+  }
+  .MuiTypography-body1{
+    font-size: 3vw !important;
+    padding: 4vw 0 3vw 5vw;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-family: Montserrat !important;
+  }
+}
+
+@media only screen and (max-device-width: 500px) {
+  .gobi{
+    font-size: 3.5vw;
+  }
+  .icon {
+    font-size: 60px !important;
+  }
+  .social {
+    width: 70px;
+    height: 70px;
+  }
+  .copyright {
+    width: 50vw;
+    font-size: 30px !important;
+    line-height: 30px !important;
+  }
+  .makeStyles-list-1{
+    width: 100% !important;
+    height: 100vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .MuiDrawer-paperAnchorRight{
+    background-color: black !important;
+    color: white !important;
+    width: 55vw;
+  }
+  .MuiTypography-body1{
+    font-size: 4vw !important;
+    padding: 50px 0 50px 55px;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-family: Montserrat !important;
   }
 }

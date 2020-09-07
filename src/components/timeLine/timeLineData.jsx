@@ -10,7 +10,7 @@ import rocket9 from "../../images&icons/time/9.jpg";
 
 export const data = {
   1: {
-    date: "2020 / 08 / 21",
+    date: "2020 / 02 / 22",
     title: "Project starts",
     text1:
       "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",

@@ -76,15 +76,16 @@
   display: grid;
   justify-content: center;
   grid-template-rows: 4vw 10vw repeat(3, 7vw) 3vw 4vw;
-  grid-template-columns: repeat(3, 23vw);
+  grid-template-columns: repeat(1, 23vw);
   grid-template-areas:
     ". . ."
     ". . cancel"
-    "image text1 text1"
-    "image text2 text2"
-    "image text2 text2"
+    "image "
     "name . ."
-    "duty . .";
+    "duty . ."
+    "text1 text1"
+    "text2 text2"
+    "text2 text2";
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -242,13 +243,29 @@
   }
 
   .ourTeamButton {
-    width: 22vw;
-    height: 4vh;
+    width: 23vw;
+    height: 5vh;
     font-size: 3.5vw;
     line-height: 4vw;
   }
 
   .visibilityPhone {
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+  }
+  
+  .member3 {
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+  }
+  .member4 {
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+  }
+  .member5 {
     visibility: hidden;
     overflow: hidden;
     height: 0;

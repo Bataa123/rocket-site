@@ -271,6 +271,7 @@
   .timeLineStoryContainer {
     display: flex;
     width: 100%;
+    flex-direction: row;
     justify-content: space-between;
     margin-top: 7vw;
   }
@@ -299,6 +300,182 @@
     font-size: 1vw;
     width: 34vw;
     margin-top: 1.3vw;
+  }
+
+  .timeBackground2 {
+    position: absolute;
+    right: 16vw;
+    top: 13.6vw;
+    z-index: 1;
+    width: 16vw;
+  }
+}
+
+
+
+
+
+@media only screen and (max-device-width: 500px) {
+  .timeline {
+    width: 88vw;
+
+    .secondLine {
+      margin-top: 10vw;
+    }
+  }
+  .launch{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 60px;
+    .launchDay {
+      margin-top: 50px;
+      font-size: 33px;
+      text-align: left;
+      margin: 0 30px 0 0;
+  
+    }
+    .day {
+      margin: 0 !important;
+      font-size: 40px !important;
+    }
+  }
+  
+
+  .timeline-head {
+    font-size: 80px;
+    line-height: 100px;
+  }
+
+  .timelineText {
+    margin-top: 45px;
+    width: 88vw;
+    font-weight: 100;
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .timeImage {
+    width: 25vw;
+  }
+
+  .timeline-first-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+
+  .timelineMain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vw;
+  }
+
+  .lineContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .line {
+    height: 1.4px;
+    width: 7vw;
+    background-color: black;
+  }
+
+  .lineLeft,
+  .lineRight {
+    width: 4vw;
+  }
+
+  .lineLeft {
+    background-color: #00c167;
+  }
+
+  .timeDot {
+    height: 0.65vw;
+    width: 0.65vw;
+    border-radius: 50%;
+    background-color: #afafaf;
+  }
+
+  .active {
+    background-color: #00c167 !important;
+  }
+
+  .firstRow {
+    margin: 0 0 1.8vw -7vw;
+    display: flex;
+    width: auto;
+  }
+
+  .secondRow {
+    margin: 1.8vw 0 0 -5vw;
+    display: flex;
+    width: auto;
+  }
+  .rowContent {
+    font-family: Montserrat;
+    font-size: 1.06vw;
+    line-height: 1.4vw;
+    text-transform: uppercase;
+    margin-left: 3.8vw;
+  }
+
+  .timeRocket {
+    position: absolute;
+    left: 7.4vw;
+    transition: 2s;
+  }
+
+  .pointer {
+    cursor: pointer;
+  }
+
+  .timeBackground1 {
+    position: absolute;
+    top: 5vh;
+    left: -15vw;
+  }
+
+  .timeLineStoryContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 7vw;
+  }
+
+  .timeLineStoryImage {
+    object-fit: cover;
+    margin-top: 100px;
+    height: 50vh;
+    width: 100%;
+  }
+
+  .timeLineDate {
+    color: #00c167;
+    font-size: 1.4vw;
+    line-height: 1.6vw;
+    margin: 1vw 0 1vw 0;
+  }
+
+  .timeLineTitle {
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 50px 0 60px 0;
+  }
+
+  .timeLineText {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 60px;
+    width: auto;
+    // margin-top: 100px;
   }
 
   .timeBackground2 {
