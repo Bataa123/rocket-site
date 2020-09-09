@@ -82,9 +82,11 @@ export const OurTeam = () => {
           key={index}
         >
           <img alt="2" src={OurTeamData.images[cur]} className="memberImg" />
-          <div className="memberName">{OurTeamData.informations[cur].name}</div>
-          <div className="memberRole">
-            {OurTeamData.informations[cur].duties}
+          <div>
+            <div className="memberName">{OurTeamData.informations[cur].name}</div>
+            <div className="memberRole">
+              {OurTeamData.informations[cur].duties}
+            </div>
           </div>
         </div>
       );
@@ -100,7 +102,7 @@ export const OurTeam = () => {
         to Ph.D. candidates at some of the world’s most prestigious universities
       </div>
       <img
-        style={{ position: "absolute", zIndex: "1" }}
+        style={{ position: "absolute", zIndex: "1", width: '100%', height: '100%' }}
         alt="backgroundImage"
         src={background}
       />

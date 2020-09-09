@@ -76,16 +76,15 @@
   display: grid;
   justify-content: center;
   grid-template-rows: 4vw 10vw repeat(3, 7vw) 3vw 4vw;
-  grid-template-columns: repeat(1, 23vw);
+  grid-template-columns: repeat(3, 23vw);
   grid-template-areas:
-    ". . ."
-    ". . cancel"
-    "image "
-    "name . ."
-    "duty . ."
-    "text1 text1"
-    "text2 text2"
-    "text2 text2";
+  ". . ."
+  ". . cancel"
+  "image text1 text1"
+  "image text2 text2"
+  "image text2 text2"
+  "name . ."
+  "duty . .";
   background-color: rgba(0, 0, 0, 0.8);
 }
 
