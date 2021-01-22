@@ -2,8 +2,6 @@ import React from "react";
 import instagram from "../assets/linkedIcons/instagram.svg";
 import facebook from "../assets/linkedIcons/facebook.svg";
 import youtube from "../assets/linkedIcons/youtube.svg";
-import background1 from "../assets/backgrounds/footerBackground1.svg";
-import background2 from "../assets/backgrounds/footerBackground2.svg";
 
 export const Footer = () => {
   const jumpTo = (path) => window.open(path, "_blank");
@@ -35,10 +33,6 @@ export const Footer = () => {
       </div>
       <div className="footerLine"></div>
       <div className="copyright">© Copyright 2020</div>
-      <div>
-        <img className="footerBc1" alt="background1" src={background1} />
-        <img className="footerBc2" alt="background2" src={background2} />
-      </div>
     </div>
   );
 };

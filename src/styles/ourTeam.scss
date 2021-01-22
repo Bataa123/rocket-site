@@ -9,6 +9,7 @@
 }
 
 .ourTeamTitle {
+  z-index: 1;
   font-family: Montserrat;
   font-size: 2.3vw;
   font-weight: 600;
@@ -17,6 +18,7 @@
 }
 
 .ourTeamText {
+  z-index: 1;
   margin-top: 2vh;
   font-family: Raleway;
   font-size: 1.3vw;
@@ -78,13 +80,13 @@
   grid-template-rows: 4vw 10vw repeat(3, 7vw) 3vw 4vw;
   grid-template-columns: repeat(3, 23vw);
   grid-template-areas:
-  ". . ."
-  ". . cancel"
-  "image text1 text1"
-  "image text2 text2"
-  "image text2 text2"
-  "name . ."
-  "duty . .";
+    ". . ."
+    ". . cancel"
+    "image text1 text1"
+    "image text2 text2"
+    "image text2 text2"
+    "name . ."
+    "duty . .";
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -253,7 +255,7 @@
     overflow: hidden;
     height: 0;
   }
-  
+
   .member3 {
     visibility: hidden;
     overflow: hidden;

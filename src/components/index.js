@@ -8,5 +8,4 @@ export * from "./ourSponsor";
 export * from "./ourTeam";
 export * from "./sidebar";
 export * from "./timeLine";
-export * from "./topBar";
 export * from "./universities";

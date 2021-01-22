@@ -7,6 +7,7 @@
 
 .everything {
     width: 100vw;
+    height: 50vw;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -21,8 +22,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // width: 40vw;
-    height: 23vh;
     color: white;
     font-family: "Montserrat", sans-serif;
     z-index: 2;
@@ -45,6 +44,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 25px;
 }
 
 .projectText {
@@ -61,8 +61,8 @@
     font-size: 2.1vw;
     font-weight: 600;
     line-height: 2.2vw;
-    width: 165px;
     text-transform: uppercase;
+    margin-bottom: 25px;
 }
 
 .aboutImage {
@@ -85,11 +85,12 @@
     color: white;
 }
 .popUp {
-    max-width: 600px;
+    max-width: 80vw;
     font-family: "Montserrat", sans-serif;
     line-height: 173.6%;
     text-align: center;
     transition: 1s;
+    margin: 10px 0 10px 0;
 }
 .secondHeadline {
     display: flex;
@@ -118,7 +119,6 @@
 }
 @media only screen and (max-width: 1499px) {
     .allText {
-        height: 20vh !important;
         width: 370px;
     }
     .aboutText {
@@ -136,10 +136,6 @@
         font-size: 3.7vw;
         line-height: 4vw;
         margin: 92px 0 23px;
-    }
-    .allText {
-        height: 24vh !important;
-        // width: 340px;
     }
     .projectText {
         margin: auto 0px auto 6vw;
@@ -195,7 +191,7 @@
         .everything {
             display: flex;
             flex-direction: column;
-            // width: 100vw;
+            height: unset;
             .allText {
                 width: 80vw;
                 display: flex;

@@ -1,10 +1,8 @@
 import React from "react";
-import background from "../assets/backgrounds/donateBackground.svg";
 
 export const Donation = () => {
   return (
     <div id="donation" style={{position: "relative"}}>
-      <img className="donationBackground" alt="background" src={background} />
       <div className="headLine">DONATE</div>
       <div className="zuraas"></div>
       <div className="donateLeft">

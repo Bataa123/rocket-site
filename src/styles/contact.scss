@@ -42,6 +42,7 @@
 }
 
 .contactButton {
+    cursor: pointer;
     font-size: 20px;
     line-height: 24px;
     color: white;
@@ -62,7 +63,7 @@
         padding: 3vw;
         padding-left: 3vw !important;
     }
-    
+
     .contactLineGreen {
         opacity: 0.6;
         width: 95vw;
@@ -80,7 +81,7 @@
         margin-top: 7vw;
         padding: 1.1vw;
     }
-    
+
     .contactButton {
         font-size: 23px;
         line-height: 25px;
@@ -90,7 +91,6 @@
         margin-bottom: 150px;
     }
 }
-
 
 @media only screen and (max-device-width: 500px) {
     .contactLineGreen {

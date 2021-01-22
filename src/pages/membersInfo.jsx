@@ -1,5 +1,4 @@
 import React from "react";
-import background from "../assets/backgrounds/ourTeamBackground.svg";
 import cancel from "../assets/linkedIcons/cancel.svg";
 import { useFireStoreCol } from "../hooks/useFirebase";
 
@@ -71,11 +70,6 @@ export const MembersInfo = () => {
         20+ Students From Across The globe, ranging from High Schooaml Students
         to Ph.D. candidates at some of the world’s most prestigious universities
       </div>
-      <img
-        style={{ position: "absolute", zIndex: "1" }}
-        alt="backgroundImage"
-        src={background}
-      />
       <div className="ourTeamPageMemebers">{addMember()}</div>
     </div>
   );
