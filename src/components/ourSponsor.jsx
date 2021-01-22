@@ -1,14 +1,13 @@
 import React from "react";
-import "./ourSponsor.scss";
-import miat from "../../images&icons/sponsor/miatSponsor.png";
-import mosta from "../../images&icons/sponsor/mostaSponsor.png";
-import nomt from "../../images&icons/sponsor/nomtSponsor.png";
-import n from "../../images&icons/sponsor/nSponsor.png";
-import background from "../../images&icons/backgrounds/sponsorBackground.svg";
-import background1 from "../../images&icons/backgrounds/sponsorBackground1.svg";
+import miat from "../assets/sponsor/miatSponsor.png";
+import mosta from "../assets/sponsor/mostaSponsor.png";
+import nomt from "../assets/sponsor/nomtSponsor.png";
+import n from "../assets/sponsor/nSponsor.png";
+import background from "../assets/backgrounds/sponsorBackground.svg";
+import background1 from "../assets/backgrounds/sponsorBackground1.svg";
 
 
-const OurSponsor = () => {
+export const OurSponsor = () => {
   return (
     <div className="ourSponsor" style={{ position: "relative" }}>
       <div id="sponsor" className="headLine">
@@ -34,5 +33,3 @@ const OurSponsor = () => {
     </div>
   );
 };
-
-export default OurSponsor;

@@ -1,6 +1,5 @@
 import React from "react";
-import { db } from "../firebase.js";
-import "./contact.scss";
+import { db } from "./firebase";
 
 export const Contact = () => {
   const submit = () => {
@@ -22,11 +21,11 @@ export const Contact = () => {
               text: text,
             })
             .then(() => {
-              document.getElementById("name").value = '';
-              document.getElementById("email").value = '';
-              document.getElementById("text").value = '';
-              alert('Your message sent')
-            })
+              document.getElementById("name").value = "";
+              document.getElementById("email").value = "";
+              document.getElementById("text").value = "";
+              alert("Your message sent");
+            });
         });
   };
   return (
@@ -35,7 +34,11 @@ export const Contact = () => {
       <div className="zuraas"></div>
       <input id="name" placeholder="NAME" className="contactNameEmail"></input>
       <div className="contactLineGreen"></div>
-      <input id="email" placeholder="EMAIL" className="contactNameEmail"></input>
+      <input
+        id="email"
+        placeholder="EMAIL"
+        className="contactNameEmail"
+      ></input>
       <div className="contactLine"></div>
       <input id="text" placeholder="MESSAGE" className="contactMessage"></input>
       <button className="contactButton" onClick={() => submit()}>

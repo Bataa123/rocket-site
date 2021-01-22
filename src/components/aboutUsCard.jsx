@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import CancelIcon from "@material-ui/icons/Cancel";
-import projectImage from "../../../images&icons/launchRocket.jpg";
-import TextImage from "../../../images&icons/backgrounds/TextImage.svg";
+import projectImage from "../assets/launchRocket.jpg";
+import TextImage from "../assets/backgrounds/TextImage.svg";
 
-export const Project = () => {
+export const AboutUsCard = ({ title, description, isLeft }) => {
   const [call, setCall] = useState(false);
 
   const callPopUp = () => {
@@ -11,12 +11,12 @@ export const Project = () => {
   };
 
   useEffect(() => {
-    const project = document.getElementById("getCenter");
+    const project = document.getElementById("anotherCenter");
     project.style.width = call === true ? "100vw" : "0px";
     project.style.height = call === true ? "90vh" : "0px";
-    document.getElementById("ourProjectTitle").style.fontSize =
+    document.getElementById("anotherProjectTitle").style.fontSize =
       call === true ? "2vw" : "0px";
-    document.getElementById("ourProjectText").style.fontSize =
+    document.getElementById("anotherProjectText").style.fontSize =
       call === true ? "1.3vw" : "0px";
   }, [call]);
 
@@ -25,11 +25,11 @@ export const Project = () => {
       <div
         style={{ visibility: call === true ? "visible" : "hidden" }}
         className="getCenter"
-        id="getCenter"
+        id="anotherCenter"
       >
         <div className="secondHeadline">
           <div
-            id="ourProjectTitle"
+            id="anotherProjectTitle"
             className="aboutHeadline onlyPhone"
             style={{ width: "auto" }}
           >
@@ -45,7 +45,7 @@ export const Project = () => {
             onClick={callPopUp}
           />
         </div>
-        <div id="ourProjectText" className="popUp">
+        <div id="anotherProjectText" className="popUp">
           We are focused on launching a rocket to break the student altitude
           record of 330,000 feet, reaching the Kármán line, which is considered
           the border between Earth’s atmosphere and outer space. Designing,
@@ -55,28 +55,32 @@ export const Project = () => {
         </div>
       </div>
 
-      <img src={TextImage} alt="TextImage" className="TextImageLeft" />
+      <img
+        src={TextImage}
+        alt="TextImage"
+        className={isLeft ? "TextImageRight" : "TextImageLeft"}
+      />
       <div className="everything" id="ourProject">
-        <div className="allText projectText">
+        {isLeft ? (
+          <img src={projectImage} alt="project" className="aboutImage" />
+        ) : (
+          <></>
+        )}
+        <div className={`allText ${isLeft ? "aboutText" : "projectText"}`}>
           <div className="headlineWithLine">
             <div className="secondLine"></div>
-            <div className="aboutHeadline">our project</div>
+            <div className="aboutHeadline">{title}</div>
           </div>
-          <div className="text">
-            We are focused on launching a rocket to break the student altitude
-            record of 330,000 feet, reaching the Kármán line, which is
-            considered the border between Earth’s atmosphere and outer space.
-            Designing,
-            building and launching a rocket of this magnitude faces a serious
-            financial obstacle.
-          </div>
-          <div onClick={callPopUp} className="readMore">
+          <div className="text">{description}</div>
+          {/* <div onClick={callPopUp} className="readMore">
             Read more
-          </div>
+          </div> */}
         </div>
-        <div>
+        {isLeft ? (
+          <></>
+        ) : (
           <img src={projectImage} alt="project" className="aboutImage" />
-        </div>
+        )}
       </div>
     </div>
   );

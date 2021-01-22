@@ -1,6 +1,5 @@
 import React from "react";
-import "./donation.scss";
-import background from "../../images&icons/backgrounds/donateBackground.svg";
+import background from "../assets/backgrounds/donateBackground.svg";
 
 export const Donation = () => {
   return (

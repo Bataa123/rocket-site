@@ -1,10 +1,9 @@
 import React from "react";
-import "./footer.scss";
-import instagram from "../../images&icons/linkedIcons/instagram.svg";
-import facebook from "../../images&icons/linkedIcons/facebook.svg";
-import youtube from "../../images&icons/linkedIcons/youtube.svg";
-import background1 from "../../images&icons/backgrounds/footerBackground1.svg";
-import background2 from "../../images&icons/backgrounds/footerBackground2.svg";
+import instagram from "../assets/linkedIcons/instagram.svg";
+import facebook from "../assets/linkedIcons/facebook.svg";
+import youtube from "../assets/linkedIcons/youtube.svg";
+import background1 from "../assets/backgrounds/footerBackground1.svg";
+import background2 from "../assets/backgrounds/footerBackground2.svg";
 
 export const Footer = () => {
   const jumpTo = (path) => window.open(path, "_blank");

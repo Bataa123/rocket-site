@@ -1,29 +1,27 @@
 import React, { useState, useEffect } from "react";
-import "./timeLine.scss";
-import left from "../../images&icons/linkedIcons/leftArrow.svg";
-import right from "../../images&icons/linkedIcons/rightArrow.svg";
-import rocket from "../../images&icons/rocket.svg";
-import background1 from "../../images&icons/backgrounds/timeBackground1.svg";
+import left from "../assets/linkedIcons/leftArrow.svg";
+import right from "../assets/linkedIcons/rightArrow.svg";
+import rocket from "../assets/rocket.svg";
 import { TimeLineHistory } from "./timeLineHistory";
 
 export const TimeLine = () => {
-  // const [wich, setWich] = useState(1);
+  const [wich, setWich] = useState(1);
 
-  // useEffect(() => {
-  //   document.getElementById("rocket").style.left =
-  //     7.6 * ((wich - (wich % 2)) / 2 + 1) + "vw";
-  //   for (var i = 0; i < 16; i++) {
-  //     if (i % 2 === 0)
-  //       document.getElementById(i).style.backgroundColor =
-  //         i < wich ? "#00C167" : "black";
-  //     else
-  //       document.getElementById(i).style.backgroundColor =
-  //         i <= wich ? "#00C167" : "#AFAFAF";
-  //   }
-  // }, [wich]);
+  useEffect(() => {
+    document.getElementById("rocket").style.left =
+      7.6 * ((wich - (wich % 2)) / 2 + 1) + "vw";
+    for (var i = 0; i < 16; i++) {
+      if (i % 2 === 0)
+        document.getElementById(i).style.backgroundColor =
+          i < wich ? "#00C167" : "black";
+      else
+        document.getElementById(i).style.backgroundColor =
+          i <= wich ? "#00C167" : "#AFAFAF";
+    }
+  }, [wich]);
   return (
     <div className="timeline" id="timeLine" style={{ position: "relative" }}>
-      <img src={background1} alt="background" className="timeBackground1" />
+      {/* <img src={background1} alt="background" className="timeBackground1" />
       <div className="secondLine"></div>
       <div className="timeline-head"> timeline </div>
       <div className="timeline-first-row">
@@ -42,8 +40,8 @@ export const TimeLine = () => {
             2020 / 08 / 21
           </p>
         </div>
-      </div>
-      {/* <div className="timelineMain">
+      </div> */}
+      <div className="timelineMain">
         <div className="firstRow">
           <div className="rowContent">Project starts</div>
           <div className="rowContent">Complete the assembly</div>
@@ -114,7 +112,7 @@ export const TimeLine = () => {
           </div>
         </div>
       </div>
-      <TimeLineHistory id={(wich - (wich % 2)) / 2 + 1}/> */}
+      <TimeLineHistory id={(wich - (wich % 2)) / 2 + 1} />
     </div>
   );
 };

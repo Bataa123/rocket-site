@@ -1,19 +1,18 @@
 import React from "react";
-import "./universities.scss";
-import berkeley from "../../images&icons/universities/berkeleyUniversity.png";
-import columbia from "../../images&icons/universities/columbiaUniversity.png";
-import cornell from "../../images&icons/universities/cornellUniversity.png";
-import duke from "../../images&icons/universities/dukeUniversity.png";
-import harvard from "../../images&icons/universities/harvardUniversity.png";
-import mit from "../../images&icons/universities/mitUniversity.png";
-import muis from "../../images&icons/universities/muisUniversity.png";
-import penn from "../../images&icons/universities/pennUniversity.png";
-import rutgers from "../../images&icons/universities/rutgersUniversity.png";
-import tokyo from "../../images&icons/universities/tokyoUniversity.png";
-import villnova from "../../images&icons/universities/villnovaUniversity.png";
-import shutis from "../../images&icons/universities/shutis.png"
+import berkeley from "../assets/universities/berkeleyUniversity.png";
+import columbia from "../assets/universities/columbiaUniversity.png";
+import cornell from "../assets/universities/cornellUniversity.png";
+import duke from "../assets/universities/dukeUniversity.png";
+import harvard from "../assets/universities/harvardUniversity.png";
+import mit from "../assets/universities/mitUniversity.png";
+import muis from "../assets/universities/muisUniversity.png";
+import penn from "../assets/universities/pennUniversity.png";
+import rutgers from "../assets/universities/rutgersUniversity.png";
+import tokyo from "../assets/universities/tokyoUniversity.png";
+import villnova from "../assets/universities/villnovaUniversity.png";
+import shutis from "../assets/universities/shutis.png"
 
-const Universities = () => {
+export const Universities = () => {
   return (
     <>
       <div id="unis" className="headLine">
@@ -37,5 +36,3 @@ const Universities = () => {
     </>
   );
 };
-
-export default Universities;

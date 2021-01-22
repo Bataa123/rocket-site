@@ -1,26 +1,16 @@
 import React from "react";
-import "./ourTeam.scss";
-import background from "../../images&icons/backgrounds/ourTeamBackground.svg";
+import background from "../assets/backgrounds/ourTeamBackground.svg";
 import { useHistory } from "react-router-dom";
-import { OurTeamData } from "./ourTeamData";
-import cancel from "../../images&icons/linkedIcons/cancel.svg";
+import cancel from "../assets/linkedIcons/cancel.svg";
+import { useFireStoreCol } from "../hooks/useFirebase";
 
 export const OurTeam = () => {
   const history = useHistory();
-  const members = [
-    "Marley",
-    "Lucie",
-    "Jennifer",
-    "Safiya",
-    "Nichols",
-    "Mcmahon",
-    "Powers",
-    "Holder",
-  ];
+  const members = useFireStoreCol("/members").collection;
 
   const toTeam = () => history.push("/ourTeam");
 
-  const popUp = (number) => {
+  const popUp = (cur) => {
     const popUpFather = document.createElement("div");
     const popUpChild = document.createElement("div");
     const popUpImage = document.createElement("img");
@@ -35,8 +25,8 @@ export const OurTeam = () => {
     popUpChild.className = "popUpMember";
     popUpChild.id = "popUpMember";
 
-    popUpImage.src = OurTeamData.images[number];
-    popUpImage.alt = number;
+    popUpImage.src = cur.image;
+    popUpImage.alt = cur.name;
     popUpImage.className = "popImage";
 
     popUpIcon.src = cancel;
@@ -47,16 +37,16 @@ export const OurTeam = () => {
       document.getElementById("ourTeam").removeChild(popUpChild);
     };
 
-    popUpTitle.textContent = OurTeamData.informations[number].name;
+    popUpTitle.textContent = cur.name;
     popUpTitle.className = "popName";
 
-    popUpSubject.textContent = OurTeamData.informations[number].duties;
+    popUpSubject.textContent = cur.role;
     popUpSubject.className = "popDuty";
 
-    popUpText1.textContent = OurTeamData.informations[number].about;
+    popUpText1.textContent = cur.description;
     popUpText1.className = "popText1";
 
-    popUpText2.textContent = OurTeamData.informations[number].about;
+    popUpText2.textContent = cur.description;
     popUpText2.className = "popText2";
 
     popUpChild.appendChild(popUpImage);
@@ -72,27 +62,15 @@ export const OurTeam = () => {
       .scrollIntoView({ behavior: "smooth" });
   };
 
-  const addMember = () => {
-    const collection = members.map((cur, index) => {
-      return (
-        <div
-          className={`member${index}`}
-          onClick={() => popUp(cur)}
-          style={{ cursor: "pointer" }}
-          key={index}
-        >
-          <img alt="2" src={OurTeamData.images[cur]} className="memberImg" />
-          <div>
-            <div className="memberName">{OurTeamData.informations[cur].name}</div>
-            <div className="memberRole">
-              {OurTeamData.informations[cur].duties}
-            </div>
-          </div>
-        </div>
-      );
-    });
-    return collection;
-  };
+  const addMember = () =>
+    members.map((cur, index) => (
+      <div onClick={() => popUp(cur)} style={{ cursor: "pointer" }} key={index}>
+        <img alt="2" src={cur.image} className="memberImg" />
+        <div className="memberName">{cur.name}</div>
+        <div className="memberRole">{cur.role}</div>
+      </div>
+    ));
+
   return (
     <div className="ourTeamEverything" id="ourTeam">
       <div className="secondLine"></div>
@@ -102,7 +80,12 @@ export const OurTeam = () => {
         to Ph.D. candidates at some of the world’s most prestigious universities
       </div>
       <img
-        style={{ position: "absolute", zIndex: "1", width: '100%', height: '100%' }}
+        style={{
+          position: "absolute",
+          zIndex: "1",
+          width: "100%",
+          height: "100%",
+        }}
         alt="backgroundImage"
         src={background}
       />
