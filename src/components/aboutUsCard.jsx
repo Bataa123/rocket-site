@@ -2,12 +2,26 @@ import React, { useState, useEffect } from "react";
 import CancelIcon from "@material-ui/icons/Cancel";
 import projectImage from "../assets/launchRocket.jpg";
 import TextImage from "../assets/backgrounds/TextImage.svg";
+import back1 from "../assets/backgrounds/back1.png";
+import back2 from "../assets/backgrounds/back2.png";
+import back3 from "../assets/backgrounds/back4.png";
 
-export const AboutUsCard = ({ title, description, isLeft }) => {
+export const AboutUsCard = ({ title, description, isLeft, item }) => {
   const [call, setCall] = useState(false);
 
   const callPopUp = () => {
     setCall(!call);
+  };
+
+  const getBackground = () => {
+    switch (item) {
+      case "1":
+        return back1;
+      case "2":
+        return back3;
+      case "3":
+        return back2;
+    }
   };
 
   useEffect(() => {
@@ -56,9 +70,11 @@ export const AboutUsCard = ({ title, description, isLeft }) => {
       </div>
 
       <img
-        src={TextImage}
+        src={getBackground()}
         alt="TextImage"
-        className={isLeft ? "TextImageRight" : "TextImageLeft"}
+        className={
+          isLeft ? "TextImage TextImageRight" : "TextImage TextImageLeft"
+        }
       />
       <div className="everything" id="ourProject">
         {isLeft ? (

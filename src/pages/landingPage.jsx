@@ -13,7 +13,9 @@ import {
 
 export const LandingPage = () => {
   return (
-    <div>
+    <div
+      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+    >
       <Header />
       <AboutUs />
       <OurTeam />

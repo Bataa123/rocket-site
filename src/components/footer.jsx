@@ -11,13 +11,13 @@ export const Footer = () => {
     <div className="footer">
       <div className="footerLinks">
         <img
-          style={{cursor: "pointer"}}
+          style={{ cursor: "pointer" }}
           onClick={() => jumpTo("https://www.youtube.com")}
           src={youtube}
           alt="youtube"
         />
         <img
-          style={{cursor: "pointer"}}
+          style={{ cursor: "pointer" }}
           onClick={() =>
             jumpTo(
               "https://www.facebook.com/20000m-above-the-Gobi-Desert-111550123772413/"
@@ -27,7 +27,7 @@ export const Footer = () => {
           alt="facebook"
         />
         <img
-          style={{cursor: "pointer"}}
+          style={{ cursor: "pointer" }}
           onClick={() => jumpTo("https://www.instagram.com/gobi.space/")}
           src={instagram}
           alt="instagram"

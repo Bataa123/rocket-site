@@ -22,7 +22,7 @@
     flex-direction: column;
     justify-content: space-between;
     // width: 40vw;
-    height: 36vh;
+    height: 23vh;
     color: white;
     font-family: "Montserrat", sans-serif;
     z-index: 2;
@@ -82,7 +82,7 @@
     justify-content: center;
     transition: 1s;
     z-index: 3;
-    color: white;   
+    color: white;
 }
 .popUp {
     max-width: 600px;
@@ -102,23 +102,23 @@
     justify-content: center;
 }
 
-.TextImageLeft {
-    width: 22vw;
+.TextImage {
+    width: 32vw;
     position: absolute;
-    left: 0;
     z-index: 1;
 }
 
+.TextImageLeft {
+    left: 0;
+}
+
 .TextImageRight {
-    width: 22vw;
-    position: absolute;
     right: 0;
-    transform: rotate(180deg);
-    z-index: 1;
+    transform: rotate(-20deg);
 }
 @media only screen and (max-width: 1499px) {
     .allText {
-        height: 30vh !important;
+        height: 20vh !important;
         width: 370px;
     }
     .aboutText {
@@ -141,17 +141,17 @@
         height: 24vh !important;
         // width: 340px;
     }
-    .projectText{
+    .projectText {
         margin: auto 0px auto 6vw;
     }
-    .aboutText{
+    .aboutText {
         margin: 6vh 0px 0px 57vw;
     }
-    .aboutHeadline{
+    .aboutHeadline {
         font-size: 32px;
         line-height: 32px;
     }
-    .readMore{
+    .readMore {
         font-size: 14px;
         width: 140px;
         height: 55px;
@@ -190,7 +190,7 @@
     .aboutText {
         position: unset;
     }
-    
+
     .aboutEvery {
         .everything {
             display: flex;
@@ -238,18 +238,18 @@
         flex-direction: column-reverse !important;
     }
     .onlyPhone {
-        font-size: 60px ;
+        font-size: 60px;
     }
     .aboutImage {
         width: 100vw;
         height: 50vh;
     }
     .getCenter {
-        height: 100vh ;
+        height: 100vh;
         .popUp {
             max-width: 600px;
             font-size: 35px;
-            line-height: 138.88% ;
+            line-height: 138.88%;
         }
     }
 }

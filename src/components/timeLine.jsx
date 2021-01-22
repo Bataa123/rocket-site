@@ -21,7 +21,6 @@ export const TimeLine = () => {
   }, [wich]);
   return (
     <div className="timeline" id="timeLine" style={{ position: "relative" }}>
-      {/* <img src={background1} alt="background" className="timeBackground1" />
       <div className="secondLine"></div>
       <div className="timeline-head"> timeline </div>
       <div className="timeline-first-row">
@@ -31,16 +30,15 @@ export const TimeLine = () => {
           universities
         </div>
         <div className="launch">
-          <p className="launchDay">
-            launch day
-          </p>
-          <p className="day"
-            style={{ color: "#00B65F", fontSize: "1.5vw", marginTop: "0.8vw" }} 
+          <p className="launchDay">launch day</p>
+          <p
+            className="day"
+            style={{ color: "#00B65F", fontSize: "1.5vw", marginTop: "0.8vw" }}
           >
             2020 / 08 / 21
           </p>
         </div>
-      </div> */}
+      </div>
       <div className="timelineMain">
         <div className="firstRow">
           <div className="rowContent">Project starts</div>

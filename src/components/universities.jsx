@@ -31,7 +31,7 @@ export const Universities = () => {
         <img alt="number6" src={mit} className="universityLogo"/>
         <img alt="number3" src={cornell} className="universityLogo"/>
         <img alt="number2" src={columbia} className="universityLogo"/>
-        <img alt="number12" src={shutis} className="universityLogo"/>
+        <img alt="number12" src={shutis} className="shutis"/>
       </div>
     </>
   );

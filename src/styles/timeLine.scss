@@ -120,6 +120,7 @@
 }
 
 .timeLineStoryImage {
+  background-size: cover;
   height: 18.1vw;
   width: 32.1vw;
   z-index: 2;
@@ -311,10 +312,6 @@
   }
 }
 
-
-
-
-
 @media only screen and (max-device-width: 500px) {
   .timeline {
     width: 88vw;
@@ -323,7 +320,7 @@
       margin-top: 10vw;
     }
   }
-  .launch{
+  .launch {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -334,14 +331,12 @@
       font-size: 33px;
       text-align: left;
       margin: 0 30px 0 0;
-  
     }
     .day {
       margin: 0 !important;
       font-size: 40px !important;
     }
   }
-  
 
   .timeline-head {
     font-size: 80px;
@@ -366,7 +361,6 @@
     justify-content: space-between;
     flex-direction: column;
   }
-
 
   .timelineMain {
     width: 100%;

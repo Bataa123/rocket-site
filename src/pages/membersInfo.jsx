@@ -15,7 +15,6 @@ export const MembersInfo = () => {
     const popUpTitle = document.createElement("p");
     const popUpSubject = document.createElement("p");
     const popUpText1 = document.createElement("p");
-    const popUpText2 = document.createElement("p");
 
     popUpFather.className = "popUpFather";
 
@@ -43,14 +42,10 @@ export const MembersInfo = () => {
     popUpText1.textContent = cur.description;
     popUpText1.className = "popText1";
 
-    popUpText2.textContent = cur.description;
-    popUpText2.className = "popText2";
-
     popUpChild.appendChild(popUpImage);
     popUpChild.appendChild(popUpTitle);
     popUpChild.appendChild(popUpSubject);
     popUpChild.appendChild(popUpText1);
-    popUpChild.appendChild(popUpText2);
     popUpChild.appendChild(popUpIcon);
 
     document.getElementById("ourTeam").appendChild(popUpChild);

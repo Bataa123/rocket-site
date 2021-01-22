@@ -40,7 +40,11 @@ export const Contact = () => {
         className="contactNameEmail"
       ></input>
       <div className="contactLine"></div>
-      <input id="text" placeholder="MESSAGE" className="contactMessage"></input>
+      <textarea
+        id="text"
+        placeholder="MESSAGE"
+        className="contactMessage"
+      ></textarea>
       <button className="contactButton" onClick={() => submit()}>
         SEND
       </button>

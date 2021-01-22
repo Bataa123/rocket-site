@@ -1,5 +1,4 @@
 import React from "react";
-import timeBackground2 from "../assets/backgrounds/timeBackground2.svg";
 import { useFireStoreDoc } from "../hooks/useFirebase";
 
 export const TimeLineHistory = ({ id }) => {
@@ -19,16 +18,12 @@ export const TimeLineHistory = ({ id }) => {
             </div>
           ))}
       </div>
-      <img
-        alt={id}
-        src={timeLineData && timeLineData.poster}
+      <div
+        style={{
+          backgroundImage: `url(${timeLineData && timeLineData.poster})`,
+        }}
         className="timeLineStoryImage"
-      />
-      <img
-        src={timeBackground2}
-        alt="timeBackground2"
-        className="timeBackground2"
-      />
+      ></div>
     </div>
   );
 };

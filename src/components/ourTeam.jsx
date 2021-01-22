@@ -1,5 +1,5 @@
 import React from "react";
-import background from "../assets/backgrounds/ourTeamBackground.svg";
+import background from "../assets/backgrounds/back3.png";
 import { useHistory } from "react-router-dom";
 import cancel from "../assets/linkedIcons/cancel.svg";
 import { useFireStoreCol } from "../hooks/useFirebase";
@@ -18,7 +18,6 @@ export const OurTeam = () => {
     const popUpTitle = document.createElement("p");
     const popUpSubject = document.createElement("p");
     const popUpText1 = document.createElement("p");
-    const popUpText2 = document.createElement("p");
 
     popUpFather.className = "popUpFather";
 
@@ -46,14 +45,10 @@ export const OurTeam = () => {
     popUpText1.textContent = cur.description;
     popUpText1.className = "popText1";
 
-    popUpText2.textContent = cur.description;
-    popUpText2.className = "popText2";
-
     popUpChild.appendChild(popUpImage);
     popUpChild.appendChild(popUpTitle);
     popUpChild.appendChild(popUpSubject);
     popUpChild.appendChild(popUpText1);
-    popUpChild.appendChild(popUpText2);
     popUpChild.appendChild(popUpIcon);
 
     document.getElementById("ourTeam").appendChild(popUpChild);
