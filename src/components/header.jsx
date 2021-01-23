@@ -12,7 +12,7 @@ export const Header = () => {
       <div className="firstLook">
         <Navigation />
         <div className="firstRectangle">
-          2000M Above <br /> the Gobi Desert
+          20000M Above <br /> the Gobi Desert
         </div>
         <KeyboardArrowDownIcon className="headerArrow" />
       </div>

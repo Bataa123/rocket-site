@@ -74,9 +74,11 @@ export const AboutUsCard = ({
         <div id={`anotherProjectText1${item}`} className="popUp">
           {text1}
         </div>
+        <div className="aboutUsLine"></div>
         <div id={`anotherProjectText2${item}`} className="popUp">
           {text2}
         </div>
+        <div className="aboutUsLine"></div>
         <div id={`anotherProjectText3${item}`} className="popUp">
           {text3}
         </div>

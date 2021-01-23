@@ -42,8 +42,12 @@ export const TimeLine = () => {
       <div className="timelineMain">
         <div className="firstRow">
           <div className="rowContent">Project starts</div>
-          <div className="rowContent">Complete the assembly</div>
-          <div className="rowContent">Static test #2</div>
+          <div className="rowContent" style={{ marginLeft: "4vw" }}>
+            CALCULATION BEGINS
+          </div>
+          <div className="rowContent" style={{ marginLeft: "5.5vw" }}>
+            Static test #1
+          </div>
           <div className="rowContent">Launch site will be ready</div>
         </div>
         <div className="lineContainer" style={{ position: "relative" }}>
@@ -96,16 +100,17 @@ export const TimeLine = () => {
           />
         </div>
         <div className="secondRow">
-          <div className="rowContent" style={{ marginLeft: "11vw" }}>
+          <div className="rowContent" style={{ marginLeft: "11.5vw" }}>
             Formed a team
           </div>
-          <div className="rowContent" style={{ marginLeft: "6.9vw" }}>
-            Static test #1
+          <div className="rowContent" style={{ marginLeft: "3.5vw" }}>
+            Complete the assembly
           </div>
-          <div className="rowContent" style={{ marginLeft: "7.7vw" }}>
-            Static test #3
+          <div className="rowContent" style={{ marginLeft: "3vw" }}>
+            dynamic test #1
           </div>
-          <div className="rowContent" style={{ marginLeft: "8.8vw" }}>
+          <div className="rowContent" style={{ marginLeft: "8vw" }}>
+            
             Launch
           </div>
         </div>

@@ -2,6 +2,7 @@ import React from "react";
 import instagram from "../assets/linkedIcons/instagram.svg";
 import facebook from "../assets/linkedIcons/facebook.svg";
 import youtube from "../assets/linkedIcons/youtube.svg";
+import gif from "../assets/backgrounds/footer.gif";
 
 export const Footer = () => {
   const jumpTo = (path) => window.open(path, "_blank");
@@ -31,6 +32,7 @@ export const Footer = () => {
           alt="instagram"
         />
       </div>
+      <img className="footer-image" src={gif} />
       <div className="footerLine"></div>
       <div className="copyright">© Copyright 2020</div>
     </div>

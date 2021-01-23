@@ -11,8 +11,8 @@
     background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
     height: 2px;
     width: 60vw;
+    z-index: 2;
 }
-
 
 .copyright {
     font-family: Montserrat;
@@ -21,6 +21,7 @@
     font-feature-settings: "pnum" on, "lnum" on;
     color: white;
     text-align: center;
+    z-index: 2;
 }
 
 .footerLinks {
@@ -28,6 +29,14 @@
     margin-bottom: 2vw;
     display: flex;
     justify-content: space-evenly;
+    z-index: 2;
+}
+
+.footer-image {
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    z-index: 0;
 }
 
 @media only screen and (max-device-width: 500px) {

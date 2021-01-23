@@ -117,6 +117,24 @@
     right: 0;
     transform: rotate(-20deg);
 }
+
+.popUpText {
+    font-size: 1vw;
+    text-align: start;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.popUpLabel {
+    font-size: 1.2vw;
+    text-align: start;
+    margin-right: 20px;
+}
+.aboutUsLine {
+    width: 80vw;
+    height: 1px;
+    background-color: lawngreen;
+}
+
 @media only screen and (max-width: 1499px) {
     .allText {
         width: 370px;
@@ -182,6 +200,7 @@
     .zuraas {
         width: 60px;
         height: 9px;
+        z-index: 2;
     }
     .aboutText {
         position: unset;
