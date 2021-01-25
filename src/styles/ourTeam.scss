@@ -39,6 +39,8 @@
 .memberImg {
   width: 17vw;
   border-radius: 4px;
+  height: 20vw;
+  background-size: cover;
 }
 
 .memberName {
@@ -74,7 +76,7 @@
   width: 100vw;
   height: 100vh;
   position: absolute;
-  z-index: 3;
+  z-index: 5;
   display: grid;
   justify-content: center;
   grid-template-rows: 4vw 10vw repeat(3, 7vw) 3vw 4vw;
@@ -92,8 +94,9 @@
 
 .popImage {
   grid-area: image;
-  width: 20.5vw;
-  height: 20.5vw;
+  width: 20vw;
+  height: 30vw;
+  background-size: cover;
 }
 
 .popName {
@@ -137,6 +140,7 @@
   grid-area: cancel;
   position: absolute;
   right: 0;
+  z-index: 10;
 }
 @media only screen and (max-device-width: 1100px) {
   .ourTeamEverything {
@@ -165,6 +169,7 @@
   .memberImg {
     width: 30vw;
     border-radius: 4px;
+    height: 20vw;
   }
 
   .memberName {

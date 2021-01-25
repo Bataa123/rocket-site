@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import CancelIcon from "@material-ui/icons/Cancel";
 import projectImage from "../assets/launchRocket.jpg";
+import img1 from "../assets/backgrounds/img1.png";
+import img2 from "../assets/backgrounds/img2.png";
 import back1 from "../assets/backgrounds/back1.png";
 import back2 from "../assets/backgrounds/back2.png";
 import back3 from "../assets/backgrounds/back4.png";
@@ -28,6 +30,16 @@ export const AboutUsCard = ({
         return back3;
       case "3":
         return back2;
+    }
+  };
+  const getImage = () => {
+    switch (item) {
+      case "1":
+        return img2;
+      case "2":
+        return img1;
+      case "3":
+        return projectImage;
     }
   };
 
@@ -96,7 +108,7 @@ export const AboutUsCard = ({
         id="ourProject"
       >
         {isLeft ? (
-          <img src={projectImage} alt="project" className="aboutImage" />
+          <img src={getImage()} alt="project" className="aboutImage" />
         ) : (
           <></>
         )}
@@ -113,7 +125,7 @@ export const AboutUsCard = ({
         {isLeft ? (
           <></>
         ) : (
-          <img src={projectImage} alt="project" className="aboutImage" />
+          <img src={getImage()} alt="project" className="aboutImage" />
         )}
       </div>
     </div>

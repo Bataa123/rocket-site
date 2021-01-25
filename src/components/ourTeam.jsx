@@ -13,7 +13,7 @@ export const OurTeam = () => {
   const popUp = (cur) => {
     const popUpFather = document.createElement("div");
     const popUpChild = document.createElement("div");
-    const popUpImage = document.createElement("img");
+    const popUpImage = document.createElement("div");
     const popUpIcon = document.createElement("img");
     const popUpTitle = document.createElement("p");
     const popUpSubject = document.createElement("p");
@@ -24,9 +24,8 @@ export const OurTeam = () => {
     popUpChild.className = "popUpMember";
     popUpChild.id = "popUpMember";
 
-    popUpImage.src = cur.image;
-    popUpImage.alt = cur.name;
     popUpImage.className = "popImage";
+    popUpImage.style.backgroundImage = `url(${cur.image})`;
 
     popUpIcon.src = cancel;
     popUpIcon.alt = "cancel";
@@ -58,21 +57,31 @@ export const OurTeam = () => {
   };
 
   const addMember = () =>
-    members.map((cur, index) => (
-      <div onClick={() => popUp(cur)} style={{ cursor: "pointer" }} key={index}>
-        <img alt="2" src={cur.image} className="memberImg" />
-        <div className="memberName">{cur.name}</div>
-        <div className="memberRole">{cur.role}</div>
-      </div>
-    ));
+    members.map((cur, index) => {
+      if (index < 8)
+        return (
+          <div
+            onClick={() => popUp(cur)}
+            style={{ cursor: "pointer" }}
+            key={index}
+          >
+            <div
+              style={{ backgroundImage: `url(${cur.image})` }}
+              className="memberImg"
+            ></div>
+            <div className="memberName">{cur.name}</div>
+            <div className="memberRole">{cur.role}</div>
+          </div>
+        );
+    });
 
   return (
     <div className="ourTeamEverything" id="ourTeam">
       <div className="secondLine"></div>
       <div className="ourTeamTitle">Our Team</div>
       <div className="ourTeamText">
-        20+ Students From Across The globe, ranging from High Schooaml Students
-        to Ph.D. candidates at some of the world’s most prestigious universities
+        Дэлхийн өнцөг булан бүрээс элссэн ахлах ангийн сурагчдаас эхлээд
+        магистер, докторант оюутнууд хүртэлх нийтдээ 30+ гишүүдтэй
       </div>
       <img
         style={{

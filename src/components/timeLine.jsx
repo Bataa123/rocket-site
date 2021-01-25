@@ -25,9 +25,10 @@ export const TimeLine = () => {
       <div className="timeline-head"> timeline </div>
       <div className="timeline-first-row">
         <div className="timelineText">
-          20+ Students From Across The globe, ranging from High School Students
-          to Ph.D. candidates at some of the world’s most prestigious
-          universities
+          Бид пуужингийн технелогтой холбоотой бараг бүхий л зүйлийг судлаж
+          компютерийн симуляц хийж дуусгаад одоо пуужингаа бүтээхээр хөрөнгө
+          босгох үе шат дээр явж байна. Та бүхнийг бидэнд туслана гэдэгт
+          итгэлтэй байна
         </div>
         <div className="launch">
           <p className="launchDay">launch day</p>
@@ -110,7 +111,6 @@ export const TimeLine = () => {
             dynamic test #1
           </div>
           <div className="rowContent" style={{ marginLeft: "8vw" }}>
-            
             Launch
           </div>
         </div>
