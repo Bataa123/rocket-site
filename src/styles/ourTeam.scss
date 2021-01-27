@@ -41,6 +41,7 @@
   border-radius: 4px;
   height: 20vw;
   background-size: cover;
+  background-position: center;
 }
 
 .memberName {
@@ -79,16 +80,17 @@
   z-index: 5;
   display: grid;
   justify-content: center;
-  grid-template-rows: 4vw 10vw repeat(3, 7vw) 3vw 4vw;
+  grid-template-rows: 4vw 10vw 4vw 8vw 4vw 8vw 4vw 4vw;
   grid-template-columns: repeat(3, 23vw);
   grid-template-areas:
     ". . ."
     ". . cancel"
+    "image label1 label1"
     "image text1 text1"
+    "image label2 label2"
     "image text2 text2"
-    "image text2 text2"
-    "name . ."
-    "duty . .";
+    "name label3 label3"
+    "duty text3 text3";
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -97,6 +99,7 @@
   width: 20vw;
   height: 30vw;
   background-size: cover;
+  background-position: center;
 }
 
 .popName {
@@ -118,22 +121,43 @@
   color: #00b65f;
 }
 
-.popText1 {
-  grid-area: text1;
+.popText {
   font-family: Montserrat;
   font-size: 1vw;
   line-height: 150%;
-
   letter-spacing: 0.02em;
+  padding-left: 30px;
+}
+
+.popLabel {
+  font-family: Montserrat;
+  font-size: 1vw;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+}
+
+.popText1 {
+  grid-area: text1;
+}
+
+.popLabel1 {
+  grid-area: label1;
+}
+
+.popLabel2 {
+  grid-area: label2;
 }
 
 .popText2 {
   grid-area: text2;
-  font-family: Montserrat;
-  font-size: 1vw;
-  line-height: 150%;
+}
 
-  letter-spacing: 0.02em;
+.popText3 {
+  grid-area: text3;
+}
+
+.popLabel3 {
+  grid-area: label3;
 }
 
 .popCancel {

@@ -108,7 +108,10 @@ export const AboutUsCard = ({
         id="ourProject"
       >
         {isLeft ? (
-          <img src={getImage()} alt="project" className="aboutImage" />
+          <div
+            style={{ backgroundImage: `url(${getImage()})` }}
+            className="aboutImage"
+          ></div>
         ) : (
           <></>
         )}

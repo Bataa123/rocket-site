@@ -31,12 +31,12 @@ export const TimeLine = () => {
           итгэлтэй байна
         </div>
         <div className="launch">
-          <p className="launchDay">launch day</p>
+          <p className="launchDay">Хөөргөх өдөр</p>
           <p
             className="day"
             style={{ color: "#00B65F", fontSize: "1.5vw", marginTop: "0.8vw" }}
           >
-            2020 / 08 / 21
+            2020 / 02 / 25
           </p>
         </div>
       </div>
