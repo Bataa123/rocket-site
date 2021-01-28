@@ -42,12 +42,12 @@ export const TimeLine = () => {
       </div>
       <div className="timelineMain">
         <div className="firstRow">
-          <div className="rowContent">Project starts</div>
+          <div className="rowContent">ТӨСӨЛ ЭХЛЭХ</div>
           <div className="rowContent" style={{ marginLeft: "4vw" }}>
-            CALCULATION BEGINS
+            ТООЦОЛЛЫГ ХИЙЖ ЭХЛЭВ
           </div>
-          <div className="rowContent" style={{ marginLeft: "5.5vw" }}>
-            Static test #1
+          <div className="rowContent" style={{ marginLeft: "3.8vw" }}>
+            СТАТИК ТЕСТ #1
           </div>
           <div className="rowContent">Launch site will be ready</div>
         </div>
@@ -101,17 +101,17 @@ export const TimeLine = () => {
           />
         </div>
         <div className="secondRow">
-          <div className="rowContent" style={{ marginLeft: "11.5vw" }}>
-            Formed a team
+          <div className="rowContent" style={{ marginLeft: "8.5vw" }}>
+            БАГ БҮРДҮҮЛЭЛТ ЭХЛЭВ
           </div>
-          <div className="rowContent" style={{ marginLeft: "3.5vw" }}>
-            Complete the assembly
+          <div className="rowContent" style={{ marginLeft: "2.5vw" }}>
+            ПУУЖИНГ УГСРАХ ӨДӨР
           </div>
           <div className="rowContent" style={{ marginLeft: "3vw" }}>
-            dynamic test #1
+            ДИНАМИК ТЕСТ #1
           </div>
-          <div className="rowContent" style={{ marginLeft: "8vw" }}>
-            Launch
+          <div className="rowContent" style={{ marginLeft: "4vw" }}>
+            НИСЛЭГИЙН ӨДӨР
           </div>
         </div>
       </div>

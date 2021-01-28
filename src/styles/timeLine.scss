@@ -25,6 +25,7 @@
   text-align: start;
   font-size: 1vw;
   line-height: 1.5vw;
+  font-weight: 300;
 }
 
 .timeImage {
@@ -138,13 +139,6 @@
   font-weight: 600;
   font-size: 1.8vw;
   text-transform: uppercase;
-}
-
-.timeLineText {
-  font-weight: 300;
-  font-size: 1vw;
-  width: 34vw;
-  margin-top: 1.3vw;
 }
 
 .timeBackground2 {
@@ -297,13 +291,6 @@
     text-transform: uppercase;
   }
 
-  .timeLineText {
-    font-weight: 300;
-    font-size: 1vw;
-    width: 34vw;
-    margin-top: 1.3vw;
-  }
-
   .timeBackground2 {
     position: absolute;
     right: 16vw;
@@ -348,7 +335,7 @@
     margin-top: 45px;
     width: 88vw;
     font-weight: 100;
-    font-size: 35px;
+    font-size: 3vw;
     line-height: 45px;
   }
 
@@ -453,25 +440,18 @@
 
   .timeLineDate {
     color: #00c167;
-    font-size: 1.4vw;
+    font-size: 3vw;
     line-height: 1.6vw;
     margin: 1vw 0 1vw 0;
   }
 
   .timeLineTitle {
     font-weight: 600;
-    font-size: 40px;
+    font-size: 5vw;
     text-transform: uppercase;
     margin: 50px 0 60px 0;
   }
 
-  .timeLineText {
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 60px;
-    width: auto;
-    // margin-top: 100px;
-  }
 
   .timeBackground2 {
     position: absolute;

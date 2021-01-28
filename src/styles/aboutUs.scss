@@ -104,8 +104,10 @@
 }
 
 .TextImage {
-    width: 32vw;
+    width: 50vw;
+    height: 50vw;
     position: absolute;
+    background-size: cover;
     z-index: 1;
 }
 
@@ -115,6 +117,8 @@
 
 .TextImageRight {
     right: 0;
+    width: 40vw;
+    height: 20vw;
     transform: rotate(-20deg);
 }
 
@@ -133,6 +137,14 @@
     width: 80vw;
     height: 1px;
     background-color: lawngreen;
+}
+.aboutUsBackground1 {
+    width: 50vw;
+    height: 50vw;
+    background-size: cover;
+    transform: rotateY(180deg);
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, #000000 100%),
+        url("../assets/backgrounds/source.gif") !important;
 }
 
 @media only screen and (max-width: 1499px) {
@@ -192,9 +204,9 @@
         background: #00b65f;
     }
     .headLine {
-        font-weight: 500;
-        font-size: 55px;
-        line-height: 55px;
+        font-weight: 500 !important;
+        font-size: 55px !important;
+        line-height: 55px !important;
     }
 
     .zuraas {

@@ -37,7 +37,7 @@
 }
 
 .memberImg {
-  width: 17vw;
+  width: 16.9vw;
   border-radius: 4px;
   height: 20vw;
   background-size: cover;
@@ -193,7 +193,7 @@
   .memberImg {
     width: 30vw;
     border-radius: 4px;
-    height: 20vw;
+    height: 20vw !important;
   }
 
   .memberName {
@@ -257,6 +257,7 @@
 
   .memberImg {
     width: 90vw;
+    height: 60vw !important;
     border-radius: 20px;
   }
 

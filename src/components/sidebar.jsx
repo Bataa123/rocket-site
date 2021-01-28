@@ -51,17 +51,27 @@ export const SideBar = () => {
           }
           className="menuText"
         >
-          Our project
+          БИДНИЙ ЗОРИЛГО
         </ListItemText>
         <ListItemText
           onClick={() =>
-            document.getElementById("ourGoal").scrollIntoView({
+            document.getElementById("whyGobi").scrollIntoView({
               behavior: "smooth",
             })
           }
           className="menuText"
         >
-          Our goal
+          ЯАГААД ГОВЬ ГЭЖ?
+        </ListItemText>
+        <ListItemText
+          onClick={() =>
+            document.getElementById("project").scrollIntoView({
+              behavior: "smooth",
+            })
+          }
+          className="menuText"
+        >
+          БИД ЮУ ХИЙЖ БАЙГАА ВЭ?
         </ListItemText>
         <ListItemText
           onClick={() =>
@@ -71,7 +81,7 @@ export const SideBar = () => {
           }
           className="menuText"
         >
-          Our team
+          МАНАЙ БАГ
         </ListItemText>
         <ListItemText
           onClick={() =>

@@ -3,7 +3,6 @@ import CancelIcon from "@material-ui/icons/Cancel";
 import projectImage from "../assets/launchRocket.jpg";
 import img1 from "../assets/backgrounds/img1.png";
 import img2 from "../assets/backgrounds/img2.png";
-import back1 from "../assets/backgrounds/back1.png";
 import back2 from "../assets/backgrounds/back2.png";
 import back3 from "../assets/backgrounds/back4.png";
 
@@ -15,6 +14,7 @@ export const AboutUsCard = ({
   text1 = "",
   text2 = "",
   text3 = "",
+  id,
 }) => {
   const [call, setCall] = useState(false);
 
@@ -25,7 +25,7 @@ export const AboutUsCard = ({
   const getBackground = () => {
     switch (item) {
       case "1":
-        return back1;
+        return "";
       case "2":
         return back3;
       case "3":
@@ -35,11 +35,11 @@ export const AboutUsCard = ({
   const getImage = () => {
     switch (item) {
       case "1":
-        return img2;
+        return projectImage;
       case "2":
         return img1;
       case "3":
-        return projectImage;
+        return img2;
     }
   };
 
@@ -96,16 +96,22 @@ export const AboutUsCard = ({
         </div>
       </div>
 
-      <img
+      {/* <img
         src={getBackground()}
         alt="TextImage"
-        className={
-          isLeft ? "TextImage TextImageRight" : "TextImage TextImageLeft"
-        }
-      />
+        className={`
+          ${isLeft ? "TextImage TextImageRight" : "TextImage TextImageLeft"} 
+          ${item === "1" ? "aboutUsBackground1" : ""}`}
+      /> */}
+      <div
+        style={{ backgroundImage: `url(${getBackground()})` }}
+        className={`
+          ${isLeft ? "TextImage TextImageRight" : "TextImage TextImageLeft"} 
+          ${item === "1" ? "aboutUsBackground1" : ""}`}
+      ></div>
       <div
         className={`everything ${item === "2" ? "reverseForPhone" : ""}`}
-        id="ourProject"
+        id={id}
       >
         {isLeft ? (
           <div

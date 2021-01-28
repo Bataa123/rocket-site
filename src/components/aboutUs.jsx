@@ -54,6 +54,7 @@ export const AboutUs = () => {
             </div>
           </div>
         }
+        id="ourProject"
       />
       <AboutUsCard
         isLeft={true}
@@ -117,6 +118,7 @@ export const AboutUs = () => {
             </div>
           </div>
         }
+        id="whyGobi"
       />
       <AboutUsCard
         isLeft={false}
@@ -140,6 +142,7 @@ export const AboutUs = () => {
             </div>
           </div>
         }
+        id="project"
       />
     </div>
   );

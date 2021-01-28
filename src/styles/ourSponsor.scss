@@ -25,9 +25,10 @@
     .sponsor {
         width: 94vw;
         margin-bottom: 60px;
-        justify-content: space-between;
+        justify-content: space-around;
+        flex-wrap: wrap;
         img {
-            width: 17vw;
+            width: 32vw;
         }
     }
 }

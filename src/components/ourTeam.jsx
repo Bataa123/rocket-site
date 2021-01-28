@@ -28,7 +28,7 @@ export const OurTeam = () => {
     popUpChild.id = "popUpMember";
 
     popUpImage.className = "popImage";
-    popUpImage.style.backgroundImage = `url(${cur.image})`;
+    popUpImage.style.backgroundImage = `url("${cur.image}")`;
 
     popUpIcon.src = cancel;
     popUpIcon.alt = "cancel";
@@ -61,7 +61,7 @@ export const OurTeam = () => {
 
     popUpLabel3.textContent = cur.description[2].question;
     popUpLabel3.className = "popLabel popLabel3";
-    console.log(cur.description[0].question)
+    console.log(cur.description[0].question);
     popUpChild.appendChild(popUpImage);
     popUpChild.appendChild(popUpTitle);
     popUpChild.appendChild(popUpSubject);
@@ -89,7 +89,7 @@ export const OurTeam = () => {
             key={index}
           >
             <div
-              style={{ backgroundImage: `url(${cur.image})` }}
+              style={{ backgroundImage: `url("${cur.image}")` }}
               className="memberImg"
             ></div>
             <div className="memberName">{cur.name}</div>
@@ -104,7 +104,7 @@ export const OurTeam = () => {
       <div className="ourTeamTitle">Манай баг</div>
       <div className="ourTeamText">
         Дэлхийн өнцөг булан бүрээс элссэн ахлах ангийн сурагчдаас эхлээд
-        магистер, докторант оюутнууд хүртэлх нийтдээ 30+ гишүүдтэй
+        магистер, докторант оюутнууд хүртэлх нийтдээ 8 улсын 30+ гишүүдтэй
       </div>
       <img
         style={{
