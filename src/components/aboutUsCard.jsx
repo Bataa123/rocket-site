@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import CancelIcon from "@material-ui/icons/Cancel";
 import projectImage from "../assets/launchRocket.jpg";
-import img1 from "../assets/backgrounds/img1.png";
+import img1 from "../assets/backgrounds/img1.jpg";
 import img2 from "../assets/backgrounds/img2.png";
 import back2 from "../assets/backgrounds/back2.png";
 import back3 from "../assets/backgrounds/back4.png";
@@ -96,13 +96,6 @@ export const AboutUsCard = ({
         </div>
       </div>
 
-      {/* <img
-        src={getBackground()}
-        alt="TextImage"
-        className={`
-          ${isLeft ? "TextImage TextImageRight" : "TextImage TextImageLeft"} 
-          ${item === "1" ? "aboutUsBackground1" : ""}`}
-      /> */}
       <div
         style={{ backgroundImage: `url(${getBackground()})` }}
         className={`

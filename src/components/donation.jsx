@@ -1,5 +1,7 @@
 import React from "react";
 import gif from "../assets/backgrounds/donate.gif";
+import moneyAccount from "../assets/money_account.jpg";
+import golomt from "../assets/linkedIcons/golomt.png";
 
 export const Donation = () => {
   const width = window.outerWidth;
@@ -34,20 +36,38 @@ export const Donation = () => {
             difference in supporting the next generation of leaders, scientists,
             and entrepreneurs.
           </div>
-          <div className="donateText" style={{ marginLeft: "40px" }}>
-            Дансны дугаар: 457063198 <br />
-            Хүлээн авагчийн нэр: Ezenbaatar B. <br />
+          <div className="donateText">
             Гүйлгээний утга: (Таны нэр, өөрийн Email хаяг )
           </div>
         </div>
         <div
           style={{
-            width: "377px",
-            height: "577px",
             zIndex: 5,
-            backgroundColor: "#363636",
+            marginBottom: width < 500 ? "0" : "10vw",
+            display: "flex",
+            flexDirection: width < 500 ? "row" : "column",
+            justifyContent: "center",
+            alignItems: "center",
           }}
-        ></div>
+        >
+          <div
+            style={{
+              width: "60px",
+              height: "60px",
+              backgroundImage: `url(${golomt})`,
+              backgroundSize: "60px 60px",
+              marginBottom: "20px",
+            }}
+          ></div>
+          <div
+            style={{
+              width: "250px",
+              height: "250px",
+              backgroundImage: `url(${moneyAccount})`,
+              backgroundSize: "250px 250px",
+            }}
+          ></div>
+        </div>
       </div>
     </div>
   );

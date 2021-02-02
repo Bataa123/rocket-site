@@ -36,7 +36,7 @@ export const TimeLine = () => {
             className="day"
             style={{ color: "#00B65F", fontSize: "1.5vw", marginTop: "0.8vw" }}
           >
-            2020 / 02 / 25
+            2021 / 03 / 03
           </p>
         </div>
       </div>
