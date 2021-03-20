@@ -17,6 +17,13 @@
   text-transform: uppercase;
 }
 
+.ourTeamContainer {
+  width: 16.9vw;
+  // justify-content: center;
+  // align-items: center;
+  cursor: pointer;
+}
+
 .ourTeamText {
   z-index: 1;
   margin-top: 2vh;
@@ -37,9 +44,10 @@
 }
 
 .memberImg {
-  width: 16.9vw;
+  margin-left: 1vw;;
+  width: 14.9vw;
   border-radius: 4px;
-  height: 20vw;
+  height: 18vw;
   background-size: cover;
   background-position: center;
 }

@@ -116,15 +116,20 @@
 
 .timeLineStoryContainer {
   display: flex;
-  width: 100%;
+  width: 70vw;
   justify-content: space-between;
   margin-top: 7vw;
 }
 
+.timeLineTextContainer {
+  width: 80vw;
+  padding-right: 1vw;
+}
+
 .timeLineStoryImage {
   background-size: cover;
-  height: 18.1vw;
-  width: 32.1vw;
+  height: 15vw;
+  width: 52.1vw;
   z-index: 2;
 }
 
@@ -451,7 +456,6 @@
     text-transform: uppercase;
     margin: 50px 0 60px 0;
   }
-
 
   .timeBackground2 {
     position: absolute;

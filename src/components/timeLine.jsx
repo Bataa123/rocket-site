@@ -49,7 +49,7 @@ export const TimeLine = () => {
           <div className="rowContent" style={{ marginLeft: "3.8vw" }}>
             СТАТИК ТЕСТ #1
           </div>
-          <div className="rowContent">Launch site will be ready</div>
+          <div className="rowContent">ХӨӨРГӨХ ТАВЦАНГ БЭЛДЭХ</div>
         </div>
         <div className="lineContainer" style={{ position: "relative" }}>
           <img

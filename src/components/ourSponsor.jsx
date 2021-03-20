@@ -4,19 +4,21 @@ import mosta from "../assets/sponsor/mostaSponsor.png";
 import nomt from "../assets/sponsor/nomtSponsor.png";
 import n from "../assets/sponsor/nSponsor.png";
 
-
 export const OurSponsor = () => {
   return (
     <div className="ourSponsor" style={{ position: "relative" }}>
       <div id="sponsor" className="headLine">
-        SPONSORS
+        Дэмжигчид
       </div>
       <div className="zuraas"></div>
       <div className="sponsor">
-        <img alt="number3" src={mosta}></img>
-        <img alt="number2" src={miat}></img>
-        <img alt="number3" src={n}></img>
-        <img alt="number1" src={nomt}></img>
+        <img alt="number3" src={mosta} />
+        <img alt="number2" src={miat} />
+        <div className="naniContainer">
+          <img alt="number3" src={n} />
+          <div className="naniName">Nani tech</div>
+        </div>
+        <img alt="number1" src={nomt} />
       </div>
     </div>
   );

@@ -2,6 +2,10 @@ import React from "react";
 import gif from "../assets/backgrounds/donate.gif";
 import moneyAccount from "../assets/money_account.jpg";
 import golomt from "../assets/linkedIcons/golomt.png";
+import tdb from "../assets/tdb.jpg";
+import khaan from "../assets/khaanBank.jpg";
+import khaanLogo from "../assets/khaanLogo.png";
+import tdbLogo from "../assets/tdbLogo.png";
 
 export const Donation = () => {
   const width = window.outerWidth;
@@ -16,7 +20,7 @@ export const Donation = () => {
         alignItems: "center",
       }}
     >
-      <div className="headLine">DONATE</div>
+      <div className="headLine">Хандив</div>
       <div className="zuraas"></div>
       <img src={gif} alt="donate" className="donationGif" />
       <div
@@ -50,23 +54,87 @@ export const Donation = () => {
             alignItems: "center",
           }}
         >
-          <div
-            style={{
-              width: "60px",
-              height: "60px",
-              backgroundImage: `url(${golomt})`,
-              backgroundSize: "60px 60px",
-              marginBottom: "20px",
-            }}
-          ></div>
-          <div
-            style={{
-              width: "250px",
-              height: "250px",
-              backgroundImage: `url(${moneyAccount})`,
-              backgroundSize: "250px 250px",
-            }}
-          ></div>
+          <div style={{ display: "flex" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <div
+                style={{
+                  width: "60px",
+                  height: "60px",
+                  backgroundImage: `url(${golomt})`,
+                  backgroundSize: "60px 60px",
+                  marginBottom: "20px",
+                }}
+              ></div>
+              <div
+                style={{
+                  width: "250px",
+                  height: "250px",
+                  backgroundImage: `url(${moneyAccount})`,
+                  backgroundSize: "250px 250px",
+                }}
+              ></div>
+            </div>
+
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                marginLeft: 10,
+                marginRight: 10,
+              }}
+            >
+              <div
+                style={{
+                  width: "60px",
+                  height: "60px",
+                  backgroundImage: `url(${tdbLogo})`,
+                  backgroundSize: "60px 60px",
+                  marginBottom: "20px",
+                }}
+              ></div>
+              <div
+                style={{
+                  width: "250px",
+                  height: "250px",
+                  backgroundImage: `url(${tdb})`,
+                  backgroundSize: "250px 250px",
+                }}
+              ></div>
+            </div>
+
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <div
+                style={{
+                  width: "60px",
+                  height: "60px",
+                  backgroundImage: `url(${khaanLogo})`,
+                  backgroundSize: "60px 60px",
+                  marginBottom: "20px",
+                }}
+              ></div>
+              <div
+                style={{
+                  width: "250px",
+                  height: "250px",
+                  backgroundImage: `url(${khaan})`,
+                  backgroundSize: "250px 250px",
+                }}
+              ></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

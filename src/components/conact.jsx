@@ -30,7 +30,7 @@ export const Contact = () => {
   };
   return (
     <div className="contact" id="contact">
-      <div className="headLine">CONTACT US</div>
+      <div className="headLine">Бидэнтэй холбогдох</div>
       <div className="zuraas"></div>
       <input id="name" placeholder="NAME" className="contactNameEmail"></input>
       <div className="contactLineGreen"></div>

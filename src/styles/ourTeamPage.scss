@@ -1,232 +1,232 @@
-.ourTeamPageEverything {
-    margin-top: 4vw;
-    width: 80vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    z-index: 1;
-}
+// .ourTeamPageEverything {
+//     margin-top: 4vw;
+//     width: 80vw;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     color: white;
+//     z-index: 1;
+// }
 
-.ourTeamPageTitle {
-    font-family: Montserrat;
-    font-size: 2.3vw;
-    font-weight: 600;
-    line-height: 2.6vw;
-    text-transform: uppercase;
-}
+// .ourTeamPageTitle {
+//     font-family: Montserrat;
+//     font-size: 2.3vw;
+//     font-weight: 600;
+//     line-height: 2.6vw;
+//     text-transform: uppercase;
+// }
 
-.ourTeamPageText {
-    margin-top: 2vh;
-    font-family: Raleway;
-    font-size: 1.3vw;
-    line-height: 1.7vw;
-    width: 56vw;
-    text-align: center;
-}
+// .ourTeamPageText {
+//     margin-top: 2vh;
+//     font-family: Raleway;
+//     font-size: 1.3vw;
+//     line-height: 1.7vw;
+//     width: 56vw;
+//     text-align: center;
+// }
 
-.ourTeamPageMemebers {
-    margin-top: 4vw;
-    margin-bottom: 5vw;
-    display: grid;
-    grid-template-columns: repeat(4, 17vw);
-    grid-gap: 1rem;
-    z-index: 2;
-    font-family: Montserrat;
-}
+// .ourTeamPageMemebers {
+//     margin-top: 4vw;
+//     margin-bottom: 5vw;
+//     display: grid;
+//     grid-template-columns: repeat(4, 17vw);
+//     grid-gap: 1rem;
+//     z-index: 2;
+//     font-family: Montserrat;
+// }
 
-.memberImg {
-    width: 16.9vw;
-    border-radius: 4px;
-}
+// .memberImg {
+//     width: 16.9vw;
+//     border-radius: 4px;
+// }
 
-.memberName {
-    font-weight: 600;
-    font-size: 1.3vw;
-    line-height: 3vw;
-    text-align: center;
-}
+// .memberName {
+//     font-weight: 600;
+//     font-size: 1.3vw;
+//     line-height: 3vw;
+//     text-align: center;
+// }
 
-.memberRole {
-    font-size: 1.1vw;
-    line-height: 3vw;
-    text-transform: uppercase;
-    text-align: center;
-    color: #00b65f;
-}
+// .memberRole {
+//     font-size: 1.1vw;
+//     line-height: 3vw;
+//     text-transform: uppercase;
+//     text-align: center;
+//     color: #00b65f;
+// }
 
-.ourTeamPageButton {
-    cursor: pointer;
-    margin-top: 2vw;
-    width: 8vw;
-    height: 5vh;
-    font-family: Montserrat;
-    font-size: 1.2vw;
-    line-height: 2.4vw;
-    border: 1px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+// .ourTeamPageButton {
+//     cursor: pointer;
+//     margin-top: 2vw;
+//     width: 8vw;
+//     height: 5vh;
+//     font-family: Montserrat;
+//     font-size: 1.2vw;
+//     line-height: 2.4vw;
+//     border: 1px solid white;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
 
-.popImage {
-    grid-area: image;
-    width: 20.5vw;
-    height: 20.5vw;
-}
+// .popImage {
+//     grid-area: image;
+//     width: 20.5vw;
+//     height: 20.5vw;
+// }
 
-.popName {
-    grid-area: name;
-    font-family: Montserrat;
-    font-weight: 600;
-    font-size: 1.7vw;
-    line-height: 1.9vw;
-    text-align: center;
-}
+// .popName {
+//     grid-area: name;
+//     font-family: Montserrat;
+//     font-weight: 600;
+//     font-size: 1.7vw;
+//     line-height: 1.9vw;
+//     text-align: center;
+// }
 
-.popDuty {
-    grid-area: duty;
-    font-family: Montserrat;
-    font-size: 1.5vw;
-    line-height: 1.9vw;
-    text-align: center;
-    text-transform: uppercase;
-    color: #00b65f;
-}
+// .popDuty {
+//     grid-area: duty;
+//     font-family: Montserrat;
+//     font-size: 1.5vw;
+//     line-height: 1.9vw;
+//     text-align: center;
+//     text-transform: uppercase;
+//     color: #00b65f;
+// }
 
-.popText1 {
-    grid-area: text1;
-    font-family: Montserrat;
-    font-size: 1vw;
-    line-height: 150%;
+// .popText1 {
+//     grid-area: text1;
+//     font-family: Montserrat;
+//     font-size: 1vw;
+//     line-height: 150%;
 
-    letter-spacing: 0.02em;
-}
+//     letter-spacing: 0.02em;
+// }
 
-.popText2 {
-    grid-area: text2;
-    font-family: Montserrat;
-    font-size: 1vw;
-    line-height: 150%;
+// .popText2 {
+//     grid-area: text2;
+//     font-family: Montserrat;
+//     font-size: 1vw;
+//     line-height: 150%;
 
-    letter-spacing: 0.02em;
-}
+//     letter-spacing: 0.02em;
+// }
 
-.popCancel {
-    grid-area: cancel;
-    position: absolute;
-    right: 0;
-}
-@media only screen and (max-device-width: 1100px) {
-    .ourTeamPageEverything {
-        margin-top: 10vw;
-        width: 80vw;
-    }
+// .popCancel {
+//     grid-area: cancel;
+//     position: absolute;
+//     right: 0;
+// }
+// @media only screen and (max-device-width: 1100px) {
+//     .ourTeamPageEverything {
+//         margin-top: 10vw;
+//         width: 80vw;
+//     }
 
-    .ourTeamPageTitle {
-        font-family: Montserrat;
-        font-size: 3.2vw;
-        font-weight: 600;
-        line-height: 3.7vw;
-    }
+//     .ourTeamPageTitle {
+//         font-family: Montserrat;
+//         font-size: 3.2vw;
+//         font-weight: 600;
+//         line-height: 3.7vw;
+//     }
 
-    .ourTeamPageText {
-        font-size: 1.5vw;
-        line-height: 2.1vw;
-    }
+//     .ourTeamPageText {
+//         font-size: 1.5vw;
+//         line-height: 2.1vw;
+//     }
 
-    .ourTeamPageMemebers {
-        margin-top: 4vw;
-        grid-template-columns: repeat(3, 30vw);
-        grid-gap: 1.5rem;
-    }
+//     .ourTeamPageMemebers {
+//         margin-top: 4vw;
+//         grid-template-columns: repeat(3, 30vw);
+//         grid-gap: 1.5rem;
+//     }
 
-    .memberImg {
-        width: 30vw;
-        border-radius: 4px;
-    }
+//     .memberImg {
+//         width: 30vw;
+//         border-radius: 4px;
+//     }
 
-    .memberName {
-        font-size: 1.6vw;
-        line-height: 3.3vw;
-    }
+//     .memberName {
+//         font-size: 1.6vw;
+//         line-height: 3.3vw;
+//     }
 
-    .memberRole {
-        font-size: 1.5vw;
-        line-height: 3.2vw;
-    }
+//     .memberRole {
+//         font-size: 1.5vw;
+//         line-height: 3.2vw;
+//     }
 
-    .ourTeamPageButton {
-        margin-top: 2vw;
-        width: 11vw;
-        height: 3vh;
-        font-family: Montserrat;
-        font-size: 1.5vw;
-        line-height: 2.4vw;
-    }
+//     .ourTeamPageButton {
+//         margin-top: 2vw;
+//         width: 11vw;
+//         height: 3vh;
+//         font-family: Montserrat;
+//         font-size: 1.5vw;
+//         line-height: 2.4vw;
+//     }
 
-    .visibility {
-        visibility: hidden;
-        overflow: hidden;
-        height: 0;
-    }
-}
+//     .visibility {
+//         visibility: hidden;
+//         overflow: hidden;
+//         height: 0;
+//     }
+// }
 
-@media only screen and (max-device-width: 500px) {
-    .ourTeamPageEverything {
-        margin-top: 10vw;
-        width: 80vw;
-    }
+// @media only screen and (max-device-width: 500px) {
+//     .ourTeamPageEverything {
+//         margin-top: 10vw;
+//         width: 80vw;
+//     }
 
-    .ourTeamPageTitle {
-        font-size: 60px;
-        font-weight: 600;
-        line-height: 60px;
-        margin-top: 30px;
-    }
+//     .ourTeamPageTitle {
+//         font-size: 60px;
+//         font-weight: 600;
+//         line-height: 60px;
+//         margin-top: 30px;
+//     }
 
-    .ourTeamPageText {
-        width: 80vw;
-        font-size: 35px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 160%;
-        padding: 50px 0 !important;
-    }
+//     .ourTeamPageText {
+//         width: 80vw;
+//         font-size: 35px;
+//         font-style: normal;
+//         font-weight: 400;
+//         line-height: 160%;
+//         padding: 50px 0 !important;
+//     }
 
-    .ourTeamPageMemebers {
-        margin-top: 4vw;
-        grid-template-columns: repeat(1, 90vw);
-        grid-gap: 1rem;
-    }
+//     .ourTeamPageMemebers {
+//         margin-top: 4vw;
+//         grid-template-columns: repeat(1, 90vw);
+//         grid-gap: 1rem;
+//     }
 
-    .memberImg {
-        width: 90vw;
-        border-radius: 20px;
-    }
+//     .memberImg {
+//         width: 90vw;
+//         border-radius: 20px;
+//     }
 
-    .memberName {
-        font-size: 4.6vw;
-        line-height: 5vw;
-        padding: 50px 0 30px;
-    }
+//     .memberName {
+//         font-size: 4.6vw;
+//         line-height: 5vw;
+//         padding: 50px 0 30px;
+//     }
 
-    .memberRole {
-        font-size: 3.5vw;
-        line-height: 4vw;
-        padding-bottom: 60px;
-    }
+//     .memberRole {
+//         font-size: 3.5vw;
+//         line-height: 4vw;
+//         padding-bottom: 60px;
+//     }
 
-    .ourTeamPageButton {
-        width: 23vw;
-        height: 5vh;
-        font-size: 3.5vw;
-        line-height: 4vw;
-    }
+//     .ourTeamPageButton {
+//         width: 23vw;
+//         height: 5vh;
+//         font-size: 3.5vw;
+//         line-height: 4vw;
+//     }
 
-    .visibilityPhone {
-        visibility: hidden;
-        overflow: hidden;
-        height: 0;
-    }
-}
+//     .visibilityPhone {
+//         visibility: hidden;
+//         overflow: hidden;
+//         height: 0;
+//     }
+// }

@@ -85,7 +85,7 @@ export const OurTeam = () => {
         return (
           <div
             onClick={() => popUp(cur)}
-            style={{ cursor: "pointer" }}
+            className="ourTeamContainer"
             key={index}
           >
             <div
