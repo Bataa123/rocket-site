@@ -121,7 +121,7 @@ export const AboutUsCard = ({
           </div>
           <div className="text">{description}</div>
           <div onClick={callPopUp} className="readMore">
-            Read more
+            Цааш унших
           </div>
         </div>
         {isLeft ? (

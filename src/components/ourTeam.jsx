@@ -118,7 +118,7 @@ export const OurTeam = () => {
       />
       <div className="ourTeamMemebers">{addMember()}</div>
       <div className="ourTeamButton" onClick={toTeam}>
-        All
+        Бүгд
       </div>
     </div>
   );

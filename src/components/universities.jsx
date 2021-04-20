@@ -28,10 +28,15 @@ export const Universities = () => {
           alt="number9"
           src={toronto}
           className="universityLogo"
-          style={{ width: "10vw" }}
+          style={{ width: "14vw" }}
         />
         <img alt="number1" src={berkeley} className="berkeley" />
-        <img alt="number8" src={penn} className="universityLogo" />
+        <img
+          alt="number8"
+          src={penn}
+          className="universityLogo"
+          style={{ width: "10vw" }}
+        />
         <img alt="number10" src={tokyo} className="universityLogo" />
         <img alt="number6" src={mit} className="mit" />
         <img alt="number3" src={cornell} className="universityLogo" />

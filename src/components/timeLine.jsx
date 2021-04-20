@@ -22,7 +22,7 @@ export const TimeLine = () => {
   return (
     <div className="timeline" id="timeLine" style={{ position: "relative" }}>
       <div className="secondLine"></div>
-      <div className="timeline-head"> timeline </div>
+      <div className="timeline-head"> төлөвлөгөө </div>
       <div className="timeline-first-row">
         <div className="timelineText">
           Бид пуужингийн технелогтой холбоотой бараг бүхий л зүйлийг судлаж
@@ -36,7 +36,7 @@ export const TimeLine = () => {
             className="day"
             style={{ color: "#00B65F", fontSize: "1.5vw", marginTop: "0.8vw" }}
           >
-            2021 / 03 / 03
+            2021 / 05 / 26
           </p>
         </div>
       </div>

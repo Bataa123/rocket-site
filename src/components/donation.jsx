@@ -46,6 +46,7 @@ export const Donation = () => {
         </div>
         <div
           style={{
+            marginLeft: width < 500 ? "0px" : "4vw",
             zIndex: 5,
             marginBottom: width < 500 ? "0" : "10vw",
             display: "flex",
